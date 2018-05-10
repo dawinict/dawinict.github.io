@@ -43,9 +43,42 @@
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-<style style="text/css">
-#navbar-menu .nav a:hover { background-color: yellow; }
-#navbar-menu .nav a:active { background-color: red; }
+<style type="text/css">
+#header {position:fixed;width:100%;height:80px;line-height:80px;background:url(../dawin_img/caption_35.png);z-index: 1000000;transition:all 0.1s ease-out;}
+#header h1 {font-size:0; letter-spacing:0; word-spacing:0; float:left;}
+#header h1 img {vertical-align:middle;}
+#header h1 img.color {display:none;}
+#header #gnb {float:right;}
+#header #gnb>ul>li {float:left; position:relative;}
+#header #gnb>ul>li.mobile_title {display:none;}
+#header #gnb>ul>li>a {color:#fff; font-size:15px; font-family:'Open Sans', sans-serif; font-weight:700; padding:0 30px; display:block;}
+#header #gnb>ul>li>a.mobile {display:none;}
+#header #gnb>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
+#header #gnb>ul>li>ul {background-color:#fff; position:absolute; top:80px; left:0; width:100%; min-width:200px; display:none;}
+#header #gnb>ul>li:last-child>ul {left:auto; right:0;}
+#header #gnb>ul>li:hover>ul {display:block;}
+#header #gnb>ul>li>ul>li {font-size:13px; line-height:18px;}
+#header #gnb>ul>li>ul>li>a {display:block; padding:10px 15px; font-family:'Open Sans', sans-serif; font-weight:400; transition:all 0.1s ease-out; border-bottom:1px solid #ddd; position:relative;}
+#header #gnb>ul>li>ul>li>a span.icon {display:block; position:absolute; top:50%; right:10px; margin-top:-8px;}
+#header #gnb>ul>li>ul>li>a span.icon i {font-size:20px; color:#404c59;}
+#header #gnb>ul>li>ul>li>a span.icon i.off {display:none;}
+#header #gnb>ul>li>ul>li>a:hover {background-color:#505a64; border-bottom:1px solid #505a64; color:#fff;}
+#header #gnb>ul>li>ul>li>a:hover span.icon i {color:#fff;}
+#header #gnb>ul>li>ul>li.active>a {background-color:#505a64; border-bottom:1px solid #505a64; color:#fff;}
+#header #gnb>ul>li>ul>li.active>a span.icon i.on {display:none;}
+#header #gnb>ul>li>ul>li.active>a span.icon {margin-top:-10px;}
+#header #gnb>ul>li>ul>li.active>a span.icon i.off {display:block; color:#fff;}
+#header #gnb>ul>li>ul>li>ul {display:none;}
+#header #gnb>ul>li>ul>li>ul li a {display:block; padding:8px 12px; border-bottom:1px solid #a1a8ae; font-size:12px; line-height:15px; background-color:#7d8790; color:#fff; transition:all 0.25s ease-out;}
+#header #gnb>ul>li>ul>li>ul li a:hover {background-color:#404c59;}
+#header .mg_control {display:none;}
+#header.changed {background:none; background-color:#fff; border-bottom:1px solid #eee; height:60px; line-height:60px;}
+#header.changed h1 img.white {display:none;}
+#header.changed h1 img.color {display:inline-block;}
+#header.changed #gnb>ul>li>a {color:#000;}
+#header.changed #gnb>ul>li:hover>a {color:#fff;}
+#header.changed #gnb>ul>li>ul {top:60px; border-top:1px solid #ddd;}
+#header.changed #gnb>ul>li>ul>li>a {border:1px solid #ddd; border-top:0;}
 </style>
         
     </head>
@@ -111,9 +144,9 @@
                 <!-- End Top Search -->
 
 
-                <div class="container"> 
+                <div class="container" > 
                     <div class="attr-nav">
-                        <ul>
+                        <ul style="margin:0">
                             <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
                         </ul>
                     </div> 
@@ -124,19 +157,19 @@
                             <i class="fa fa-bars"></i>
                         </button>
                         <a class="navbar-brand" href="#brand">
-                            <img src="dawin_img/logo.gif" class="logo" alt="">
+                            <img src="dawin_img/logo.gif"  alt="logo" >
                             <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
                         </a>
 
                     </div>
                     <!-- End Header Navigation -->
                     <!-- navbar menu -->
-                    <div class="collapse navbar-collapse" id="navbar-menu" >
-                        <ul class="nav navbar-nav navbar-right" >
-                            <li ><a href="#home">Home</a></li>                    
-                            <li ><a href="#features">회사소개</a></li>
+                    <div class="collapse navbar-collapse " id="navbar-menu"  >
+                        <ul class="nav navbar-nav navbar-right " style="margin:0;background-color: rgb(240, 234, 234)">
+                            <li ><a href="#home" >Home</a></li>                    
+                            <li><a href="#features">회사소개</a></li>
                             <li ><a href="#business">사업소개</a></li>
-                            <li ><a href="#work">제품정보</a></li>
+                            <li ><a href="#product">제품정보</a></li>
                             <li ><a href="#contact">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -257,24 +290,18 @@
                             </div>
                             
                             <div class="col-md-6">
-                                <div class="business_item sm-m-top-50">
-                                    <h2 class="text-uppercase"><strong>Made</strong> is Template For Business</h2>
-                                    <ul>
-                                        <li><i class="fa fa-arrow-circle-right"></i> Clean & Modern Design</li>
-                                        <li><i class="fa  fa-arrow-circle-right"></i> Fully Responsive</li>
-                                        <li><i class="fa  fa-arrow-circle-right"></i> Google Fonts</li>
-                                    </ul>
-                                    <p class="m-top-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque eleifend in mi 
-                                        sit amet mattis suspendisse ac ligula volutpat nisl rhoncus sagittis cras suscipit 
-                                        lacus quis erat malesuada lobortis eiam dui magna volutpat commodo eget pretium vitae
-                                        elit etiam luctus risus urna in malesuada ante convallis.</p>
-
-                                    <div class="business_btn">
-                                        <a href="" class="btn btn-default m-top-20">Read More</a>
-                                        <a href="" class="btn btn-primary m-top-20">Buy Now</a>
-                                    </div>
-
-                                </div>
+                                <img src="dawin_img/sub_img_1_3_1.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="main_business">
+                            <div class="col-md-6">
+                                <img src="dawin_img/sub_img_1_3_2.jpg" alt="" />
+                            </div>
+                            
+                            <div class="col-md-6 m-top-20">
+                                <img src="dawin_img/sub_img_1_3_3.jpg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -304,12 +331,12 @@
                                 <div class="item active">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img">
-                                                        <img src="dawin_img/main_visual_01.jpg" alt="" />
+                                                        <img src="dawin_img/sub_img_3_1.jpg" alt="" />
                                                         <div class="port_overlay text-center">
-                                                            <a href="dawin_img/main_visual_01.jpg" class="popup-img">+</a>
+                                                            <a href="dawin_img/sub_img_3_1.jpg" class="popup-img">+</a>
                                                         </div>
                                                     </div>
                                                     <div class="port_caption m-top-20">
@@ -318,12 +345,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img">
-                                                        <img src="assets/images/work-img2.jpg" alt="" />
+                                                        <img src="dawin_img/sub_img_3_2.jpg" alt="" />
                                                         <div class="port_overlay text-center">
-                                                            <a href="assets/images/work-img2.jpg" class="popup-img">+</a>
+                                                            <a href="dawin_img/sub_img_3_2.jpg" class="popup-img">+</a>
                                                         </div>
                                                     </div>
                                                     <div class="port_caption m-top-20">
@@ -332,26 +359,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img">
-                                                        <img src="assets/images/work-img3.jpg" alt="" />
+                                                        <img src="dawin_img/sub_img_3_3.jpg" alt="" />
                                                         <div class="port_overlay text-center">
-                                                            <a href="assets/images/work-img3.jpg" class="popup-img">+</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="port_item xs-m-top-30">
-                                                    <div class="port_img">
-                                                        <img src="assets/images/work-img4.jpg" alt="" />
-                                                        <div class="port_overlay text-center">
-                                                            <a href="assets/images/work-img4.jpg" class="popup-img">+</a>
+                                                            <a href="dawin_img/sub_img_3_3.jpg" class="popup-img">+</a>
                                                         </div>
                                                     </div>
                                                     <div class="port_caption m-top-20">
@@ -367,7 +380,7 @@
                                 <div class="item">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img">
                                                         <img src="assets/images/work-img1.jpg" alt="" />
@@ -381,7 +394,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img">
                                                         <img src="assets/images/work-img2.jpg" alt="" />
@@ -395,26 +408,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img">
-                                                        <img src="assets/images/work-img3.jpg" alt="" />
+                                                        <img src="assets/images/work-img2.jpg" alt="" />
                                                         <div class="port_overlay text-center">
-                                                            <a href="assets/images/work-img3.jpg" class="popup-img">+</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="port_item xs-m-top-30">
-                                                    <div class="port_img">
-                                                        <img src="assets/images/work-img4.jpg" alt="" />
-                                                        <div class="port_overlay text-center">
-                                                            <a href="assets/images/work-img4.jpg" class="popup-img">+</a>
+                                                            <a href="assets/images/work-img2.jpg" class="popup-img">+</a>
                                                         </div>
                                                     </div>
                                                     <div class="port_caption m-top-20">
@@ -427,68 +426,6 @@
                                     </div>
                                 </div>
 
-                                <div class="item">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <div class="port_item xs-m-top-30">
-                                                    <div class="port_img">
-                                                        <img src="assets/images/work-img1.jpg" alt="" />
-                                                        <div class="port_overlay text-center">
-                                                            <a href="assets/images/work-img1.jpg" class="popup-img">+</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="port_item xs-m-top-30">
-                                                    <div class="port_img">
-                                                        <img src="assets/images/work-img2.jpg" alt="" />
-                                                        <div class="port_overlay text-center">
-                                                            <a href="assets/images/work-img2.jpg" class="popup-img">+</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="port_item xs-m-top-30">
-                                                    <div class="port_img">
-                                                        <img src="assets/images/work-img3.jpg" alt="" />
-                                                        <div class="port_overlay text-center">
-                                                            <a href="assets/images/work-img3.jpg" class="popup-img">+</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="port_item xs-m-top-30">
-                                                    <div class="port_img">
-                                                        <img src="assets/images/work-img4.jpg" alt="" />
-                                                        <div class="port_overlay text-center">
-                                                            <a href="assets/images/work-img4.jpg" class="popup-img">+</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
 
@@ -632,7 +569,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="widget_area">
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="widget_item widget_about">
                                     <h5 class="text-white">About Us</h5>
                                     <p class="m-top-20">Lorem ipsum dolor sit amet consec tetur adipiscing elit 
@@ -641,31 +578,31 @@
                                     <div class="widget_ab_item m-top-30">
                                         <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
                                         <div class="widget_ab_item_text">
-                                            <h6 class="text-white">Location</h6>
+                                            <h6 class="text-white">주소</h6>
                                             <p>
-                                                123 suscipit ipsum nam auctor
-                                                mauris dui, ac sollicitudin mauris,
-                                                Bandung</p>
+                                                서울시 송파구 송파대로 201 B동 920호<br/>
+                                                (문정동, 테라타워2)
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="widget_ab_item m-top-30">
                                         <div class="item_icon"><i class="fa fa-phone"></i></div>
                                         <div class="widget_ab_item_text">
-                                            <h6 class="text-white">Phone :</h6>
-                                            <p>+1 2345 6789</p>
+                                            <h6 class="text-white">전화 :</h6>
+                                            <p>+82 2 881 5771</p>
                                         </div>
                                     </div>
                                     <div class="widget_ab_item m-top-30">
                                         <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
                                         <div class="widget_ab_item_text">
-                                            <h6 class="text-white">Email Address :</h6>
-                                            <p>youremail@mail.com</p>
+                                            <h6 class="text-white">이메일 :</h6>
+                                            <p>sdkim@dawinict.com</p>
                                         </div>
                                     </div>
                                 </div><!-- End off widget item -->
                             </div><!-- End off col-md-3 -->
 
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="widget_item widget_latest sm-m-top-50">
                                     <h5 class="text-white">Latest News</h5>
                                     <div class="widget_latst_item m-top-30">
@@ -692,21 +629,8 @@
                                 </div><!-- End off widget item -->
                             </div><!-- End off col-md-3 -->
 
-                            <div class="col-md-3">
-                                <div class="widget_item widget_service sm-m-top-50">
-                                    <h5 class="text-white">Latest News</h5>
-                                    <ul class="m-top-20">
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Web Design</a></li>
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> User Interface Design</a></li>
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> E- Commerce</a></li>
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Web Hosting</a></li>
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Themes</a></li>
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Support Forums</a></li>
-                                    </ul>
-                                </div><!-- End off widget item -->
-                            </div><!-- End off col-md-3 -->
 
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="widget_item widget_newsletter sm-m-top-50">
                                     <h5 class="text-white">Newsletter</h5>
                                     <form class="form-inline m-top-30">
@@ -716,19 +640,12 @@
                                         </div>
 
                                     </form>
-                                    <div class="widget_brand m-top-40">
-                                        <a href="" class="text-uppercase">Your Logo</a>
+                                    <div class="widget_item m-top-40">
+                                    	  <img src="dawin_img/copy_logo.gif" alt="" />
+
                                         <p>Lorem ipsum dolor sit amet consec tetur 
                                             adipiscing elit nulla aliquet pretium nisi in</p>
                                     </div>
-                                    <ul class="list-inline m-top-20">
-                                        <li>-  <a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href=""><i class="fa fa-behance"></i></a></li>
-                                        <li><a href=""><i class="fa fa-dribbble"></i></a>  - </li>
-                                    </ul>
 
                                 </div><!-- End off widget item -->
                             </div><!-- End off col-md-3 -->
