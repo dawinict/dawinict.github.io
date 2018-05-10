@@ -44,35 +44,6 @@
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 <style type="text/css">
-#header {position:fixed;width:100%;height:80px;line-height:80px;background:url(../dawin_img/caption_35.png);z-index: 1000000;transition:all 0.1s ease-out;}
-#header h1 {font-size:0; letter-spacing:0; word-spacing:0; float:left;}
-#header h1 img {vertical-align:middle;}
-#header h1 img.color {display:none;}
-#header #gnb {float:right;}
-#header #gnb>ul>li {float:left; position:relative;}
-#header #gnb>ul>li.mobile_title {display:none;}
-#header #gnb>ul>li>a {color:#fff; font-size:15px; font-family:'Open Sans', sans-serif; font-weight:700; padding:0 30px; display:block;}
-#header #gnb>ul>li>a.mobile {display:none;}
-#header #gnb>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
-#header #gnb>ul>li>ul {background-color:#fff; position:absolute; top:80px; left:0; width:100%; min-width:200px; display:none;}
-#header #gnb>ul>li:last-child>ul {left:auto; right:0;}
-#header #gnb>ul>li:hover>ul {display:block;}
-#header #gnb>ul>li>ul>li {font-size:13px; line-height:18px;}
-#header #gnb>ul>li>ul>li>a {display:block; padding:10px 15px; font-family:'Open Sans', sans-serif; font-weight:400; transition:all 0.1s ease-out; border-bottom:1px solid #ddd; position:relative;}
-#header #gnb>ul>li>ul>li>a span.icon {display:block; position:absolute; top:50%; right:10px; margin-top:-8px;}
-#header #gnb>ul>li>ul>li>a span.icon i {font-size:20px; color:#404c59;}
-#header #gnb>ul>li>ul>li>a span.icon i.off {display:none;}
-#header #gnb>ul>li>ul>li>a:hover {background-color:#505a64; border-bottom:1px solid #505a64; color:#fff;}
-#header #gnb>ul>li>ul>li>a:hover span.icon i {color:#fff;}
-#header #gnb>ul>li>ul>li.active>a {background-color:#505a64; border-bottom:1px solid #505a64; color:#fff;}
-#header #gnb>ul>li>ul>li.active>a span.icon i.on {display:none;}
-#header #gnb>ul>li>ul>li.active>a span.icon {margin-top:-10px;}
-#header #gnb>ul>li>ul>li.active>a span.icon i.off {display:block; color:#fff;}
-#header #gnb>ul>li>ul>li>ul {display:none;}
-#header #gnb>ul>li>ul>li>ul li a {display:block; padding:8px 12px; border-bottom:1px solid #a1a8ae; font-size:12px; line-height:15px; background-color:#7d8790; color:#fff; transition:all 0.25s ease-out;}
-#header #gnb>ul>li>ul>li>ul li a:hover {background-color:#404c59;}
-#header .mg_control {display:none;}
-#header.changed {background:none; background-color:#fff; border-bottom:1px solid #eee; height:60px; line-height:60px;}
 #header.changed h1 img.white {display:none;}
 #header.changed h1 img.color {display:inline-block;}
 #header.changed #gnb>ul>li>a {color:#000;}
@@ -110,8 +81,8 @@
                             <div class="col-md-6">
                                 <div class="navbar-callus text-left sm-text-center">
                                     <ul class="list-inline">
-                                        <li><a href=""><i class="fa fa-phone"></i> Call us: 02 881 5771</a></li>
-                                        <li><a href=""><i class="fa fa-envelope-o"></i> Contact us: sdkim@dawinict.com</a></li>
+                                        <li><a href=""><i class="fa fa-phone"></i> Phone : 02 881 5771</a></li>
+                                        <li><a href=""><i class="fa fa-envelope-o"></i> Contact us : sdkim@dawinict.com</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -127,7 +98,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!--  row -->
                     </div>
                 </div>
 
@@ -146,18 +117,20 @@
 
                 <div class="container" > 
                     <div class="attr-nav">
-                        <ul style="margin:0">
+                        <ul>
                             <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
                         </ul>
                     </div> 
 
                     <!-- Start Header Navigation -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="#brand">
-                            <img src="dawin_img/logo.gif"  alt="logo" >
+
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                              <i class="fa "></i>
+                          </button>
+
+                        <a class="navbar-brand" href="#self">
+                            <img src="dawin_img/logo.gif"  class="logo logo-scrolled" alt="logo" >
                             <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
                         </a>
 
@@ -165,11 +138,19 @@
                     <!-- End Header Navigation -->
                     <!-- navbar menu -->
                     <div class="collapse navbar-collapse " id="navbar-menu"  >
-                        <ul class="nav navbar-nav navbar-right " style="margin:0;background-color: rgb(240, 234, 234)">
+                        <ul class="nav navbar-nav navbar-right ">
                             <li ><a href="#home" >Home</a></li>                    
                             <li><a href="#features">회사소개</a></li>
                             <li ><a href="#business">사업소개</a></li>
-                            <li ><a href="#product">제품정보</a></li>
+                            <li  class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#self">
+                                                                        제품정보 </a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#product1">앱스마트워커</a></li>
+                                <li><a href="#product2">앱스파커</a></li>
+                                <li class="divider"> </li>
+                                <li><a href="#product3">MetaSuite</a></li>
+                              </ul>                                                                        
+                            </li>
                             <li ><a href="#contact">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -244,9 +225,9 @@
                                         <i class="fa fa-thumbs-o-up"></i>
                                     </div>
                                     <div class="f_item_text">
-                                        <h3>Best Quality Design</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
-                                            in sit amet mattis volutpat rhoncus.</p>
+                                        <h3>최고의 IT 진단 및 컨설팅</h3>
+                                        <p>Platform Modernization,Security,Biz 개발 및 운영 서비스와 솔루션을
+                                          제공하여 경쟁력 제고</p>
                                     </div>
                                 </div>
                             </div>
@@ -256,9 +237,9 @@
                                         <i class="fa fa-tablet"></i>
                                     </div>
                                     <div class="f_item_text">
-                                        <h3>Responsive Design</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
-                                            in sit amet mattis volutpat rhoncus.</p>
+                                        <h3>솔루션 및 서비스 개발</h3>
+                                        <p>문화,비지니스,기술Trend를 선도하는 ICT(Information & Communication Technology)
+                                           서비스 제공</p>
                                     </div>
                                 </div>
                             </div>
@@ -268,9 +249,8 @@
                                         <i class="fa fa-sliders"></i>
                                     </div>
                                     <div class="f_item_text">
-                                        <h3>Easy to Customize</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
-                                            in sit amet mattis volutpat rhoncus.</p>
+                                        <h3>높은 투자수익률 보장</h3>
+                                        <p>회사의 가치를 높이고 임직원의 만족도를 최고로 하는 경영문화 </p>
                                     </div>
                                 </div>
                             </div>
@@ -281,11 +261,12 @@
 
 
             <!--Business Section-->
-            <section id="business" class="business roomy-40">
+            <section id="businessx" class="business roomy-40">
                 <div class="container">
                     <div class="row">
                         <div class="main_business">
                             <div class="col-md-6">
+                                <blockquote><img src="dawin_img/title_1_1.gif" alt="" /></blockquote>
                                 <img src="dawin_img/sub_img_1_1.jpg" alt="" />
                             </div>
                             
@@ -294,36 +275,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="main_business">
-                            <div class="col-md-6">
-                                <img src="dawin_img/sub_img_1_3_2.jpg" alt="" />
-                            </div>
-                            
-                            <div class="col-md-6 m-top-20">
-                                <img src="dawin_img/sub_img_1_3_3.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </section><!-- End off Business section -->
 
-
-            <!--product section-->
-            <section id="product" class="product">
                 <div class="container">
                     <div class="main_product roomy-80">
-                        <div class="head_title text-center fix">
-                            <h2 class="text-uppercase">What Client Say</h2>
-                            <h5>Clean and Modern design is our best specialist</h5>
+                        <div class="head_title fix">
+                            <img src="dawin_img/sub_siljuk.png" alt="" />
                         </div>
 
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
                             </ol>
 
                             <!-- Wrapper for slides -->
@@ -334,42 +299,30 @@
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img">
-                                                        <img src="dawin_img/sub_img_3_1.jpg" alt="" />
+                                                        <img src="dawin_img/sub_2010_2011.png" alt="" />
                                                         <div class="port_overlay text-center">
-                                                            <a href="dawin_img/sub_img_3_1.jpg" class="popup-img">+</a>
+                                                            <a href="dawin_img/sub_2010_2011.png" class="popup-img">+</a>
                                                         </div>
-                                                    </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img">
-                                                        <img src="dawin_img/sub_img_3_2.jpg" alt="" />
+                                                        <img src="dawin_img/sub_2012_2013.png" alt="" />
                                                         <div class="port_overlay text-center">
-                                                            <a href="dawin_img/sub_img_3_2.jpg" class="popup-img">+</a>
+                                                            <a href="dawin_img/sub_2012_2013.png" class="popup-img">+</a>
                                                         </div>
-                                                    </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img">
-                                                        <img src="dawin_img/sub_img_3_3.jpg" alt="" />
+                                                        <img src="dawin_img/sub_2014_2015.png" alt="" />
                                                         <div class="port_overlay text-center">
-                                                            <a href="dawin_img/sub_img_3_3.jpg" class="popup-img">+</a>
+                                                            <a href="dawin_img/sub_2014_2015.png" class="popup-img">+</a>
                                                         </div>
-                                                    </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -388,10 +341,6 @@
                                                             <a href="assets/images/work-img1.jpg" class="popup-img">+</a>
                                                         </div>
                                                     </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
@@ -402,10 +351,6 @@
                                                             <a href="assets/images/work-img2.jpg" class="popup-img">+</a>
                                                         </div>
                                                     </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
@@ -415,10 +360,6 @@
                                                         <div class="port_overlay text-center">
                                                             <a href="assets/images/work-img2.jpg" class="popup-img">+</a>
                                                         </div>
-                                                    </div>
-                                                    <div class="port_caption m-top-20">
-                                                        <h5>Your Work Title</h5>
-                                                        <h6>- Graphic Design</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -430,118 +371,64 @@
                             </div>
 
                             <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
                                 <i class="fa fa-angle-left" aria-hidden="true"></i>
                                 <span class="sr-only">Previous</span>
                             </a>
 
-                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
                     </div><!-- End off row -->
                 </div><!-- End off container -->
+
+            </section><!-- End off Business section -->
+
+            <!--Business Section-->
+            <section id="business" class="business roomy-40">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_business">
+                            <div class="col-md-12 ">
+                                <blockquote><img src="dawin_img/title_2_1.gif" alt="" /></blockquote>
+                                <img src="dawin_img/sub_img_2_1.jpg" alt="" />
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- end off business section -->
+
+            <!--product section-->
+            <section id="product" class="product">
+                <div class="container">
+                    <div class="head_title fix">
+                        <blockquote><h3><strong>제품정보</strong></h3></blockquote>
+                    </div>
+                    <div class="row">
+                        <div class="main_product text-right">
+                              <div class="row" id="product1">
+                                <img src="dawin_img/sub_img_3_1.jpg" alt="" />
+                              </div>
+                              <hr class="one"/>
+                              
+                              <div class="row p-top-60" id="product2">
+                                <img src="dawin_img/sub_img_3_2.jpg" alt="" />
+                              </div>
+                              <hr class="one"/>
+                              <div class="row p-top-60" id="product3">
+                                <img src="dawin_img/sub_img_3_3.jpg" alt="" />
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            
             </section><!-- End off Product section -->
 
 
-
-            <!--Test section-->
-            <section id="test" class="test bg-grey roomy-60 fix">
-                <div class="container">
-                    <div class="row">                        
-                        <div class="main_test fix">
-
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="head_title text-center fix">
-                                    <h2 class="text-uppercase">What Client Say</h2>
-                                    <h5>Clean and Modern design is our best specialist</h5>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="test_item fix">
-                                    <div class="item_img">
-                                        <img class="img-circle" src="assets/images/test-img1.jpg" alt="" />
-                                        <i class="fa fa-quote-left"></i>
-                                    </div>
-
-                                    <div class="item_text">
-                                        <h5>Sarah Smith</h5>
-                                        <h6>envato.com</h6>
-
-                                        <p>Natus voluptatum enim quod necessitatibus quis
-                                            expedita harum provident eos obcaecati id culpa
-                                            corporis molestias.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="test_item fix sm-m-top-30">
-                                    <div class="item_img">
-                                        <img class="img-circle" src="assets/images/test-img2.jpg" alt="" />
-                                        <i class="fa fa-quote-left"></i>
-                                    </div>
-
-                                    <div class="item_text">
-                                        <h5>Sarah Smith</h5>
-                                        <h6>envato.com</h6>
-
-                                        <p>Natus voluptatum enim quod necessitatibus quis
-                                            expedita harum provident eos obcaecati id culpa
-                                            corporis molestias.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- End off test section -->
-
-
-            <!--Brand Section-->
-            <section id="brand" class="brand fix roomy-80">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_brand text-center">
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="brand_item sm-m-top-20">
-                                    <img src="assets/images/cbrand-img1.png" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="brand_item sm-m-top-20">
-                                    <img src="assets/images/cbrand-img2.png" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="brand_item sm-m-top-20">
-                                    <img src="assets/images/cbrand-img3.png" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="brand_item sm-m-top-20">
-                                    <img src="assets/images/cbrand-img4.png" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="brand_item sm-m-top-20">
-                                    <img src="assets/images/cbrand-img5.png" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <div class="brand_item sm-m-top-20">
-                                    <img src="assets/images/cbrand-img6.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- End off Brand section -->
-
-
-            <!--Call to  action section-->
+ <!-- Call to  action section 
             <section id="action" class="action bg-primary roomy-40">
                 <div class="container">
                     <div class="row">
@@ -561,108 +448,80 @@
                 </div>
             </section>
 
+-->
 
 
-
-            <footer id="contact" class="footer action-lage bg-black p-top-80">
+            <footer id="contact" class="footer bg-black p-top-30 p-bottom-30">
                 <!--<div class="action-lage"></div>-->
                 <div class="container">
                     <div class="row">
                         <div class="widget_area">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="widget_item widget_about">
-                                    <h5 class="text-white">About Us</h5>
-                                    <p class="m-top-20">Lorem ipsum dolor sit amet consec tetur adipiscing elit 
-                                        nulla aliquet pretium nisi in cursus 
-                                        maecenas nec eleifen.</p>
-                                    <div class="widget_ab_item m-top-30">
+                                    <div class="widget_ab_item m-top-10">
                                         <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
                                         <div class="widget_ab_item_text">
-                                            <h6 class="text-white">주소</h6>
-                                            <p>
-                                                서울시 송파구 송파대로 201 B동 920호<br/>
-                                                (문정동, 테라타워2)
-                                            </p>
+                                            <span class="text-white">주&ensp; 소</span>
+                                            <span> &ensp;:&nbsp; 서울시 송파구 송파대로 201 B동 920호 (문정동, 테라타워2) </span>
                                         </div>
                                     </div>
-                                    <div class="widget_ab_item m-top-30">
+                                    <div class="widget_ab_item m-top-10">
                                         <div class="item_icon"><i class="fa fa-phone"></i></div>
                                         <div class="widget_ab_item_text">
-                                            <h6 class="text-white">전화 :</h6>
-                                            <p>+82 2 881 5771</p>
+                                            <span class="text-white">전&ensp; 화 </span>
+                                            <span>&ensp;:&nbsp; +82 2 881 5771</span>
                                         </div>
                                     </div>
-                                    <div class="widget_ab_item m-top-30">
+                                    <div class="widget_ab_item m-top-10">
                                         <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
                                         <div class="widget_ab_item_text">
-                                            <h6 class="text-white">이메일 :</h6>
-                                            <p>sdkim@dawinict.com</p>
+                                            <span class="text-white">이메일 </span>
+                                            <span>&ensp;:&nbsp; sdkim@dawinict.com</span>
                                         </div>
                                     </div>
                                 </div><!-- End off widget item -->
-                            </div><!-- End off col-md-3 -->
+                            </div><!-- End off col-md-8 -->
 
-                            <div class="col-md-4">
-                                <div class="widget_item widget_latest sm-m-top-50">
-                                    <h5 class="text-white">Latest News</h5>
-                                    <div class="widget_latst_item m-top-30">
-                                        <div class="item_icon"><img src="assets/images/ltst-img-1.jpg" alt="" /></div>
-                                        <div class="widget_latst_item_text">
-                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                            <a href="">21<sup>th</sup> July 2016</a>
-                                        </div>
-                                    </div>
-                                    <div class="widget_latst_item m-top-30">
-                                        <div class="item_icon"><img src="assets/images/ltst-img-2.jpg" alt="" /></div>
-                                        <div class="widget_latst_item_text">
-                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                            <a href="">21<sup>th</sup> July 2016</a>
-                                        </div>
-                                    </div>
-                                    <div class="widget_latst_item m-top-30">
-                                        <div class="item_icon"><img src="assets/images/ltst-img-3.jpg" alt="" /></div>
-                                        <div class="widget_latst_item_text">
-                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                            <a href="">21<sup>th</sup> July 2016</a>
-                                        </div>
-                                    </div>
-                                </div><!-- End off widget item -->
-                            </div><!-- End off col-md-3 -->
+                            <div class="col-md-6 bg-grey" >
+                                <div class="widget_item sm-m-top-40 ">
+<!--
+                                      <form class="form-inline m-top-30">
+                                          <div class="form-group">
+                                              <input type="email" class="form-control" placeholder="Enter you Email">
+                                              <button type="submit" class="btn text-center"><i class="fa fa-arrow-right"></i></button>
+                                          </div>
+  
+                                      </form>
 
-
-                            <div class="col-md-4">
-                                <div class="widget_item widget_newsletter sm-m-top-50">
-                                    <h5 class="text-white">Newsletter</h5>
-                                    <form class="form-inline m-top-30">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Enter you Email">
-                                            <button type="submit" class="btn text-center"><i class="fa fa-arrow-right"></i></button>
-                                        </div>
-
-                                    </form>
-                                    <div class="widget_item m-top-40">
+-->
+                                    <div class="col-md-3 m-top-30">
                                     	  <img src="dawin_img/copy_logo.gif" alt="" />
-
-                                        <p>Lorem ipsum dolor sit amet consec tetur 
-                                            adipiscing elit nulla aliquet pretium nisi in</p>
                                     </div>
-
+                                    <div class="col-md-9 m-top-30">
+                                        <strong style="font-size:.6rem">(주)다윈아이씨티  대표이사 : 김성덕   사업자등록번호:101-86-52969
+                                           <br/>ⓒ 2018 by DAWINICT CO.,LTD. All Rights Reserved
+                                            <br/><br/>
+                                        </strong>
+                                    </div>
                                 </div><!-- End off widget item -->
                             </div><!-- End off col-md-3 -->
                         </div>
                     </div>
                 </div>
-                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
-                    <div class="col-md-12">
-                        <p class="wow fadeInRight" data-wow-duration="1s">
-                            Made with 
-                            <i class="fa fa-heart"></i>
-                            by 
-                            <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> 
-                            2016. All Rights Reserved
-                        </p>
-                    </div>
-                </div>
+                
+<!--
+                  <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-40">
+                      <div class="col-md-12">
+                          <p class="wow fadeInRight" data-wow-duration="1s">
+                              Made with 
+                              <i class="fa fa-heart"></i>
+                              by 
+                              <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> 
+                              2016. All Rights Reserved
+                          </p>
+                      </div>
+                  </div>
+-->
             </footer>
 
 
@@ -675,7 +534,6 @@
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
 
-        <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/jquery.magnific-popup.js"></script>
         <script src="assets/js/jquery.easing.1.3.js"></script>
         <script src="assets/css/slick/slick.js"></script>
