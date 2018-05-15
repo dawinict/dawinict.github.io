@@ -870,11 +870,11 @@ Home Section style
 ==================*/
 
 .home{
-    background: url(../images/1920_600.jpg) no-repeat scroll  center center;
-    background-size: contain;
+    background: url(../images/1920_600.jpg) no-repeat scroll  center ;
+    background-size: cover;
     position: relative;
     padding-top: 300px;
-    padding-bottom: 190px;
+    padding-bottom: 180px;
     width:100%;
 }
 .main_home .home_text h2{
