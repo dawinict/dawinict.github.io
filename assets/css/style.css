@@ -224,7 +224,7 @@ h6 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 4rem;
 }
 h2 {
@@ -236,8 +236,8 @@ h3 {
     line-height: 2rem;
 }
 h4 {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
 }
 h5 {
     font-size: 1.125rem;
@@ -694,7 +694,7 @@ textarea::-ms-input-placeholder{
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 1;
+/*    z-index: 1;*/
     margin-top: 0px;
     top: 0px;
     left:0;
@@ -870,7 +870,7 @@ Home Section style
 ==================*/
 
 .home{
-    background: url(../images/1920_600.jpg) no-repeat scroll  center ;
+    background: url(../images/1920_600.jpg) no-repeat center center ;
     background-size: cover;
     position: relative;
     padding-top: 300px;
