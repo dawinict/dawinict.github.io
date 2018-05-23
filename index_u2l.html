@@ -28,11 +28,7 @@
 
         <!-- xsslider slider css -->
 
-
         <!--<link rel="stylesheet" href="assets/css/xsslider.css">-->
-
-
-
 
         <!--For Plugins external css-->
         <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
@@ -64,8 +60,16 @@
 				      top: 80px;
 				      z-index: 9999 !important;
 				  }
-				  #service * {color:#3b2c87;}
+				  #service hr {color:#3b2c87;}
 					#service img { float:left}
+					.mygrid {
+							border: 1px solid #afcee1;
+							font-size : 1.3rem ;
+							grid-column-gap: 20px;
+						  display: grid;
+						  grid-template-columns: 15% 85%;
+						  padding : 10 10;
+						}
         </style>
 				<script> (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement) </script>
     </head>
@@ -163,51 +167,174 @@
             <!--Home Sections-->
 
             <!--Featured Section-->
-            <section id="service" class="features" >
-                <div class="container ">
+            <section id="service" class="features" style="background-color:#fbfaf9" >
+                <div class="container-fluid ">
                     <div class="row" >
-									    <nav class="col-md-2 p-top-60" >
-									      <ul class="nav nav-pills nav-stacked text-left" data-spy="affix" data-offset-top="700" >
-									        <li class="active"><a href="#section1">Assessment</a></li>
+									    <nav class="col-md-3 p-top-60 " style="font-size:1.3rem">
+									      <ul class="nav nav-pills nav-stacked text-left w700" data-spy="affix" data-offset-top="700" >
+									        <li><a href="#section1">Assessment</a></li>
 									        <li><a href="#section2">Application Migration</a></li>
 									        <li><a href="#section3">AppSmart Works</a></li>
 									        <li><a href="#section4">AppSparker</a></li>
 									      </ul>
 									    </nav>
-                    	<div id="section1" class="col-md-9  p-top-60" >
-                    		<div class="row">
-	                        <div  class="roomy-20" >
-	                            <img src="assets/images/sub_1_1.png" width="20%" alt="1"/>
-	                            <h1>진단 및 영향 분석<br/>(Assessment)</h1>
-	                            <span>
-	                            <h3 class="w700">사전 Assessment 작업으로 작업 대상을 추출하고 유형별 Guideline을 
-	                            	정의하여 작업의 일관성 확보하고 사전 유형별 오류 도출로 마이그레이션 
-	                            	작업의 효율 높이고 리스크를 최소화 합니다.
-															</h3>
-														  </span>
+                    	<div id="section1" class="col-md-9 " style="padding:60px 70px 0;">
+                    		<div class="row" >
+	                        <div  class="roomy-20 text-center media-middle" >
+	                            <img src="assets/images/sub_1_1.png" width="15%" alt="1"/>
+	                            <h2>진단 및 영향 분석<br/>(Assessment)</h2>
 	                        </div>
                         </div>
+	                      <div class="row roomy-40">
+                          <h3 class="w700">사전 Assessment 작업으로 작업 대상을 추출하고 유형별 Guideline을 
+                          	정의하여 작업의 일관성 확보하고 사전 유형별 오류 도출로 마이그레이션 
+                          	작업의 효율 높이고 리스크를 최소화 합니다.
+													</h3>
+												</div>
+	                      <div class="row roomy-20">
+	                      	<div class="col-md-3">
+	                          <h3 class="w700">리눅스 전환 오류
+														</h3>
+													</div>
+	                      	<div class="col-md-9">
+	                          <h4>동일한 어플리케이션이 리눅스 전환으로 인해 유닉스 환경에서와 상이한 결과 값을 갖는 것
+														</h4>
+													</div>
+												</div>
+	                      <div class="row roomy-20">
+	                      	<div class="col-md-3">
+	                          <h3 class="w700">컴파일 오류<br/>(Compilation)
+														</h3>
+													</div>
+	                      	<div class="col-md-9">
+	                          <h4>리눅스 환경 내 컴파일 과정에서 유닉스 환경에서와 상이하게 발생하는 에러 또는 경고
+														</h4>
+													</div>
+												</div>
+	                      <div class="row roomy-20">
+	                      	<div class="col-md-3">
+	                          <h3 class="w700">런타임 오류<br/>(Testing)
+														</h3>
+													</div>
+	                      	<div class="col-md-9">
+	                          <h4>리눅스 환경 내 컴파일 오류(경고 포함) 수정 완료 후 실행 환경에서 
+	                          	동일한 어플리케이션이 유닉스 환경과 다른 결과값을 발생 시키는 것
+														</h4>
+													</div>
+												</div>
+												
                     		<div class="row">
-										    	<i id="section2"></i>
-	                        <div  class="p-top-60">
 	                            <img src="assets/images/sub_1_2.png" alt="1"/>
+                        </div>
+												<hr/>
+									    	<i id="section2"></i>
+                    		<div class="row" >
+	                        <div  class="p-top-60 text-center media-middle" >
+	                            <img src="assets/images/sub_1_3.png" width="15%" alt="1"/>
+	                            <h2>어플리케이션 마이그레이션<br/>(Application Migration)</h2>
 	                        </div>
                         </div>
-                    		<div class="row">	
-	                        <div id="section3" class="p-top-60">
-	                            <img src="assets/images/sub_1_3.png" alt="1"/>
-	                        </div>
-                        </div>
+	                      <div class="row roomy-40">
+                          <h3 class="w700">다양한 운영환경에서 U2L 프로젝트 수행을 통한 경험과 노하우가 
+                          	결집된 마이그레이션  방법론과 자동화  솔루션를 활용하여 이슈에 대한 유연한 대응과 
+                          	소요 시간 및 투입 인력 절감 등 높은 효율성과 안정성  보장합니다.
+													</h3>
+												</div>
                     		<div class="row">
-	                        <div id="section4" class="p-top-60">
 	                            <img src="assets/images/sub_1_4.png" alt="1"/>
+	                            <p class="text-center"> 마이그레이션 전환 절차</p>
+                        </div>
+												<hr/>
+                        
+									    	<i id="section3"></i>
+                    		<div class="row" >
+	                        <div  class="p-top-60 text-center media-middle" >
+	                            <img src="assets/images/sub_1_5.png" width="15%" alt="1"/>
+	                            <h2>어플리케이션 전환 솔루션<br/>(AppSmart Works)</h2>
 	                        </div>
                         </div>
+	                      <div class="row roomy-40">
+                          <h3 class="w700">앱스마트워커(AppSmartWorker)는 마이그레이션 경험과 노하우를 결집하여
+                          	 개발한 마이그레이션 자동화 솔루션 입니다. Unix to Linux, H/W Vendor Win-Back 으로 
+                          	 인한 마이그레이션에 유연하게 대응 합니다.
+													</h3>
+												</div>
+                    		<div class="row p-bottom-40">
+	                            <img src="assets/images/sub_1_6.png" alt="1"/>
+                        </div>
+                        <strong> 앱스마트워크 장점</strong>
+                        <div class="row roomy-40">
+                        		<div class="col-md-4">수작업 Migration시</div>
+                        		<div class="col-md-8">
+                        			<ul>
+                        				<li>개발자/설계자의 수작업 확인 및 담당자별 검증
+                        					 <br/>-소스 파일, 데이터 베이스, 설계 문서 등
+                       					</li>
+                        				<li>실제 시스템과 산출물 사이의 차이 발생</li>
+                        				<li>모든 개발소스 검증을 수작업으로 수행함에 따른 시간 지연 및 누락 발생</li>
+                        			</ul>
+                        		</div>
+                        </div>
+                        <div class="row roomy-40">
+                        		<div class="col-md-4">앱스마트워커 사용 Migration시</div>
+                        		<div class="col-md-8">
+                        			<ul>
+                        				<li>프로그램 소스들의 IP정보를 자동으로 수집 / 식별하여 정의된 신규 IP정보로 
+                        					변경 후 관련 내역을 산출물로 제공
+                       					</li>
+                        				<li>자동화에 따른 신속성 및 정확성 제고</li>
+                        				<li>산출물 자동 생성을 통해 향후 시스템 개발을 위한 참고자료로 활용</li>
+                        			</ul>
+                        		</div>
+                        </div>
+
+												<hr/>
+
+									    	<i id="section4"></i>
+                    		<div class="row" >
+	                        <div  class="p-top-60 text-center media-middle" >
+	                            <img src="assets/images/sub_1_5.png" width="15%" alt="1"/>
+	                            <h2>어플리케이션 진단 솔루션<br/>(AppSparker)</h2>
+	                        </div>
+                        </div>
+	                      <div class="row roomy-40">
+                          <h3 class="w700">앱스파커 (AppSparker : Application Security & Vulnerability Scanner)는
+                          	 어플리케이션 소스코드의 연관 검색 및 취약점 진단을 위한 Security Assessment tool 입니다.
+													</h3>
+												</div>
+	                      <div class="row roomy-20">
+                          <h3 class="w700">[구성 및 용도]<br/> SecureScan  (개인정보 노출 취약 소스 진단 및 연관 검색) 
+                   									SecureCoding (시큐어코딩 취약 소스 진단 및 검색)
+													</h3>
+												</div>
                     		<div class="row">
-	                        <div class="roomy-20">
-	                            <img src="assets/images/sub_1_5.png" alt="1"/>
-	                        </div>
+	                            <img src="assets/images/sub_1_7.png" alt="1"/>
                         </div>
+                        <div class="mygrid">
+                        	<div>기 능
+                        	</div>
+                        	<div>내 용
+                        	</div>
+                        	<div>
+                        		개인정보 노출 취약 소스 진단 및 검색(SecureScan)
+                        	</div>
+                        	<div>
+                        		 개인정보 항목에 대한 영향도 분석
+ 대상 현황 및 항목별  어플리케이션 현황
+ 테이블/칼럼  항목별 상세 연관 검색(프로그램 라인 , 소스코드, 연관검색값)
+                        	</div>
+                        	<div>
+                        		시큐어코딩 취약 소스 진단 및  검색(SecureCoding)
+                        	</div>
+                        	<div>
+                        		보안취약 목록 조회 (Redirect, SQL-Injection, XSS 등)
+ 해당 프로그램 Directory, 파일명 조회
+ 해당 취약 대상 프로그램 해당 라인 조회 및 소스코드 연계
+ 해당 취약점 준수 가이드 조회
+
+                        	</div>
+                        </div>
+												<hr/>
                       </div>
                     </div>
                 </div>
