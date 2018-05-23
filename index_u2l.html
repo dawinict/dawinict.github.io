@@ -9,13 +9,14 @@
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
     		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta content="blendTrans(Duration=0.0)" http-equiv="Page-Enter" />
+<meta content="blendTrans(Duration=0.0)" http-equiv="Page-Exit" />
 
         <link rel="icon" type="image/png" href="favicon.ico"/>
 
         <!--Google Font link-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+
         <link rel="stylesheet" href="assets/css/slick/slick.css"/> 
         <link rel="stylesheet" href="assets/css/slick/slick-theme.css"/>
         <link rel="stylesheet" href="assets/css/animate.css"/>
@@ -44,9 +45,9 @@
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="https://unpkg.com/vue"></script>
-        <style>
 
+        <style>
+					.js #fouc {display: none} 
         	.navbar-default {
 					    background-color: rgba(255,255,255,0.95);
 					    font-size:18px;
@@ -57,57 +58,24 @@
 
 					#navbar-menu>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
 					.carousel-caption { padding-bottom:20%;color:#6b4963}
+					hr {border:none; border:1px solid; color:grey}
+
+				  .affix {
+				      top: 80px;
+				      z-index: 9999 !important;
+				  }
+				  #service * {color:#3b2c87;}
+					#service img { float:left}
         </style>
+				<script> (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement) </script>
     </head>
 
     <body data-spy="scroll" data-target=".navbar-collapse">
 
-        <div class="culmn">
+        <div id="fouc" class="culmn">
             <!--Home page style-->
 
-
             <nav class="navbar navbar-default navbar-fixed-top ">
-            	<!--
-                <div class="navbar-top bg-grey fix">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="navbar-callus text-left sm-text-center">
-                                    <ul class="list-inline">
-                                        <li><a href=""><i class="fa fa-phone"></i> Phone : 02 881 5771</a></li>
-                                        <li><a href=""><i class="fa fa-envelope-o"></i> Contact us : sdkim@dawinict.com</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="navbar-socail text-right sm-text-center">
-                                    <ul class="list-inline">
-                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href=""><i class="fa fa-behance"></i></a></li>
-                                        <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-							-->
-                <!-- Start Top Search -->
-                <!--
-                <div class="top-search">
-                    <div class="container">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                            <input type="text" class="form-control" placeholder="Search">
-                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-                        </div>
-                    </div>
-                </div>
-                -->
-                <!-- End Top Search -->
 
                 <div class="container-fluid " > 
                 	<!--
@@ -141,7 +109,6 @@
                 </div> 
 
             </nav>
-
   <section style="background-color:#0169A9">
 <!--    <div class="overlay"></div>-->
 		<div id="myCarousel" class="carousel slide main-home" data-ride="carousel">
@@ -196,35 +163,62 @@
             <!--Home Sections-->
 
             <!--Featured Section-->
-            <section id="service" class="features roomy-40" >
-                <div class="container text-center">
-                    <div class="row" style="padding:5% 15%" >
-                        <div class="roomy-20" >
-                            <img src="assets/images/sub_1_1.png" alt="1"/>
+            <section id="service" class="features" >
+                <div class="container ">
+                    <div class="row" >
+									    <nav class="col-md-2 p-top-60" >
+									      <ul class="nav nav-pills nav-stacked text-left" data-spy="affix" data-offset-top="700" >
+									        <li class="active"><a href="#section1">Assessment</a></li>
+									        <li><a href="#section2">Application Migration</a></li>
+									        <li><a href="#section3">AppSmart Works</a></li>
+									        <li><a href="#section4">AppSparker</a></li>
+									      </ul>
+									    </nav>
+                    	<div id="section1" class="col-md-9  p-top-60" >
+                    		<div class="row">
+	                        <div  class="roomy-20" >
+	                            <img src="assets/images/sub_1_1.png" width="20%" alt="1"/>
+	                            <h1>진단 및 영향 분석<br/>(Assessment)</h1>
+	                            <span>
+	                            <h3 class="w700">사전 Assessment 작업으로 작업 대상을 추출하고 유형별 Guideline을 
+	                            	정의하여 작업의 일관성 확보하고 사전 유형별 오류 도출로 마이그레이션 
+	                            	작업의 효율 높이고 리스크를 최소화 합니다.
+															</h3>
+														  </span>
+	                        </div>
                         </div>
-                        <div class="roomy-20">
-                            <img src="assets/images/sub_1_2.png" alt="1"/>
+                    		<div class="row">
+										    	<i id="section2"></i>
+	                        <div  class="p-top-60">
+	                            <img src="assets/images/sub_1_2.png" alt="1"/>
+	                        </div>
                         </div>
-                        <div class="roomy-20">
-                            <img src="assets/images/sub_1_3.png" alt="1"/>
+                    		<div class="row">	
+	                        <div id="section3" class="p-top-60">
+	                            <img src="assets/images/sub_1_3.png" alt="1"/>
+	                        </div>
                         </div>
-                        <div class="roomy-20">
-                            <img src="assets/images/sub_1_4.png" alt="1"/>
+                    		<div class="row">
+	                        <div id="section4" class="p-top-60">
+	                            <img src="assets/images/sub_1_4.png" alt="1"/>
+	                        </div>
                         </div>
-                        <div class="roomy-20">
-                            <img src="assets/images/sub_1_5.png" alt="1"/>
+                    		<div class="row">
+	                        <div class="roomy-20">
+	                            <img src="assets/images/sub_1_5.png" alt="1"/>
+	                        </div>
                         </div>
+                      </div>
                     </div>
                 </div>
             </section>
 
--->
-
-
             <footer id="contact" class="footer bg-black p-top-30 p-bottom-30">
-                <!--<div class="action-lage"></div>-->
+                
                 <div class="container">
-   	            		<div style="cursor:pointer;" onclick="window.scrollTo(0,0);">Top <i class="fa fa-angle-up"></i></div>
+   	            		<div class="row text-right " style="font-size:1.2rem;padding-bottom:10px;cursor:pointer;" onclick="window.scrollTo(0,0);">Top 
+   	            			<i class="fa fa-angle-up"></i>
+   	            		</div>
                     <div class="row" >
                         <div class="widget_area">
                             <div class="col-md-6">
@@ -321,31 +315,8 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
 <script>
-	var com_rem = [
-				{ nm:"회사명:",ny:"(주)다윈아이씨티 (DawinICT. Co., LTD.)"},
-				{ nm:"주소:",ny:"서울시 송파구 송파대로 201 B동 920호(문정동,테라타워2)"},
-				{ nm:"전화번호:",ny:"02 881 5771"},
-				{ nm:"팩스번호:",ny:"02 881 5772"},
-				{ nm:"홈페이지:",ny:"http://www.dawinict.co.kr"},
-				{ nm:"설립일자:",ny:"2010년 2월 8일"},
-				{ nm:"업태:",ny:"도소매,서비스"},
-				{ nm:"업종:",ny:"시스템개발 및 관리,S/W,통신장비"}
-			];
-	
-const vue_app = new Vue({
-  el: '#vue-app',
-  data: function() {
-    return {
-      com_rem: com_rem 
-    }
-  }
-});
 
-/*
-	var com_history = [
-		{ yy:"2010", mm="2월",ny="회사설립" }
-		] ;
-*/		
+document.getElementById("fouc").style.display="block";
 
 </script>
     </body>
