@@ -65,23 +65,38 @@
 					#service ul { list-style:circle inside  ;}
 
 					.text-i {
-					    font-size: 22px;
-					    line-height: 30px;
-					    margin-bottom: 30px;
-					    letter-spacing: -0.5pt;
+							word-spacing: 2px;
+							letter-spacing: -0.6px;
 					    background: url(assets/images/text_i.png) no-repeat left 6px;
-					    padding-left: 32px;
+					    padding-left: 2rem;
 					}					
 					/* table { font-weight : bold ; } */
 					th, .my-middle {
 					  text-align: center;
 					  vertical-align:middle;
 					}
+					#myScroll { font-size:1.3rem; font-weight:bold }
+					#section1 {
+						padding:5% 5% 0; 
+						border-left:1px solid silver; 
+						background-color:#fbfaf9;
+					}
+					img {  
+						max-width: 100%;
+  					height: auto;
+					}
+  @media screen and (max-width: 810px) {
+    #section1  {
+        margin-left: 150px;
+    }
+    #myScroll { font-size:1rem; font-weight:normal }
+  }
+					
         </style>
 				<script> (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement) </script>
     </head>
 
-    <body data-spy="scroll" data-target=".navbar-collapse">
+    <body data-spy="scroll" data-target=".navbar-collapse #myScroll">
 
         <div id="fouc" class="culmn">
             <!--Home page style-->
@@ -177,15 +192,15 @@
             <section id="service" class="features"  >
                 <div class="container-fluid ">
                     <div class="row" >
-									    <nav class="col-md-3 p-top-60 " style="font-size:1.3rem">
-									      <ul class="nav nav-pills nav-stacked text-left w700" data-spy="affix" data-offset-top="700" >
-									        <li><blockquote><a href="#section1">Assessment</a></blockquote></li>
-									        <li><blockquote><a href="#section2">Application Migration</a></blockquote></li>
-									        <li><blockquote><a href="#section3">AppSmart Works</a></blockquote></li>
-									        <li><blockquote><a href="#section4">AppSparker</a></blockquote></li>
+									    <nav class="col-md-3 p-top-60 " id="myScroll">
+									      <ul class="nav nav-pills nav-stacked text-left navbar-collapse w700" data-spy="affix" data-offset-top="700" >
+									        <li><a href="#section1">Assessment</a></li>
+									        <li><a href="#section2">Application Migration</a></li>
+									        <li><a href="#section3">AppSmart Works</a></li>
+									        <li><a href="#section4">AppSparker</a></li>
 									      </ul>
 									    </nav>
-                    	<div id="section1" class="col-md-9 " style="padding:60px 70px 0; border-left:1px solid silver; background-color:#fbfaf9">
+                    	<div id="section1" class="col-md-9 " >
                     		<div class="row roomy-20 " >
 	                        <div  class="col-md-2" >
 	                            <img src="assets/images/sub_1_1.png" alt="1"/>
