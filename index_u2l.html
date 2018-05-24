@@ -54,7 +54,7 @@
 
 					#navbar-menu>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
 					.carousel-caption { padding-bottom:20%;color:#6b4963}
-					hr {border:none; border:1px solid; color:grey}
+					hr { border:1px solid silver}
 
 				  .affix {
 				      top: 80px;
@@ -63,6 +63,7 @@
 				  #service hr,h2,h3,h4 {color:#3b2c87;}
 					#service img { float:left}
 					#service ul { list-style:circle inside  ;}
+
 					.text-i {
 					    font-size: 22px;
 					    line-height: 30px;
@@ -71,9 +72,10 @@
 					    background: url(assets/images/text_i.png) no-repeat left 6px;
 					    padding-left: 32px;
 					}					
-					table { font-weight : bold ; }
-					th {
+					/* table { font-weight : bold ; } */
+					th, .my-middle {
 					  text-align: center;
+					  vertical-align:middle;
 					}
         </style>
 				<script> (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement) </script>
@@ -172,21 +174,23 @@
             <!--Home Sections-->
 
             <!--Featured Section-->
-            <section id="service" class="features" style="background-color:#fbfaf9" >
+            <section id="service" class="features"  >
                 <div class="container-fluid ">
                     <div class="row" >
 									    <nav class="col-md-3 p-top-60 " style="font-size:1.3rem">
 									      <ul class="nav nav-pills nav-stacked text-left w700" data-spy="affix" data-offset-top="700" >
-									        <li><a href="#section1">Assessment</a></li>
-									        <li><a href="#section2">Application Migration</a></li>
-									        <li><a href="#section3">AppSmart Works</a></li>
-									        <li><a href="#section4">AppSparker</a></li>
+									        <li><blockquote><a href="#section1">Assessment</a></blockquote></li>
+									        <li><blockquote><a href="#section2">Application Migration</a></blockquote></li>
+									        <li><blockquote><a href="#section3">AppSmart Works</a></blockquote></li>
+									        <li><blockquote><a href="#section4">AppSparker</a></blockquote></li>
 									      </ul>
 									    </nav>
-                    	<div id="section1" class="col-md-9 " style="padding:60px 70px 0; border-left:1px solid silver;">
-                    		<div class="row" >
-	                        <div  class="roomy-20 text-center media-middle" >
-	                            <img src="assets/images/sub_1_1.png" width="16%" alt="1"/>
+                    	<div id="section1" class="col-md-9 " style="padding:60px 70px 0; border-left:1px solid silver; background-color:#fbfaf9">
+                    		<div class="row roomy-20 " >
+	                        <div  class="col-md-2" >
+	                            <img src="assets/images/sub_1_1.png" alt="1"/>
+	                        </div>
+	                        <div  class="col-md-10 media-middle" >
 	                            <h2>진단 및 영향 분석<br/>(Assessment)</h2>
 	                        </div>
                         </div>
@@ -196,46 +200,51 @@
                           	작업의 효율 높이고 리스크를 최소화 합니다.
 													</h3>
 												</div>
-	                      <div class="row roomy-20">
-	                      	<div class="col-md-3">
-	                          <h3 class="w700">리눅스 전환 오류
-														</h3>
-													</div>
-	                      	<div class="col-md-9">
-	                          <h4>동일한 어플리케이션이 리눅스 전환으로 인해 유닉스 환경에서와 상이한 결과 값을 갖는 것
-														</h4>
-													</div>
-												</div>
-	                      <div class="row roomy-20">
-	                      	<div class="col-md-3">
-	                          <h3 class="w700">컴파일 오류<br/>(Compilation)
-														</h3>
-													</div>
-	                      	<div class="col-md-9">
-	                          <h4>리눅스 환경 내 컴파일 과정에서 유닉스 환경에서와 상이하게 발생하는 에러 또는 경고
-														</h4>
-													</div>
-												</div>
-	                      <div class="row roomy-20">
-	                      	<div class="col-md-3">
-	                          <h3 class="w700">런타임 오류<br/>(Testing)
-														</h3>
-													</div>
-	                      	<div class="col-md-9">
-	                          <h4>리눅스 환경 내 컴파일 오류(경고 포함) 수정 완료 후 실행 환경에서 
-	                          	동일한 어플리케이션이 유닉스 환경과 다른 결과값을 발생 시키는 것
-														</h4>
-													</div>
-												</div>
+	                      <table class="table table-bordered roomy-20">
+	                      	<tbody>
+	                      		<tr>
+	                      			<td class="bg-success my-middle" width="30%">
+	                          		<h3 class="w700">리눅스 전환 오류</h3>
+	                          	</td>
+													    <td>
+			                          <h4>동일한 어플리케이션이 리눅스 전환으로 인해 유닉스 환경에서와 상이한 결과 값을 갖는 것
+																</h4>
+															</td>
+														</tr>
+														<tr>
+	                      			<td class="bg-success my-middle" width="30%">
+			                          <h3 class="w700">컴파일 오류<br/>(Compilation)
+																</h3>
+															</td>
+															<td>
+			                          <h4>리눅스 환경 내 컴파일 과정에서 유닉스 환경에서와 상이하게 발생하는 에러 또는 경고
+																</h4>
+															</td>
+														</tr>
+													  <tr>
+			                      	<td class="bg-success my-middle" width="30%">
+			                          <h3 class="w700">런타임 오류<br/>(Testing)
+																</h3>
+															</td>
+			                      	<td>
+			                          <h4>리눅스 환경 내 컴파일 오류(경고 포함) 수정 완료 후 실행 환경에서 
+			                          	동일한 어플리케이션이 유닉스 환경과 다른 결과값을 발생 시키는 것
+																</h4>
+															</td>
+														</tr>
+													</tbody>
+												</table>
 												
                     		<div class="row">
 	                            <img src="assets/images/sub_1_2.png" alt="1"/>
                         </div>
 												<hr/>
 									    	<i id="section2"></i>
-                    		<div class="row" >
-	                        <div  class="p-top-60 text-center media-middle" >
-	                            <img src="assets/images/sub_1_3.png" width="16%" alt="1"/>
+                    		<div class="row p-top-60 " >
+	                        <div  class="col-md-2" >
+	                            <img src="assets/images/sub_1_3.png" alt="1"/>
+	                        </div>
+	                        <div  class="col-md-10 media-middle" >
 	                            <h2>어플리케이션 마이그레이션<br/>(Application Migration)</h2>
 	                        </div>
                         </div>
@@ -246,15 +255,17 @@
 													</h3>
 												</div>
                     		<div class="row">
-	                            <img src="assets/images/sub_1_4.png" alt="1"/>
-	                            <p class="text-center"> 마이그레이션 전환 절차</p>
+	                          <img src="assets/images/sub_1_4.png" alt="1"/>
                         </div>
-												<hr/>
-                        
+												<h4 class="text-center p-top-30"> 마이그레이션 전환 절차</h4>
+
+                        <hr/>
 									    	<i id="section3"></i>
-                    		<div class="row" >
-	                        <div  class="p-top-60 text-center media-middle" >
-	                            <img src="assets/images/sub_1_5.png" width="16%" alt="1"/>
+                    		<div class="row p-top-60 " >
+	                        <div  class="col-md-2 text-center" >
+	                            <img src="assets/images/sub_1_5.png" alt="1"/>
+	                        </div>
+	                        <div  class="col-md-10 media-middle" >
 	                            <h2>어플리케이션 전환 솔루션<br/>(AppSmart Works)</h2>
 	                        </div>
                         </div>
@@ -264,14 +275,14 @@
                           	 인한 마이그레이션에 유연하게 대응 합니다.
 													</h3>
 												</div>
-                    		<div class="row roomy-40">
+                    		<div class="row roomy-20">
 	                            <img src="assets/images/sub_1_6.png" alt="1"/>
                         </div>
-                        <h3 class="p-top-30"> [ 앱스마트워크 장점 ]</h3>
+                        <h3 class="p-top-40"> [ 앱스마트워크 장점 ]</h3>
                         <table class="table table-bordered">
                         	<tbody>
                         		<tr>
-	                        		<td width="20%"> 수작업 Migration시</td>
+	                        		<td class="bg-success w700" width="20%"> 수작업 Migration시</td>
 	                        		<td>
 	                        			<ul>
 	                        				<li>개발자/설계자의 수작업 확인 및 담당자별 검증
@@ -283,7 +294,7 @@
 	                        		</td>
                         		</tr>
                         		<tr>
-	                        		<td>앱스마트워커 사용 Migration시</td>
+	                        		<td class="bg-success w700">앱스마트워커 사용 Migration시</td>
 	                        		<td>
 	                        			<ul>
 	                        				<li>프로그램 소스들의 IP정보를 자동으로 수집 / 식별하여 정의된 신규 IP정보로 
@@ -296,11 +307,13 @@
 	                        	</tr>
 	                        </tbody>
                         </table>
-
+									
 									    	<i id="section4"></i>
-                    		<div class="row" >
-	                        <div  class="p-top-60 text-center media-middle" >
-	                            <img src="assets/images/sub_1_5.png" width="16%" alt="1"/>
+                    		<div class="row p-top-60" >
+	                        <div  class="col-md-2 text-center" >
+	                            <img src="assets/images/sub_1_5.png" alt="1"/>
+	                        </div>
+	                        <div  class=" col-md-10 media-middle" >
 	                            <h2>어플리케이션 진단 솔루션<br/>(AppSparker)</h2>
 	                        </div>
                         </div>
