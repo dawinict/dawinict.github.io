@@ -16,7 +16,8 @@
 
         <!--Google Font link-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
-
+				<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+				
         <link rel="stylesheet" href="assets/css/slick/slick.css"/> 
         <link rel="stylesheet" href="assets/css/slick/slick-theme.css"/>
         <link rel="stylesheet" href="assets/css/animate.css"/>
@@ -48,11 +49,21 @@
 					    background-color: rgba(255,255,255,0.95);
 					    font-size:18px;
 					    font-weight:700;
-					    font-family:Raleway,'Jua';
+					    font-family:Raleway,'Nanum Gothic','Jua';
 					    padding-top:7px;
 					}
 
 					#navbar-menu>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
+					#navbar-menu>ul>li:hover>ul { display : block ;}
+					#navbar-menu>ul>li>ul {
+					    background-color: rgba(255,255,255,0.95);
+					    font-size:18px;
+					    font-weight:bold;
+					    font-family:Raleway,'Nanum Gothic','Jua';
+					    padding-top:7px;
+					    display: none;
+					}
+
 					.carousel-caption { padding-bottom:20%;color:#6b4963}
 					hr { border:1px solid silver}
 
@@ -126,7 +137,14 @@
                     <!-- navbar menu -->
                     <div class="collapse navbar-collapse" id="navbar-menu"  >
                         <ul class="nav navbar-nav navbar-center " style="color: #ffffff">
-                            <li><a href="index_u2l.html">U2L Service</a></li>
+                            <li><a href="index_u2l.html">U2L Service</a>
+                            	<ul>
+												        <li><a href="#section1">Assessment</a></li>
+												        <li><a href="#section2">Application Migration</a></li>
+												        <li><a href="#section3">AppSmart Works</a></li>
+												        <li><a href="#section4">AppSparker</a></li>
+                            	</ul>
+                            </li>
                             <li><a href="index_iot.html">IoT & Sensor</a></li>
                             <li><a href="index_drm.html">Disaster Recovery</a></li>
                             <li><a href="#contact">About US</a></li>
@@ -326,7 +344,7 @@
 									    	<i id="section4"></i>
                     		<div class="row p-top-60" >
 	                        <div  class="col-md-2 text-center" >
-	                            <img src="assets/images/sub_1_5.png" alt="1"/>
+	                            <img src="assets/images/sub_1_7.png" alt="1"/>
 	                        </div>
 	                        <div  class=" col-md-10 media-middle" >
 	                            <h2>어플리케이션 진단 솔루션<br/>(AppSparker)</h2>
@@ -345,7 +363,7 @@
 													</h3>
 												</div>
                     		<div class="row p-top-40">
-	                            <img src="assets/images/sub_1_7.png" alt="1"/>
+	                            <img src="assets/images/sub_1_8.png" alt="1"/>
                         </div>
                         <table class="table table-bordered m-top-40">
                         	<thead>
