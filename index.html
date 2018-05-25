@@ -10,9 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
     		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-<meta content="blendTrans(Duration=0.0)" http-equiv="Page-Enter" />
-<meta content="blendTrans(Duration=0.0)" http-equiv="Page-Exit" />
-
         <link rel="icon" type="image/png" href="favicon.ico"/>
 
         <!--Google Font link-->
@@ -32,9 +29,6 @@
 
 
         <!--<link rel="stylesheet" href="assets/css/xsslider.css">-->
-
-
-
 
         <!--For Plugins external css-->
         <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
@@ -56,14 +50,41 @@
 					    font-weight:700;
 					    font-family:Raleway,'Jua';
 					    padding-top:7px;
+							letter-spacing:-0.5px ;
 					}
 
 					#navbar-menu>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
 					.carousel-caption { padding-bottom:20%;color:#6b4963}
+.features_item .f_item_icon i{
+    font-size:3rem;
+    color:#00a885;
+}
+					hr { border:1px solid silver}
+					#navbar-menu>ul>li>ul>li>a {display:block; padding:10px 15px; 
+						transition:all 0.1s ease-out; border-bottom:1px solid #ddd; position:relative;
+					}
+					#navbar-menu>ul>li>ul>li { font-size:14px; line-height:18px; font-weight:normal; block-size: auto;}
+
+					#navbar-menu>ul>li:hover>ul { display : block ;}
+					#navbar-menu>ul>li>ul {
+					    background-color: white;
+					    color: black;
+					    font-family:Raleway,'Nanum Gothic','Jua';
+					    padding-top:7px;
+					    display: none;
+					    position:absolute;
+					    top:50px;
+					    width:100%; 
+					    min-width:200px;
+					    box-sizing:content-box;
+					    height:auto;
+					    list-style-type: none;
+					}
+					#navbar-menu>ul>li>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
+
         </style>
         
 				<script> (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement) </script>
-
         
     </head>
 
@@ -151,11 +172,18 @@
                     <!-- End Header Navigation -->
                     <!-- navbar menu -->
                     <div class="collapse navbar-collapse" id="navbar-menu"  >
-                        <ul class="nav navbar-nav navbar-center " style="color: #ffffff">
-                            <li><a href="index_u2l.html">U2L Service</a></li>
+                        <ul class="nav navbar-nav navbar-center "  >
+                            <li><a href="index_u2l.html">U2L Service</a>
+                            	<ul>
+												        <li><a href="index_u2l.html#section1">Assessment</a></li>
+												        <li><a href="index_u2l.html#section2">Application Migration</a></li>
+												        <li><a href="index_u2l.html#section3">AppSmart Works</a></li>
+												        <li><a href="index_u2l.html#section4">AppSparker</a></li>
+                            	</ul>
+                            </li>
                             <li><a href="index_iot.html">IoT & Sensor</a></li>
                             <li><a href="index_drm.html">Disaster Recovery</a></li>
-                            <li><a href="#contact">About US</a></li>
+                            <li><a href="/#contact">About US</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div> 
@@ -217,43 +245,59 @@
 
             <!--Featured Section-->
             <section id="features" class="features roomy-40" >
-                <div class="container" >
-                    <div class="row">
-                    		<blockquote><img src="dawin_img/title_1_1.gif" alt="" /></blockquote> 
-                        <div class="main_features fix roomy-40" >
-                            <div class="col-md-4">
-                                <div class="features_item sm-m-top-30">
+                <div class="container-fluid" >
+                    <div class="row" style="padding:0 20px">
+                    		<h2 class="text-center p-bottom-40">IT Modernization Technology Leading Company</h2>
+<!--                    		<blockquote><img src="dawin_img/title_1_1.gif" alt="" /></blockquote> -->
+                        <div class="main_features fix roomy-30" style="letter-spaceing:-0.5px">
+                            <div class="col-md-4  p-l-15">
+                                <div class="row features_item sm-m-top-30">
                                     <div class="f_item_icon">
-                                        <i class="fa fa-thumbs-o-up"></i>
+                                        <i class="fa fa-thumbs-o-up "></i>
                                     </div>
-                                    <div class="f_item_text ">
-                                        <h3>최고의 IT 진단 및 컨설팅</h3>
-                                        <p>Platform Modernization,Security,Biz 개발 및 운영 서비스와 솔루션을
-                                          제공하여 경쟁력 제고</p>
+                                    <div class="f_item_text roomy-10">
+                                        <h4>최고의 Platform Migration Service</h4>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="features_item sm-m-top-30">
-                                    <div class="f_item_icon">
-                                        <i class="fa fa-tablet"></i>
-                                    </div>
-                                    <div class="f_item_text">
-                                        <h3>솔루션 및 서비스 개발</h3>
-                                        <p>문화,비지니스,기술Trend를 선도하는 ICT(Information & Communication Technology)
-                                           서비스 제공</p>
-                                    </div>
+                                <div class="row">
+                                    <h5>다양한 경험, 전문가, 자동화Tool을 활용하여 Mission Critical Service의
+                                    	Platform Migration ToTal Service 제공</h5>
+                                    <p>- Assessment, Technical Support, Migration Total Service</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="features_item sm-m-top-30">
+                            <div class="col-md-4 p-l-15">
+                                <div class="row features_item sm-m-top-30 " >
+                                    <div class="f_item_icon">
+                                        <i class="fa fa-industry "></i>
+                                    </div>
+                                    <div class="f_item_text roomy-10">
+                                        <h5>Industry 4.0의 핵심은 정확,안정적인 Data수집</h5>
+                                    </div>
+                                </div>
+                                <div class="row  ">
+                                        <h5>산업현장의 다양한 환경하에사도 설비 및 센서로부터 정확하고 안정적인
+                                        	Data수집을 위한 통신 신뢰도 99.999%보장(IEEE802.15.4e TSCH)
+                                        </h5>
+                                        <p>- 99.999% 신뢰도, 50㎂이하의 초저전력 통신,Any device & Sensor</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4   p-l-15">
+                                <div class="row features_item sm-m-top-30">
                                     <div class="f_item_icon">
                                         <i class="fa fa-sliders"></i>
                                     </div>
-                                    <div class="f_item_text">
-                                        <h3>높은 투자수익률 보장</h3>
-                                        <p>회사의 가치를 높이고 임직원의 만족도를 최고로 하는 경영문화 </p>
+                                    <div class="f_item_text p-top-5 p-bottom-10">
+                                        <h3>Solution</h3>
                                     </div>
+                                </div>
+                                <div class="row">
+                                        <h5>
+                                        	U2L,U2U,U2C 마이그레이션:앱스마트워커 <br/>
+                                        	어플리케이션 진단 및 검색:앱스파커 <br/>
+                                        	재해복구관리:SANOVI DRM<br/>
+                                        	실시간데이터 복제:XLOG<br/>
+                                          IoT Platform:Bird ESM(Environmental Sensor Management)
+                                        </h5>
                                 </div>
                             </div>
                         </div>

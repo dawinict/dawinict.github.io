@@ -37,6 +37,7 @@ body {
     font-weight: 400;
     width:100%;
     font-family: 'Raleway', 'Nanum Gothic' ,sans-serif;
+    word-break:keep-all;
 }
 
 /*------------------------------------------------------------------*/
@@ -97,6 +98,20 @@ section { overflow: hidden; }
     padding-bottom: 40px;
 }
 
+.roomy-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.roomy-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.roomy-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /*text color*/
 
@@ -233,15 +248,15 @@ h2 {
 }
 h3 {
     font-size: 1.500rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 h4 {
     font-size: 1.3rem;
-    line-height: 1.7rem;
+    line-height: 2rem;
 }
 h5 {
     font-size: 1.125rem;
-    line-height: 1.575rem
+    line-height: 1.7rem
 }
 h6 {
     font-size: 1rem;
@@ -259,7 +274,7 @@ p span{
 }
 
 p {
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 p:last-child {
     margin-bottom: 0px;
@@ -536,6 +551,10 @@ p-0{
 
 .p-r-15{
     padding-right: 15px;
+}
+
+.p-top-5 {
+    padding-top: 5px;
 }
 
 .p-top-10 {

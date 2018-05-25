@@ -9,8 +9,6 @@
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
     		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta content="blendTrans(Duration=0.0)" http-equiv="Page-Enter" />
-<meta content="blendTrans(Duration=0.0)" http-equiv="Page-Exit" />
 
         <link rel="icon" type="image/png" href="favicon.ico"/>
 
@@ -51,28 +49,40 @@
 					    font-weight:700;
 					    font-family:Raleway,'Nanum Gothic','Jua';
 					    padding-top:7px;
+					    letter-spacing:-0.5px ;
 					}
 
 					#navbar-menu>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
+					.carousel-caption { padding-bottom:20%;color:#6b4963}
+.features_item .f_item_icon i{
+    font-size:3rem;
+    color:#00a885;
+}
+					hr { border:1px solid silver}
+					#navbar-menu>ul>li>ul>li>a {display:block; padding:10px 15px; 
+						transition:all 0.1s ease-out; border-bottom:1px solid #ddd; position:relative;
+					}
+					#navbar-menu>ul>li>ul>li { font-size:14px; line-height:18px; font-weight:normal; block-size: auto;}
+
 					#navbar-menu>ul>li:hover>ul { display : block ;}
 					#navbar-menu>ul>li>ul {
-					    background-color: rgba(255,255,255,0.95);
-					    font-size:18px;
-					    font-weight:bold;
+					    background-color: white;
+					    color: black;
 					    font-family:Raleway,'Nanum Gothic','Jua';
 					    padding-top:7px;
 					    display: none;
+					    position:absolute;
+					    top:50px;
+					    width:100%; 
+					    min-width:200px;
+					    box-sizing:content-box;
+					    height:auto;
+					    list-style-type: none;
 					}
+					#navbar-menu>ul>li>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
 
-					.carousel-caption { padding-bottom:20%;color:#6b4963}
-					hr { border:1px solid silver}
-
-				  .affix {
-				      top: 80px;
-				      z-index: 9999 !important;
-				  }
 				  #service hr,h2,h3,h4 {color:#3b2c87;}
-					#service img { float:left}
+
 					#service ul { list-style:circle inside  ;}
 
 					.text-i {
@@ -82,15 +92,17 @@
 					    padding-left: 2rem;
 					}					
 					/* table { font-weight : bold ; } */
+					
+					.vcenter {  vertical-align:middle; display: table-cell;}
 					th, .my-middle {
+					  display: table-cell;
 					  text-align: center;
 					  vertical-align:middle;
 					}
-					#myScroll { font-size:1.3rem; font-weight:bold }
+					td { font-size:1.1em; }
 					#section1 {
 						padding:5% 5% 0; 
-						border-left:1px solid silver; 
-						background-color:#fbfaf9;
+
 					}
 					img {  
 						max-width: 100%;
@@ -107,7 +119,7 @@
 				<script> (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement) </script>
     </head>
 
-    <body data-spy="scroll" data-target=".navbar-collapse #myScroll">
+    <body data-spy="scroll" data-target=".navbar-collapse">
 
         <div id="fouc" class="culmn">
             <!--Home page style-->
@@ -136,18 +148,18 @@
                     <!-- End Header Navigation -->
                     <!-- navbar menu -->
                     <div class="collapse navbar-collapse" id="navbar-menu"  >
-                        <ul class="nav navbar-nav navbar-center " style="color: #ffffff">
+                        <ul class="nav navbar-nav navbar-center " >
                             <li><a href="index_u2l.html">U2L Service</a>
                             	<ul>
-												        <li><a href="#section1">Assessment</a></li>
-												        <li><a href="#section2">Application Migration</a></li>
-												        <li><a href="#section3">AppSmart Works</a></li>
-												        <li><a href="#section4">AppSparker</a></li>
+												        <li><a href="index_u2l.html#section1">Assessment</a></li>
+												        <li><a href="index_u2l.html#section2">Application Migration</a></li>
+												        <li><a href="index_u2l.html#section3">AppSmart Works</a></li>
+												        <li><a href="index_u2l.html#section4">AppSparker</a></li>
                             	</ul>
                             </li>
                             <li><a href="index_iot.html">IoT & Sensor</a></li>
                             <li><a href="index_drm.html">Disaster Recovery</a></li>
-                            <li><a href="#contact">About US</a></li>
+                            <li><a href="/#contact">About US</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div> 
@@ -208,22 +220,13 @@
 
             <!--Featured Section-->
             <section id="service" class="features"  >
-                <div class="container-fluid ">
-                    <div class="row" >
-									    <nav class="col-md-3 p-top-60 " id="myScroll">
-									      <ul class="nav nav-pills nav-stacked text-left navbar-collapse w700" data-spy="affix" data-offset-top="700" >
-									        <li><a href="#section1">Assessment</a></li>
-									        <li><a href="#section2">Application Migration</a></li>
-									        <li><a href="#section3">AppSmart Works</a></li>
-									        <li><a href="#section4">AppSparker</a></li>
-									      </ul>
-									    </nav>
-                    	<div id="section1" class="col-md-9 " >
+                <div class="container ">
+                   	<div id="section1" class="p-top-60 " >
                     		<div class="row roomy-20 " >
 	                        <div  class="col-md-2" >
-	                            <img src="assets/images/sub_1_1.png" alt="1"/>
+	                            <img src="assets/images/sub_1_1.png" width="80%" alt="1"/>
 	                        </div>
-	                        <div  class="col-md-10 media-middle" >
+	                        <div  class="col-md-10  p-top-10" >
 	                            <h2>진단 및 영향 분석<br/>(Assessment)</h2>
 	                        </div>
                         </div>
@@ -233,10 +236,10 @@
                           	작업의 효율 높이고 리스크를 최소화 합니다.
 													</h3>
 												</div>
-	                      <table class="table table-bordered roomy-20">
+	                      <table class="table table-bordered roomy-20" valign="middle">
 	                      	<tbody>
 	                      		<tr>
-	                      			<td class="bg-success my-middle" width="30%">
+	                      			<td width="30%" class="bg-success my-middle "  >
 	                          		<h3 class="w700">리눅스 전환 오류</h3>
 	                          	</td>
 													    <td>
@@ -245,7 +248,7 @@
 															</td>
 														</tr>
 														<tr>
-	                      			<td class="bg-success my-middle" width="30%">
+	                      			<td class="bg-success my-middle " width="30%">
 			                          <h3 class="w700">컴파일 오류<br/>(Compilation)
 																</h3>
 															</td>
@@ -275,9 +278,9 @@
 									    	<i id="section2"></i>
                     		<div class="row p-top-60 " >
 	                        <div  class="col-md-2" >
-	                            <img src="assets/images/sub_1_3.png" alt="1"/>
+	                            <img src="assets/images/sub_1_3.png"  width="80%" alt="1"/>
 	                        </div>
-	                        <div  class="col-md-10 media-middle" >
+	                        <div  class="col-md-10  p-top-10" >
 	                            <h2>어플리케이션 마이그레이션<br/>(Application Migration)</h2>
 	                        </div>
                         </div>
@@ -296,9 +299,9 @@
 									    	<i id="section3"></i>
                     		<div class="row p-top-60 " >
 	                        <div  class="col-md-2 text-center" >
-	                            <img src="assets/images/sub_1_5.png" alt="1"/>
+	                            <img src="assets/images/sub_1_5.png"  width="80%" alt="1"/>
 	                        </div>
-	                        <div  class="col-md-10 media-middle" >
+	                        <div  class="col-md-10  p-top-10" >
 	                            <h2>어플리케이션 전환 솔루션<br/>(AppSmart Works)</h2>
 	                        </div>
                         </div>
@@ -315,11 +318,11 @@
                         <table class="table table-bordered">
                         	<tbody>
                         		<tr>
-	                        		<td class="bg-success w700" width="20%"> 수작업 Migration시</td>
+	                        		<td class="bg-success w600 " width="20%"> 수작업 Migration시</td>
 	                        		<td>
 	                        			<ul>
 	                        				<li>개발자/설계자의 수작업 확인 및 담당자별 검증
-	                        					 <br/>-소스 파일, 데이터 베이스, 설계 문서 등
+	                        					 <br/> &ensp;&ensp;<i>-소스 파일, 데이터 베이스, 설계 문서 등</i>
 	                       					</li>
 	                        				<li>실제 시스템과 산출물 사이의 차이 발생</li>
 	                        				<li>모든 개발소스 검증을 수작업으로 수행함에 따른 시간 지연 및 누락 발생</li>
@@ -344,9 +347,9 @@
 									    	<i id="section4"></i>
                     		<div class="row p-top-60" >
 	                        <div  class="col-md-2 text-center" >
-	                            <img src="assets/images/sub_1_7.png" alt="1"/>
+	                            <img src="assets/images/sub_1_7.png"  width="80%" alt="1"/>
 	                        </div>
-	                        <div  class=" col-md-10 media-middle" >
+	                        <div  class=" col-md-10 p-top-10" >
 	                            <h2>어플리케이션 진단 솔루션<br/>(AppSparker)</h2>
 	                        </div>
                         </div>
