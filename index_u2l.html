@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
     <head>
         <meta charset="utf-8"/>
-        <title>DawinICT</title>
+        <title>DawinICT U2L</title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
     		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -60,7 +60,7 @@
 }
 					hr { border:1px solid silver}
 					#navbar-menu>ul>li>ul>li>a {display:block; padding:10px 15px; 
-						transition:all 0.1s ease-out; border-bottom:1px solid #ddd; position:relative;
+						transition:all 0.1s ease-out; border:1px solid #ddd; position:relative;border-top:0px;
 					}
 					#navbar-menu>ul>li>ul>li { font-size:14px; line-height:18px; font-weight:normal; block-size: auto;}
 
@@ -81,14 +81,15 @@
 					}
 					#navbar-menu>ul>li>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
 
-				  #service hr,h2,h3,h4 {color:#3b2c87;}
+				  #service hr,h1,h2,h3,h4 {color:#3b2c87;}
 
-					#service ul { list-style:circle inside  ;}
+					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87;}
+					#service ul.style-none { list-style:none inside  ; font-size:1.5rem; color:#3b2c87;; word-spacing: 2px;}
 
 					.text-i {
 							word-spacing: 2px;
 							letter-spacing: -0.6px;
-					    background: url(assets/images/text_i.png) no-repeat left 6px;
+					    background: url(assets/images/text_i.png) no-repeat left 7px;
 					    padding-left: 2rem;
 					}					
 					/* table { font-weight : bold ; } */
@@ -108,6 +109,8 @@
 						max-width: 100%;
   					height: auto;
 					}
+					#appsparker9 th,
+					#appsparker9 td { font-size:1.3rem; }
   @media screen and (max-width: 810px) {
     #section1  {
         margin-left: 150px;
@@ -157,8 +160,22 @@
 												        <li><a href="index_u2l.html#section4">AppSparker</a></li>
                             	</ul>
                             </li>
-                            <li><a href="index_iot.html">IoT & Sensor</a></li>
-                            <li><a href="index_drm.html">Disaster Recovery</a></li>
+                            <li><a href="index_iot.html">IoT & Sensor</a>
+                            	<ul>
+												        <li><a href="index_iot.html#section1">Introduction</a></li>
+												        <li><a href="index_iot.html#section2">적용분야 및 기술요소</a></li>
+												        <li><a href="index_iot.html#section3">제품구성</a></li>
+												        <li><a href="index_iot.html#section4">제공가치</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="index_drm.html">Disaster Recovery</a>
+                            	<ul>
+												        <li><a href="index_drm.html#section1">Introduction</a></li>
+												        <li><a href="index_drm.html#section2">SANOVI 특징</a></li>
+												        <li><a href="index_drm.html#section3">SANOVI 주요기능</a></li>
+												        <li><a href="index_drm.html#section4">SANOVI UI</a></li>
+                            	</ul>
+                            </li>
                             <li><a href="/#contact">About US</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -368,7 +385,7 @@
                     		<div class="row p-top-40">
 	                            <img src="assets/images/sub_1_8.png" alt="1"/>
                         </div>
-                        <table class="table table-bordered m-top-40">
+                        <table id="appsparker9" class="table table-bordered m-top-40">
                         	<thead>
                         		<tr class="success">
 		                        	<th>기 능</th>

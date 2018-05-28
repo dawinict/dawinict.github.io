@@ -1,0 +1,525 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <title>DawinICT IoT</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+        <link rel="icon" type="image/png" href="favicon.ico"/>
+
+        <!--Google Font link-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+				<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+				
+        <link rel="stylesheet" href="assets/css/slick/slick.css"/> 
+        <link rel="stylesheet" href="assets/css/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="assets/css/animate.css"/>
+        <link rel="stylesheet" href="assets/css/iconfont.css"/>
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+        <link rel="stylesheet" href="assets/css/magnific-popup.css"/>
+        <link rel="stylesheet" href="assets/css/bootsnav.css"/>
+
+        <!-- xsslider slider css -->
+
+        <!--<link rel="stylesheet" href="assets/css/xsslider.css">-->
+
+        <!--For Plugins external css-->
+        <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <style>
+					.js #fouc {display: none} 
+        	.navbar-default {
+					    background-color: rgba(255,255,255,0.95);
+					    font-size:18px;
+					    font-weight:700;
+					    font-family:Raleway,'Nanum Gothic','Jua';
+					    padding-top:7px;
+					    letter-spacing:-0.5px ;
+					}
+
+					#navbar-menu>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
+					.carousel-caption { padding-bottom:20%;color:#6b4963}
+.features_item .f_item_icon i{
+    font-size:3rem;
+    color:#00a885;
+}
+					hr { border:1px solid silver}
+					#navbar-menu>ul>li>ul>li>a {display:block; padding:10px 15px; 
+						transition:all 0.1s ease-out; border:1px solid #ddd; position:relative; border-top:0px;
+					}
+					#navbar-menu>ul>li>ul>li { font-size:14px; line-height:18px; font-weight:normal; block-size: auto;}
+
+					#navbar-menu>ul>li:hover>ul { display : block ;}
+					#navbar-menu>ul>li>ul {
+					    background-color: white;
+					    color: black;
+					    font-family:Raleway,'Nanum Gothic','Jua';
+					    padding-top:7px;
+					    display: none;
+					    position:absolute;
+					    top:50px;
+					    width:100%; 
+					    min-width:200px;
+					    box-sizing:content-box;
+					    height:auto;
+					    list-style-type: none;
+					}
+					#navbar-menu>ul>li>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
+
+				  #service hr,h1,h2,h3,h4 {color:#3b2c87;}
+
+					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87;}
+					#service ul.style-none { list-style:none inside  ; font-size:1.5rem; color:#3b2c87;; word-spacing: 2px;}
+
+					.text-i {
+							word-spacing: 2px;
+							letter-spacing: -0.6px;
+					    background: url(assets/images/text_i.png) no-repeat left 7px;
+					    padding-left: 2rem;
+					}					
+					/* table { font-weight : bold ; } */
+					
+					.vcenter {  vertical-align:middle; display: table-cell;}
+					th, .my-middle {
+					  display: table-cell;
+					  text-align: center;
+					  vertical-align:middle;
+					}
+
+					#section1 {
+						padding:5% 5% 0; 
+
+					}
+					img {  
+						max-width: 100%;
+  					height: auto;
+					}
+					#service th,
+					#service td { font-size:1.3rem; }
+
+  @media screen and (max-width: 810px) {
+    #section1  {
+        margin-left: 150px;
+    }
+    #myScroll { font-size:1rem; font-weight:normal }
+  }
+					
+        </style>
+				<script> (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement) </script>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-collapse">
+
+        <div id="fouc" class="culmn">
+            <!--Home page style-->
+
+            <nav class="navbar navbar-default navbar-fixed-top ">
+
+                <div class="container-fluid " > 
+                	<!--
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                    </div> 
+								-->
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header ">
+                          <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar-menu">
+                              <i class="fa fa-bars"></i>
+                          </button>
+
+                        <a  href="/">
+                            <img src="dawin_img/logo.png"  alt="DAWIN ICT" style="margin:7px 50px 5px" width="148" >
+                        </a>
+
+                    </div>
+                    <!-- End Header Navigation -->
+                    <!-- navbar menu -->
+                    <div class="collapse navbar-collapse" id="navbar-menu"  >
+                        <ul class="nav navbar-nav navbar-center " >
+                            <li><a href="index_u2l.html">U2L Service</a>
+                            	<ul>
+												        <li><a href="index_u2l.html#section1">Assessment</a></li>
+												        <li><a href="index_u2l.html#section2">Application Migration</a></li>
+												        <li><a href="index_u2l.html#section3">AppSmart Works</a></li>
+												        <li><a href="index_u2l.html#section4">AppSparker</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="index_iot.html">IoT & Sensor</a>
+                            	<ul>
+												        <li><a href="index_iot.html#section1">Introduction</a></li>
+												        <li><a href="index_iot.html#section2">적용분야 및 기술요소</a></li>
+												        <li><a href="index_iot.html#section3">제품구성</a></li>
+												        <li><a href="index_iot.html#section4">제공가치</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="index_drm.html">Disaster Recovery</a>
+                            	<ul>
+												        <li><a href="index_drm.html#section1">Introduction</a></li>
+												        <li><a href="index_drm.html#section2">SANOVI 특징</a></li>
+												        <li><a href="index_drm.html#section3">SANOVI 주요기능</a></li>
+												        <li><a href="index_drm.html#section4">SANOVI UI</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="/#contact">About US</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div> 
+
+            </nav>
+  <section style="background-color:#0169A9">
+<!--    <div class="overlay"></div>-->
+		<div id="myCarousel" class="carousel slide main-home" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#myCarousel" data-slide-to="1"></li>
+		    <li data-target="#myCarousel" data-slide-to="2"></li>
+		  </ol>
+
+  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+			    <div class="item active" style="background: url(assets/images/main_1.jpg) no-repeat center center ;height:650px;background-size:contain">
+			    	<div class="carousel-caption">
+	            <h1 class="w800">Mission Critical U2L Service</h1>
+	            <h3>Methodology, Process, Toolkit</h3>
+	          </div>
+			    </div>
+			
+			    <div class="item" style="background: url(assets/images/main_2.jpg) no-repeat center center ;height:650px;background-size:cover">
+			    	<h1 class="text-white w800"  style="padding-top:70px">&ensp; Industry 4.0</h1>
+			    	<div class="carousel-caption">
+	            <h1 class="w800">Industrial IoT & Sensor<br/>Wireless Network</h1>
+	            <h3 class="text-right">Reliability 99.999%</h3>
+	          </div>
+	          <div class="carousel-caption" style="padding-bottom:5%;right:5%; padding-right:20px">
+	            <h2 class="text-white w600 text-right">Industrial Wireless Network</h2>
+	          </div>
+			    </div>
+			
+			    <div class="item" style="background: url(assets/images/main_3.jpg) no-repeat center center ;height:650px;background-size:cover">
+			    	<h1 class="text-white w800" style="padding-top:70px">&ensp; Disaster Recovery</h1>
+			    	<div class="carousel-caption">
+	            <h1 class="w800 text-left">SANOVI<br/>DR Management Suite</h1>
+	          </div>
+	          <div class="carousel-caption" style="padding-bottom:5%; left:70%; right:5%; padding-right:20px">
+	            <h3 class="text-white text-left">SANOVI<br/>an IBM Company</h3>
+	          </div>
+			    </div>
+		  </div>
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</section>
+            <!--Home Sections-->
+
+            <!--Featured Section-->
+            <section id="service" class="features"  >
+                <div class="container " >
+                   	<div id="section1" class="p-top-60 " >
+
+                    		<div class="row roomy-20 " >
+                           <h1><i class="fa fa-empire fa-fw"></i>
+	                         		산업용 무선IoT & 센서 네트워크 특화 솔루션
+	                         </h1>
+                        </div>
+	                      <div class="row roomy-20">
+                          <h3 class="text-i">Bird Series는 산업 현장에 사용하는 제반 설비, 장치 및 환경 센서와 
+                          	연동하여 각종 Data를 수집 및 제어 코드 전송을  위한 무선전송장비 입니다.
+													</h3>
+												</div>
+												<div class="row roomy-30 " style="margin-left:30px">
+														<h3>
+															<div class="fa fa-check-square"> 산업용 IoT 지원을 위해 특화된 무선 기술</div><br/>
+															<div class="fa fa-check-square"> IEEE802.15.4e TSCH 표준 준용</div><br/>
+															<div class="fa fa-check-square"> 산업 현장의 열악한 무선 통신 환경하 에서도 신뢰도 99.999% 보장</div>
+														</h3>
+												</div>
+														
+                    		<div class="row roomy-30">
+	                            <img src="assets/images/sub_2_1.png" alt="2"/>
+                        </div>
+                        
+												<hr/>
+<!--적용분야 및 기술요소-->
+									    	<i id="section2"></i>
+                    		<div class="row p-top-60 " >
+	                        <div  class="col-md-2" >
+	                            <img src="assets/images/sub_2_2.png"  width="80%" alt="2"/>
+	                        </div>
+	                        <div  class="col-md-10  p-top-10" >
+	                            <h1>산업현장내 적용분야</h1>
+	                        </div>
+                        </div>
+	                      <div class="row roomy-40">
+                          <h3 class="text-i">IEEE802.15.4e TSCH 기술 기반으로 제공되는 Bird 제품은 산업현장의 다양한 
+                          	장비/설비 관제, 환경 모니터링, 작업자 안전관리 영역 등 다양한 업무에 활용될 수 있습니다.
+													</h3>
+												</div>
+                    		<div class="row roomy-40">
+	                          <img src="assets/images/sub_2_3.png" alt="2"/>
+                        </div>
+                        <hr/>
+
+                    		<div class="row p-top-60 " >
+	                        <div  class="col-md-1" >
+	                            <img src="assets/images/sub_2_4.png"   alt="2"/>
+	                        </div>
+	                        <div  class="col-md-11  p-top-10" >
+	                            <h2>무선통신 신뢰성 보장을 위해 지원하는 다양한 기술 요소</h2>
+	                        </div>
+                        </div>
+                    		<div class="row roomy-40">
+	                          <img src="assets/images/sub_2_5.png" alt="2"/>
+                        </div>
+
+                        <hr/>
+<!--제품구성-->
+									    	<i id="section3"></i>
+                    		<div class="row roomy-60 " >
+	                        <div  class="col-md-2 text-center" >
+	                            <img src="assets/images/sub_2_6.png"  width="75%" alt="2"/>
+	                        </div>
+	                        <div  class="col-md-10  p-top-10" >
+	                            <h1>Bird 제품구성</h1>
+	                        </div>
+                        </div>
+                    		<div class="row " >
+	                        <div  class="col-md-1 text-center" >
+	                            <img src="assets/images/sub_2_7.png"  alt="2"/>
+	                        </div>
+	                        <div  class="col-md-11  p-top-10 " >
+	                            <h2 class="w700">Master Mote</h2>
+	                        </div>
+                        </div>
+                    		<div class="row roomy-20">
+	                            <img src="assets/images/sub_2_8.png" alt="1"/>
+                        </div>
+                        <hr/>
+                    		<div class="row p-top-60" >
+	                        <div  class="col-md-1 text-center" >
+	                            <img src="assets/images/sub_2_7.png"  alt="2"/>
+	                        </div>
+	                        <div  class="col-md-11  p-top-10 " >
+	                            <h2 class="w700">Slave Mote</h2>
+	                        </div>
+                        </div>
+                        
+                    		<div class="row roomy-20">
+	                            <img src="assets/images/sub_2_9.png" alt="1"/>
+                        </div>
+
+                        <hr/>
+                    		<div class="row p-top-60" >
+	                        <div  class="col-md-1 text-center" >
+	                            <img src="assets/images/sub_2_7.png"  alt="2"/>
+	                        </div>
+	                        <div  class="col-md-11  p-top-10 " >
+	                            <h2 class="w700">Slave Mote 종류 및 Battery Pack 사양</h2>
+	                        </div>
+                        </div>
+                        
+                    		<div class="row roomy-20">
+	                            <img src="assets/images/sub_2_10.png" alt="1"/>
+                        </div>
+
+												<hr/>
+<!--제공가치-->									
+									    	<i id="section4"></i>
+                    		<div class="row p-top-60" >
+	                        <div  class="col-md-2 text-center" >
+	                            <img src="assets/images/sub_2_11.png"  width="80%" alt="1"/>
+	                        </div>
+	                        <div  class=" col-md-10 p-top-10" >
+	                            <h1>고객에 대한 제공가치</h1>
+	                        </div>
+                        </div>
+	                      <div class="row roomy-40">
+                          <h3 class="text-i">“Smart Factory의 핵심인 [Tier0] 영역 DATA의 신뢰성 높은 실시간 취합으로 
+                          	정확하고 적시적기 의사결정에 도움을 드립니다. ”<br/>
+														하기 표에서와 같이 자재 비용의 경우 환경에 따라 Max 10 정도 증가될 수 있으나, 
+														가장 높은 비중을 점하는 인건비 부분에서 60%이상 절감효과를 거둘 수 있음.
+													</h3>
+												</div>
+                    		<div class="row thumbnail ">
+                            <img src="assets/images/sub_2_12.png" alt="1"/>
+	                          <div class=caption">
+	                            <h5 class="text-right">※기존 유선케이블링을 100으로 가정할 경우의 비교치임.</h5>
+	                          </div>
+                        </div>
+                        <table class="table table-bordered m-top-50">
+                        	<tbody>
+                        		<tr>
+	                        		<td class="bg-info text-center w700" width="10%">
+	                        			신뢰성
+	                        	  </td>
+		                        	<td>
+		                        		<ul>
+		                        			<li>산업현장의 열악한 무선통신 환경하에서도 TSCH 기술이 지닌 특화된 알고리즘에 의해 신뢰도 99.999%</li>
+		 															<li>타 무선기술과의 충돌회피 기능으로 고객사 기존 무선환경에 대한 영향도 최소화</li>
+		                        		</ul>
+		                        	</td>
+		                        </tr>
+		                        <tr>
+		                        	<td class="bg-warning text-center w700">
+		                        		확장성
+		                        	</td>
+		                        	<td>
+		                        		<ul>
+		                        			<li>기존 시리얼 통신 및 PLC 기반 모니터링과 컨트롤 영역 전반에 적용가능</li>
+																	<li>각종 센서류에 대한 손쉬운 연동 및 전원공급 모듈제공으로 설비/환경/안전 모든 영역 적용가능</li>
+																	<li>다양한 고객사 네트워크 인프라 연동 지원</li>
+																</ul>
+		                        	</td>
+		                        </tr>
+		                        <tr>
+		                        	<td class="bg-success  my-middle w700">
+		                        		경제성
+		                        	</td>
+		                        	<td>
+		                        		<ul>
+		                        			<li>투자 (설계, Material, 구축기간, 인건비, 공간효율 등) 및 유지보수 비용 
+		                        				(원인분석 및 조치에 따른 기간, 인건비, 기회손실)의 획기적 절감 (25% 이상 절감효과) </li>
+																	<li>설비/센서 모니터링과 컨트롤의 통합 Infra 제공 및 타 Infra와의 유기적 통합지원으로 
+																		잠재적 투자비용 절감</li>
+																</ul>
+		                        	</td>
+		                        </tr>
+		                      </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="contact" class="footer bg-black p-top-30 p-bottom-30">
+                
+                <div class="container">
+   	            		<div class="row text-right " style="font-size:1.2rem;padding-bottom:10px;cursor:pointer;" onclick="window.scrollTo(0,0);">Top 
+   	            			<i class="fa fa-angle-up"></i>
+   	            		</div>
+                    <div class="row" >
+                        <div class="widget_area">
+                            <div class="col-md-6">
+                                <div class="widget_item widget_about">
+                                    <div class="widget_ab_item m-top-10">
+                                        <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
+                                        <div class="widget_ab_item_text">
+                                            <span class="text-white">주&ensp; 소</span>
+                                            <span> &ensp;:&nbsp; 서울시 송파구 송파대로 201 B동 920호 (문정동, 테라타워2) </span>
+                                        </div>
+                                    </div>
+                                    <div class="widget_ab_item m-top-10">
+                                        <div class="item_icon"><i class="fa fa-phone"></i></div>
+                                        <div class="widget_ab_item_text">
+                                            <span class="text-white">전&ensp; 화 </span>
+                                            <span>&ensp;:&nbsp; +82 2 881 5771</span>
+                                        </div>
+                                    </div>
+                                    <div class="widget_ab_item m-top-10">
+                                        <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
+                                        <div class="widget_ab_item_text">
+                                            <span class="text-white">이메일 </span>
+                                            <span>&ensp;:&nbsp; sdkim@dawinict.com</span>
+                                        </div>
+                                    </div>
+                                </div><!-- End off widget item -->
+                            </div><!-- End off col-md-8 -->
+
+                            <div class="col-md-6 bg-grey" >
+                                <div class="widget_item sm-m-top-40 ">
+<!--
+                                      <form class="form-inline m-top-30">
+                                          <div class="form-group">
+                                              <input type="email" class="form-control" placeholder="Enter you Email">
+                                              <button type="submit" class="btn text-center"><i class="fa fa-arrow-right"></i></button>
+                                          </div>
+  
+                                      </form>
+
+-->
+                                    <div class="col-md-3 m-top-30">
+                                    	  <img src="dawin_img/copy_logo.gif" alt="" />
+                                    </div>
+                                    <div class="col-md-9 m-top-20	">
+                                        <strong style="font-size:.8rem;font-family:'나눔고딕'">(주)다윈아이씨티  대표이사 : 김성덕   사업자등록번호:101-86-52969
+                                           <br/>ⓒ 2018 by DAWINICT CO.,LTD. All Rights Reserved
+                                            <br/><br/>
+                                        </strong>
+                                    </div>
+                                </div><!-- End off widget item -->
+                            </div><!-- End off col-md-3 -->
+                        </div>
+                    </div>
+                </div>
+
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+                
+<!--
+                  <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-40">
+                      <div class="col-md-12">
+                          <p class="wow fadeInRight" data-wow-duration="1s">
+                              Made with 
+                              <i class="fa fa-heart"></i>
+                              by 
+                              <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> 
+                              2016. All Rights Reserved
+                          </p>
+                      </div>
+                  </div>
+-->
+            </footer>
+
+
+
+
+        </div>
+
+        <!-- JS includes -->
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>  
+
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/css/slick/slick.js"></script>
+        <script src="assets/css/slick/slick.min.js"></script>
+        <script src="assets/js/jquery.collapse.js"></script>
+        <script src="assets/js/bootsnav.js"></script>
+
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+<script>
+
+document.getElementById("fouc").style.display="block";
+
+</script>
+    </body>
+</html>
