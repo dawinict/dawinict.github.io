@@ -40,7 +40,7 @@
 
 				  #service hr,h1,h2,h3,h4 {color:#3b2c87;}
 
-					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87;}
+					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87; line-height:3rem;}
 					#service ul.style-none { 
 						list-style:none inside  ; font-size:1.5rem; 
 						color:#3b2c87;; word-spacing: 2px; line-height:3rem;
@@ -49,18 +49,19 @@
 					.text-i {
 							word-spacing: 2px;
 							letter-spacing: -0.6px;
-					    background: url(assets/images/text_i.png) no-repeat left 7px;
+					    background: url(../images/text_i.png) no-repeat left 7px;
 					    padding-left: 2rem;
 					}					
 					/* table { font-weight : bold ; } */
 					
 					.vcenter {  vertical-align:middle; display: table-cell;}
-					th, .my-middle {
+					tr th , .my-middle {
 					  display: table-cell;
 					  text-align: center;
 					  vertical-align:middle;
+					  line-height:3rem;
 					}
-
+					
 					#section1 {
 						padding:5% 5% 0; 
 

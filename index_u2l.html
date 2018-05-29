@@ -108,7 +108,8 @@
             </nav>
   <section style="background-color:#0169A9">
 <!--    <div class="overlay"></div>-->
-		<div id="myCarousel" class="carousel slide main-home" data-ride="carousel">
+
+		<div id="myCarousel" class="carousel slide main-home" data-ride="">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
 		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -118,7 +119,7 @@
 
   <!-- Wrapper for slides -->
 		  <div class="carousel-inner">
-			    <div class="item active" style="background: url(assets/images/main_1.jpg) no-repeat center center ;height:650px;background-size:contain">
+			    <div class="item active" style="background: url(assets/images/main_1.jpg) no-repeat center center ;height:650px;background-size:cover">
 			    	<div class="carousel-caption">
 	            <h1 class="w800">Mission Critical U2L Service</h1>
 	            <h3>Methodology, Process, Toolkit</h3>
@@ -146,15 +147,6 @@
 	          </div>
 			    </div>
 		  </div>
-		  <!-- Left and right controls -->
-		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
 		</div>
 	</section>
 
@@ -176,33 +168,34 @@
                           	작업의 효율 높이고 리스크를 최소화 합니다.
 													</h3>
 												</div>
-	                      <table class="table table-bordered roomy-20" valign="middle">
+												
+	                      <table class="table table-bordered roomy-20"  >
 	                      	<tbody>
-	                      		<tr>
-	                      			<td width="30%" class="bg-success my-middle "  >
+	                      		<tr style="height:100px">
+	                      			<td width="25%" class="bg-info my-middle " style="vertical-align:middle" >
 	                          		<h3 class="w700">리눅스 전환 오류</h3>
 	                          	</td>
-													    <td>
+													    <td style="vertical-align:middle">
 			                          <h4>동일한 어플리케이션이 리눅스 전환으로 인해 유닉스 환경에서와 상이한 결과 값을 갖는 것
 																</h4>
 															</td>
 														</tr>
-														<tr>
-	                      			<td class="bg-success my-middle " width="30%">
+	                      		<tr style="height:100px;">
+	                      			<td class="bg-info my-middle " style="vertical-align:middle">
 			                          <h3 class="w700">컴파일 오류<br/>(Compilation)
 																</h3>
 															</td>
-															<td>
+															<td style="vertical-align:middle">
 			                          <h4>리눅스 환경 내 컴파일 과정에서 유닉스 환경에서와 상이하게 발생하는 에러 또는 경고
 																</h4>
 															</td>
 														</tr>
-													  <tr>
-			                      	<td class="bg-success my-middle" width="30%">
+	                      		<tr style="height:100px;">
+			                      	<td class="bg-info my-middle">
 			                          <h3 class="w700">런타임 오류<br/>(Testing)
 																</h3>
 															</td>
-			                      	<td>
+			                      	<td style="vertical-align:middle">
 			                          <h4>리눅스 환경 내 컴파일 오류(경고 포함) 수정 완료 후 실행 환경에서 
 			                          	동일한 어플리케이션이 유닉스 환경과 다른 결과값을 발생 시키는 것
 																</h4>
@@ -211,7 +204,7 @@
 													</tbody>
 												</table>
 												
-                    		<div class="row">
+                    		<div class="row text-center">
 	                            <img src="assets/images/sub_1_2.png" alt="1"/>
                         </div>
 												<hr/>
@@ -230,10 +223,11 @@
                           	소요 시간 및 투입 인력 절감 등 높은 효율성과 안정성  보장합니다.
 													</h3>
 												</div>
-                    		<div class="row">
+												<h3 style="color:#4f0080; font-weight:700"><i class="fa fa-book"></i> 마이그레이션 전환 절차</h3>
+                    		<div class="row roomy-40 text-center thumbnail" width="70%">
 	                          <img src="assets/images/sub_1_4.png" alt="1"/>
                         </div>
-												<h4 class="text-center p-top-30"> 마이그레이션 전환 절차</h4>
+												
 
                         <hr/>
 									    	<i id="section3"></i>
@@ -254,12 +248,13 @@
                     		<div class="row roomy-20">
 	                            <img src="assets/images/sub_1_6.png" alt="1"/>
                         </div>
-                        <h3 class="p-top-40"> [ 앱스마트워크 장점 ]</h3>
+
+                        <h3 class="p-top-40 w700" style="color:#4f0080;"><i class="fa fa-thumbs-up"></i> 앱스마트워크 장점</h3>
                         <table class="table table-bordered">
                         	<tbody>
-                        		<tr>
-	                        		<td class="bg-success w600 " width="20%"> 수작업 Migration시</td>
-	                        		<td>
+                        		<tr style="height:150px">
+	                        		<td class="bg-info w600 text-center" width="20%" style="vertical-align:middle"> 수작업 Migration시</td>
+	                        		<td style="vertical-align:middle">
 	                        			<ul>
 	                        				<li>개발자/설계자의 수작업 확인 및 담당자별 검증
 	                        					 <br/> &ensp;&ensp;<i>-소스 파일, 데이터 베이스, 설계 문서 등</i>
@@ -269,9 +264,9 @@
 	                        			</ul>
 	                        		</td>
                         		</tr>
-                        		<tr>
-	                        		<td class="bg-success w700">앱스마트워커 사용 Migration시</td>
-	                        		<td>
+                        		<tr style="height:150px">
+	                        		<td class="bg-info w700 text-center" style="vertical-align:middle">앱스마트워커 사용 Migration시</td>
+	                        		<td  style="vertical-align:middle">
 	                        			<ul>
 	                        				<li>프로그램 소스들의 IP정보를 자동으로 수집 / 식별하여 정의된 신규 IP정보로 
 	                        					변경 후 관련 내역을 산출물로 제공
@@ -308,16 +303,12 @@
                     		<div class="row p-top-40">
 	                            <img src="assets/images/sub_1_8.png" alt="1"/>
                         </div>
-                        <table id="appsparker9" class="table table-bordered m-top-40">
-                        	<thead>
-                        		<tr class="success">
-		                        	<th>기 능</th>
-		                        	<th>내 용</th>
-	                        	</tr>
-	                        </thead>
+
+                        <h3 class="p-top-40 w700" style="color:#4f0080;"><i class="fa fa-book"></i> 상세기능 설명</h3>
+                        <table class="table table-bordered m-bottom-60">
                         	<tbody>
                         		<tr>
-	                        		<td>
+	                        		<td class="bg-info w700 text-center" style="vertical-align:middle">
 	                        			개인정보 노출 취약 소스 진단 및 검색(SecureScan)
 	                        	  </td>
 		                        	<td>
@@ -329,7 +320,7 @@
 		                        	</td>
 		                        </tr>
 		                        <tr>
-		                        	<td>
+		                        	<td class="bg-info w700 text-center" style="vertical-align:middle">
 		                        		시큐어코딩 취약 소스 진단 및  검색(SecureCoding)
 		                        	</td>
 		                        	<td>
