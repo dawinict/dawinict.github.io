@@ -38,88 +38,10 @@
 
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
+				<link rel="stylesheet" href="assets/css/dawin.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-        <style>
-					.js #fouc {display: none} 
-        	.navbar-default {
-					    background-color: rgba(255,255,255,0.95);
-					    font-size:18px;
-					    font-weight:700;
-					    font-family:Raleway,'Nanum Gothic','Jua';
-					    padding-top:7px;
-					    letter-spacing:-0.5px ;
-					}
-
-					#navbar-menu>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
-					.carousel-caption { padding-bottom:20%;color:#6b4963}
-.features_item .f_item_icon i{
-    font-size:3rem;
-    color:#00a885;
-}
-					hr { border:1px solid silver}
-					#navbar-menu>ul>li>ul>li>a {display:block; padding:10px 15px; 
-						transition:all 0.1s ease-out; border:1px solid #ddd; position:relative; border-top:0px;
-					}
-					#navbar-menu>ul>li>ul>li { font-size:14px; line-height:18px; font-weight:normal; block-size: auto;}
-
-					#navbar-menu>ul>li:hover>ul { display : block ;}
-					#navbar-menu>ul>li>ul {
-					    background-color: white;
-					    color: black;
-					    font-family:Raleway,'Nanum Gothic','Jua';
-					    padding-top:7px;
-					    display: none;
-					    position:absolute;
-					    top:50px;
-					    width:100%; 
-					    min-width:200px;
-					    box-sizing:content-box;
-					    height:auto;
-					    list-style-type: none;
-					}
-					#navbar-menu>ul>li>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
-
-				  #service hr,h1,h2,h3,h4 {color:#3b2c87;}
-
-					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87;}
-					#service ul.style-none { list-style:none inside  ; font-size:1.5rem; color:#3b2c87;; word-spacing: 2px;}
-
-					.text-i {
-							word-spacing: 2px;
-							letter-spacing: -0.6px;
-					    background: url(assets/images/text_i.png) no-repeat left 7px;
-					    padding-left: 2rem;
-					}					
-					/* table { font-weight : bold ; } */
-					
-					.vcenter {  vertical-align:middle; display: table-cell;}
-					th, .my-middle {
-					  display: table-cell;
-					  text-align: center;
-					  vertical-align:middle;
-					}
-
-					#section1 {
-						padding:5% 5% 0; 
-
-					}
-					img {  
-						max-width: 100%;
-  					height: auto;
-					}
-					#service th,
-					#service td { font-size:1.3rem; }
-
-  @media screen and (max-width: 810px) {
-    #section1  {
-        margin-left: 150px;
-    }
-    #myScroll { font-size:1rem; font-weight:normal }
-  }
-					
-        </style>
 				<script> (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement) </script>
     </head>
 
@@ -174,7 +96,7 @@
 												        <li><a href="index_drm.html#section1">Introduction</a></li>
 												        <li><a href="index_drm.html#section2">SANOVI 특징</a></li>
 												        <li><a href="index_drm.html#section3">SANOVI 주요기능</a></li>
-												        <li><a href="index_drm.html#section4">SANOVI UI</a></li>
+												        <li><a href="index_drm.html#section4">SANOVI UI소개</a></li>
                             	</ul>
                             </li>
                             <li><a href="/#contact">About US</a></li>
@@ -247,16 +169,16 @@
 	                         </h1>
                         </div>
 	                      <div class="row roomy-20">
-                          <h3 class="text-i">Bird Series는 산업 현장에 사용하는 제반 설비, 장치 및 환경 센서와 
+                          <h3 class="text-i">&ensp;Bird Series는 산업 현장에 사용하는 제반 설비, 장치 및 환경 센서와 
                           	연동하여 각종 Data를 수집 및 제어 코드 전송을  위한 무선전송장비 입니다.
 													</h3>
 												</div>
-												<div class="row roomy-30 " style="margin-left:30px">
-														<h3>
-															<div class="fa fa-check-square"> 산업용 IoT 지원을 위해 특화된 무선 기술</div><br/>
-															<div class="fa fa-check-square"> IEEE802.15.4e TSCH 표준 준용</div><br/>
-															<div class="fa fa-check-square"> 산업 현장의 열악한 무선 통신 환경하 에서도 신뢰도 99.999% 보장</div>
-														</h3>
+												<div class="row roomy-30 p-l-15 table-bordered my-round10" >
+														<ul class="style-none p-l-15" >
+															<li><i class="fa fa-check-square"></i> 산업용 IoT 지원을 위해 특화된 무선 기술</li>
+															<li><i class="fa fa-check-square"></i> IEEE802.15.4e TSCH 표준 준용</li>
+															<li><i class="fa fa-check-square"></i> 산업 현장의 열악한 무선 통신 환경하 에서도 신뢰도 99.999% 보장</li>
+														</ul>
 												</div>
 														
                     		<div class="row roomy-30">
@@ -268,7 +190,7 @@
 									    	<i id="section2"></i>
                     		<div class="row p-top-60 " >
 	                        <div  class="col-md-2" >
-	                            <img src="assets/images/sub_2_2.png"  width="80%" alt="2"/>
+	                            <img src="assets/images/sub_2_2.png"  width="100px" alt="2"/>
 	                        </div>
 	                        <div  class="col-md-10  p-top-10" >
 	                            <h1>산업현장내 적용분야</h1>
@@ -286,9 +208,9 @@
 
                     		<div class="row p-top-60 " >
 	                        <div  class="col-md-1" >
-	                            <img src="assets/images/sub_2_4.png"   alt="2"/>
+	                            <img src="assets/images/sub_2_4.png"  width="80px" alt="2"/>
 	                        </div>
-	                        <div  class="col-md-11  p-top-10" >
+	                        <div  class="col-md-11  p-top-10 table-bordered my-round10" >
 	                            <h2>무선통신 신뢰성 보장을 위해 지원하는 다양한 기술 요소</h2>
 	                        </div>
                         </div>
@@ -301,29 +223,31 @@
 									    	<i id="section3"></i>
                     		<div class="row roomy-60 " >
 	                        <div  class="col-md-2 text-center" >
-	                            <img src="assets/images/sub_2_6.png"  width="75%" alt="2"/>
+	                            <img src="assets/images/sub_2_6.png"  width="100px" alt="2"/>
 	                        </div>
 	                        <div  class="col-md-10  p-top-10" >
 	                            <h1>Bird 제품구성</h1>
 	                        </div>
                         </div>
                     		<div class="row " >
+                    			
 	                        <div  class="col-md-1 text-center" >
-	                            <img src="assets/images/sub_2_7.png"  alt="2"/>
+	                            <img src="assets/images/sub_2_7.png" width="80px" alt="2"/>
 	                        </div>
-	                        <div  class="col-md-11  p-top-10 " >
+	                        <div  class="col-md-11  p-top-10 bg-success my-round10" >
 	                            <h2 class="w700">Master Mote</h2>
 	                        </div>
+	                      
                         </div>
                     		<div class="row roomy-20">
-	                            <img src="assets/images/sub_2_8.png" alt="1"/>
+	                            <img src="assets/images/sub_2_8.png"  alt="2"/>
                         </div>
                         <hr/>
                     		<div class="row p-top-60" >
 	                        <div  class="col-md-1 text-center" >
-	                            <img src="assets/images/sub_2_7.png"  alt="2"/>
+	                            <img src="assets/images/sub_2_7.png" width="80px" alt="2"/>
 	                        </div>
-	                        <div  class="col-md-11  p-top-10 " >
+	                        <div  class="col-md-11  p-top-10 bg-success my-round10" >
 	                            <h2 class="w700">Slave Mote</h2>
 	                        </div>
                         </div>
@@ -335,9 +259,9 @@
                         <hr/>
                     		<div class="row p-top-60" >
 	                        <div  class="col-md-1 text-center" >
-	                            <img src="assets/images/sub_2_7.png"  alt="2"/>
+	                            <img src="assets/images/sub_2_7.png" width="80px" alt="2"/>
 	                        </div>
-	                        <div  class="col-md-11  p-top-10 " >
+	                        <div  class="col-md-11  p-top-10 bg-success my-round10" >
 	                            <h2 class="w700">Slave Mote 종류 및 Battery Pack 사양</h2>
 	                        </div>
                         </div>
@@ -351,7 +275,7 @@
 									    	<i id="section4"></i>
                     		<div class="row p-top-60" >
 	                        <div  class="col-md-2 text-center" >
-	                            <img src="assets/images/sub_2_11.png"  width="80%" alt="1"/>
+	                            <img src="assets/images/sub_2_11.png" width="100px" alt="1"/>
 	                        </div>
 	                        <div  class=" col-md-10 p-top-10" >
 	                            <h1>고객에 대한 제공가치</h1>
@@ -370,7 +294,7 @@
 	                            <h5 class="text-right">※기존 유선케이블링을 100으로 가정할 경우의 비교치임.</h5>
 	                          </div>
                         </div>
-                        <table class="table table-bordered m-top-50">
+                        <table class="table table-bordered m-top-50 ">
                         	<tbody>
                         		<tr>
 	                        		<td class="bg-info text-center w700" width="10%">
@@ -519,6 +443,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 <script>
 
 document.getElementById("fouc").style.display="block";
+document.getElementById("contact").style.display="block";
 
 </script>
     </body>

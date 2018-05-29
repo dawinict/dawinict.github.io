@@ -39,55 +39,11 @@
 
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
+				<link rel="stylesheet" href="assets/css/dawin.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="https://unpkg.com/vue"></script>
-        <style>
-					.js #fouc {display: none}
-        	.navbar-default {
-					    background-color: rgba(255,255,255,0.95);
-					    font-size:18px;
-					    font-weight:700;
-					    font-family:Raleway,'Jua';
-					    padding-top:7px;
-							letter-spacing:-0.5px ;
-					}
 
-					#navbar-menu>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
-					.carousel-caption { padding-bottom:20%;color:#6b4963}
-.features_item .f_item_icon i{
-    font-size:3rem;
-    color:#00a885;
-}
-					hr { border:1px solid silver}
-					#navbar-menu>ul>li>ul>li>a {display:block; padding:10px 15px; 
-						transition:all 0.1s ease-out; border:1px solid #ddd; position:relative; border-top:0px;
-					}
-					#navbar-menu>ul>li>ul>li { font-size:14px; line-height:18px; font-weight:normal; block-size: auto;}
-
-					#navbar-menu>ul>li:hover>ul { display : block ;}
-					#navbar-menu>ul>li>ul {
-					    background-color: white;
-					    color: black;
-					    font-family:Raleway,'Nanum Gothic','Jua';
-					    padding-top:7px;
-					    display: none;
-					    position:absolute;
-					    top:50px;
-					    width:100%; 
-					    min-width:200px;
-					    box-sizing:content-box;
-					    height:auto;
-					    list-style-type: none;
-					}
-					#navbar-menu>ul>li>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
-				  #service hr,h1,h2,h3,h4 {color:#3b2c87;}
-
-					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87;}
-					#service ul.style-none { list-style:none inside  ; font-size:1.5rem; color:#3b2c87;; word-spacing: 2px;}
-
-        </style>
-        
 				<script> (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement) </script>
         
     </head>
@@ -112,56 +68,8 @@
 
 
             <nav class="navbar navbar-default navbar-fixed-top ">
-            	<!--
-                <div class="navbar-top bg-grey fix">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="navbar-callus text-left sm-text-center">
-                                    <ul class="list-inline">
-                                        <li><a href=""><i class="fa fa-phone"></i> Phone : 02 881 5771</a></li>
-                                        <li><a href=""><i class="fa fa-envelope-o"></i> Contact us : sdkim@dawinict.com</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="navbar-socail text-right sm-text-center">
-                                    <ul class="list-inline">
-                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href=""><i class="fa fa-behance"></i></a></li>
-                                        <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-							-->
-                <!-- Start Top Search -->
-                <!--
-                <div class="top-search">
-                    <div class="container">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                            <input type="text" class="form-control" placeholder="Search">
-                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-                        </div>
-                    </div>
-                </div>
-                -->
-                <!-- End Top Search -->
 
                 <div class="container-fluid " > 
-                	<!--
-                    <div class="attr-nav">
-                        <ul>
-                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        </ul>
-                    </div> 
-								-->
                     <!-- Start Header Navigation -->
                     <div class="navbar-header ">
                           <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar-menu">
@@ -188,7 +96,7 @@
                             <li><a href="index_iot.html">IoT & Sensor</a>
                             	<ul>
 												        <li><a href="index_iot.html#section1">Introduction</a></li>
-												        <li><a href="index_iot.html#section2">적용분야 및 기술요소</a></li>
+												        <li><a href="index_iot.html#section2"> 적용분야 및 기술요소 </a> </li>
 												        <li><a href="index_iot.html#section3">제품구성</a></li>
 												        <li><a href="index_iot.html#section4">제공가치</a></li>
                             	</ul>
@@ -198,7 +106,7 @@
 												        <li><a href="index_drm.html#section1">Introduction</a></li>
 												        <li><a href="index_drm.html#section2">SANOVI 특징</a></li>
 												        <li><a href="index_drm.html#section3">SANOVI 주요기능</a></li>
-												        <li><a href="index_drm.html#section4">SANOVI UI</a></li>
+												        <li><a href="index_drm.html#section4">SANOVI UI소개</a></li>
                             	</ul>
                             </li>
                             <li><a href="/#contact">About US</a></li>
@@ -208,7 +116,7 @@
 
             </nav>
 
-  <section style="background-color:#0169A9">
+  <section id="home" style="background-color:#0169A9">
 <!--    <div class="overlay"></div>-->
 		<div id="myCarousel" class="carousel slide main-home" data-ride="carousel">
 		  <!-- Indicators -->
@@ -631,6 +539,7 @@ const vue_app = new Vue({
 });
 
 	document.getElementById("fouc").style.display="block";
+document.getElementById("contact").style.display="block";
 	
 </script>
     </body>
