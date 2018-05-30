@@ -38,12 +38,19 @@
 					}
 					#navbar-menu>ul>li>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
 
-				  #service hr,h1,h2,h3,h4 {color:#3b2c87;}
+				  #service hr,h1,h2,h3,h4,h5,h6 {color:#3b2c87;}
 
-					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87; line-height:3rem;}
+					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87; 
+						line-height:3rem;     
+						text-indent: -1.3em;
+    				padding-left: 1.3em;
+    				}
 					#service ul.style-none { 
 						list-style:none inside  ; font-size:1.5rem; 
 						color:#3b2c87;; word-spacing: 2px; line-height:3rem;
+						text-indent: -1.5em;
+    				padding-left: 4em;
+
 						}
 
 					.text-i {
@@ -71,7 +78,45 @@
   					height: auto;
 					}
 					#service th,
-					#service td { font-size:1.3rem; }
+					#service td { font-size:1.5rem; }
+
+.features_item .f_item_icon{
+/*    float: left;*/
+/*    width:10%; */
+    display: inline-block;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+.features_item .f_item_icon i{
+    font-size:4rem;
+    color: #009553;
+}
+.features_item .f_item_text {
+    display: inline-block;
+}
+.features_item .f_item_text * {
+    color: #009553;
+/*    color:#00a885;*/
+}
+.features_item .f_item_text p{
+    font-size:14px;
+}
+
+.widget_ab_item  {
+		font-size:1em;
+		color:inherit;
+}
+
+.widget_ab_item .item_icon{
+    float: left;
+    width: 3em;
+    font-size:1.2em;
+    display: inline-block;
+    margin-right: 10px;
+    color:#ffe200;
+}
+
+.fa {margin-right: .7em;}
 
   @media screen and (max-width: 810px) {
     #section1  {
@@ -79,3 +124,9 @@
     }
     #myScroll { font-size:1rem; font-weight:normal }
   }
+
+td { vertical-align:middle;}
+
+.my-block
+ {background-color: #f5fbd2 ; border-left: 8px solid #c9cbf1; padding:.7em 1em;}
+

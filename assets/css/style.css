@@ -548,6 +548,9 @@ p-0{
 .p-l-15{
     padding-left: 15px;
 }
+.p-l-3e{
+    padding-left: 3em;
+}
 
 .p-r-15{
     padding-right: 15px;
@@ -967,18 +970,21 @@ Featured section style
 ========================*/
 
 .features_item .f_item_icon{
-    float: left;
-    width:15%;
+/*    float: left;*/
+/*    width:10%; */
     display: inline-block;
-    margin-right: 15px;
+    margin-left: 2em;
+    margin-right: 1em;
 }
 .features_item .f_item_icon i{
     font-size:4rem;
     color:#00a885;
 }
-.features_item .f_item_text{
+.features_item .f_item_text {
     display: inline-block;
-    width:75%;
+}
+.features_item .f_item_text * {
+    color:#00a885;
 }
 .features_item .f_item_text p{
     font-size:14px;
@@ -1305,7 +1311,7 @@ work Section style
     float: left;
     width: 20%;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 .widget_ab_item .widget_ab_item_text,
 .widget_latst_item .widget_latst_item_text {
@@ -1314,9 +1320,11 @@ work Section style
 }
 .widget_ab_item .item_icon{
     float: left;
-    width: 10%;
+    width: 3em;
+    font-size:1.2em;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 10px;
+    color:#ffe200;
 }
 .widget_ab_item .widget_ab_item_text {
     display: inline-block;
