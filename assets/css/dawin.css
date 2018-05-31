@@ -1,20 +1,20 @@
-        	.my-round10 { border-radius: 10px;}
-					.js #fouc, #contact {display: none} 
-        	.navbar-default {
-					    background-color: rgba(255,255,255,0.95);
-					    font-size:18px;
-					    font-weight:700;
-					    font-family:Raleway,'Nanum Gothic','Jua';
-					    padding-top:7px;
-					    letter-spacing:-0.5px ;
-					}
-
-					#navbar-menu>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
-					.carousel-caption { padding-bottom:20%;color:#6b4963}
-			.features_item .f_item_icon i{
-			    font-size:3rem;
-			    color:#00a885;
+    	.my-round10 { border-radius: 10px;}
+			.js #fouc, #contact {display: none} 
+    	.navbar-default {
+			    background-color: rgba(255,255,255,0.95);
+			    font-size:18px;
+			    font-weight:700;
+			    font-family:Raleway,'Nanum Gothic','Jua';
+			    padding-top:7px;
+			    letter-spacing:-0.5px ;
 			}
+
+			#navbar-menu>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
+			.carousel-caption { padding-bottom:20%;color:#6b4963}
+	.features_item .f_item_icon i{
+	    font-size:3rem;
+	    color:#00a885;
+	}
 					hr { border:1px solid silver}
 					#navbar-menu>ul>li>ul>li>a {display:block; padding:10px 15px; 
 						transition:all 0.1s ease-out; border:1px solid #ddd; position:relative; border-top:0px;
@@ -112,7 +112,7 @@
     width: 3em;
     font-size:1.2em;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 0px;
     color:#ffe200;
 }
 
@@ -130,3 +130,4 @@ td { vertical-align:middle;}
 .my-block
  {background-color: #f5fbd2 ; border-left: 8px solid #c9cbf1; padding:.7em 1em;}
 
+ 
