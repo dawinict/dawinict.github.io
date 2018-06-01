@@ -69,10 +69,6 @@
 					  line-height:3rem;
 					}
 					
-					#section1 {
-						padding:5% 5% 0; 
-
-					}
 					img {  
 						max-width: 100%;
   					height: auto;
@@ -118,16 +114,8 @@
 
 .fa {margin-right: .7em;}
 
-  @media screen and (max-width: 810px) {
-    #section1  {
-        margin-left: 150px;
-    }
-    #myScroll { font-size:1rem; font-weight:normal }
-  }
-
 td { vertical-align:middle;}
 
 .my-block
  {background-color: #f5fbd2 ; border-left: 8px solid #c9cbf1; padding:.7em 1em;}
 
- 
