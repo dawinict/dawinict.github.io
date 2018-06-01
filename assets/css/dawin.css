@@ -1,5 +1,5 @@
     	.my-round10 { border-radius: 10px;}
-			.js #fouc, #contact {display: none} 
+			.#fouc { display:none} 
     	.navbar-default {
 			    background-color: rgba(255,255,255,0.95);
 			    font-size:18px;
@@ -38,7 +38,7 @@
 					}
 					#navbar-menu>ul>li>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
 
-				  #service hr,h1,h2,h3,h4,h5,h6 {color:#3b2c87;}
+				  #service hr,h1,h2,h3,h4,h5,h6 {color:#3b2c87; letter-spacing: -0.8px;}
 
 					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87; 
 						line-height:3rem;     
@@ -85,7 +85,7 @@
 /*    width:10%; */
     display: inline-block;
     margin-left: 2em;
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 .features_item .f_item_icon i{
     font-size:4rem;

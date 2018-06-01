@@ -47,8 +47,6 @@
 
     <body data-spy="scroll" data-target=".navbar-collapse">
 
-        <div id="fouc" class="culmn">
-            <!--Home page style-->
 
             <nav class="navbar navbar-default navbar-fixed-top ">
 
@@ -111,6 +109,9 @@
                 </div> 
 
             </nav>
+
+        <div id="fouc" class="culmn">
+
   <section style="background-color:#0169A9">
 <!--    <div class="overlay"></div>-->
 		<div id="myCarousel" class="carousel slide main-home" >
@@ -161,7 +162,7 @@
                    	<div id="section1" class="p-top-60 " >
 
                     		<div class="row roomy-20 " >
-                           <h1><i class="fa fa-empire fa-fw"></i>
+                           <h1><i class="fa fa-empire "></i>
 	                         		산업용 무선IoT & 센서 네트워크 특화 솔루션
 	                         </h1>
                         </div>
@@ -339,33 +340,33 @@
 
             <footer  class="footer  bg-black roomy-20">
 
-                <div class="container text-white">
+                <div id="vue-app" class="container text-white">
                     <div class="row" >
                     	<div class="col-md-6">
                         <div class="widget_item widget_about">
                             <div class="widget_ab_item m-top-10">
                                 <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
                                 <div>
-                                    주&ensp; 소 &ensp;:&nbsp; 서울시 송파구 송파대로 201 B동 920호 (문정동, 테라타워2) 
+                                    주&ensp; 소 &ensp;:&nbsp; {{com_rem.addr}} 
                                 </div>
                                 
                             </div>
                             <div class="widget_ab_item m-top-10">
                                 <div class="item_icon"><i class="fa fa-phone"></i></div>
                                 <div >
-                                    전&ensp; 화 &ensp;:&nbsp; +82 2 881 5771
+                                    전&ensp; 화 &ensp;:&nbsp; {{com_rem.tel}}
                                 </div>
                             </div>
                             <div class="widget_ab_item m-top-10">
                                 <div class="item_icon"><i class="fa fa-fax"></i></div>
                                 <div >
-                                    팩&ensp; 스 &ensp;:&nbsp; +82 2 881 5772
+                                    팩&ensp; 스 &ensp;:&nbsp; {{com_rem.fax}}
                                 </div>
                             </div>
                             <div class="widget_ab_item m-top-10">
                                 <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
                                 <div >
-                                    이메일 &ensp;:&nbsp; dawinict@dawinit.com
+                                    이메일 &ensp;:&nbsp; {{com_rem.email}}
                                 </div>
                             </div>
                         </div><!-- End off widget item -->
@@ -377,8 +378,8 @@
                    						<img src="assets/images/copy_logo.png" alt="logo" />
                    					</td>
                    					<td style="line-height:2em;border:none;font-size:.5em;color:grey">
-			                    			(주)다윈아이씨티&ensp; 대표이사:김성덕 &ensp; 사업자번호:101-86-52969<br>
-			                    			COPYRIGHT&copy; 2014 BY DAWINICT CO.,LTD. ALLRIGHT RESERVED.<br>
+			                    			{{com_rem.kor_nm}}&ensp; 대표이사:김성덕 &ensp; 사업자번호:{{com_rem.corp_no}}<br>
+			                    			COPYRIGHT&copy; 2014 BY {{com_rem.eng_nm}} ALLRIGHT RESERVED.<br>
 			                    			<a href="privacy.html" > 개인정보취급방침</a>&ensp;|&nbsp;
 			                    			<a href="no_email.html" > 이메일주소 무단수집거부 </a> 
                    					</td>
@@ -395,7 +396,7 @@
 
         </div>
 
-        <!-- JS includes -->
+        <!-- JS includes --> 
 
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>  
@@ -409,11 +410,8 @@
 
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
-<script>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="assets/js/dawinict.js"></script>
 
-document.getElementById("fouc").style.display="block";
-document.getElementById("contact").style.display="block";
-
-</script>
-    </body>
+</body>
 </html>
