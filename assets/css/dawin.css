@@ -4,7 +4,6 @@
 			    background-color: rgba(255,255,255,0.95);
 			    font-size:18px;
 			    font-weight:700;
-			    font-family:Raleway,'Nanum Gothic','Jua';
 			    padding-top:7px;
 			    letter-spacing:-0.5px ;
 			}
@@ -25,7 +24,6 @@
 					#navbar-menu>ul>li>ul {
 					    background-color: white;
 					    color: black;
-					    font-family:Raleway,'Nanum Gothic','Jua';
 					    padding-top:7px;
 					    display: none;
 					    position:absolute;
