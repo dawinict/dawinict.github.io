@@ -20,7 +20,6 @@
 					}
 					#navbar-menu>ul>li>ul>li { font-size:14px; line-height:18px; font-weight:normal; block-size: auto;}
 
-					#navbar-menu>ul>li:hover>ul { display : block ;}
 					#navbar-menu>ul>li>ul {
 					    background-color: white;
 					    color: black;
@@ -130,11 +129,13 @@ td { vertical-align:middle;}
 	.widget_ab_item  {
 			font-size:.8em;
 	}
+	#navbar-menu>ul>li {border:1px solid #ddd;}
 
 }
 
 @media  (min-width: 768px) {
 	.carousel-caption { font-size:4rem ; color:#3b2c87; 
 	}
-		
+
+	#navbar-menu>ul>li:hover>ul { display : block ;}
 }
