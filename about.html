@@ -23,6 +23,8 @@
         <link rel="stylesheet" href="assets/css/bootstrap.css"/>
         <link rel="stylesheet" href="assets/css/magnific-popup.css"/>
         <link rel="stylesheet" href="assets/css/bootsnav.css"/>
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
         <!-- xsslider slider css -->
 
@@ -161,7 +163,7 @@
             <!--Featured Section-->
             <section id="features" class="features roomy-40" >
                 <div class="container" >
-                    <div class="row" >
+                    <div data-aos="fade-up" class="row" >
                     		<h3 class="p-bottom-40">
                     			㈜다윈아이씨티는 IT분야의 각종 시스템 진단 및 컨설팅, 플랫폼 마이그레이션을 
                     			주 사업영역으로 하고 있으며, 특히 U2L 마이그레이션 부분의 솔루션과 차별화된 
@@ -174,16 +176,16 @@
                     		</h3>
 										</div><!-- End off row -->
                     <div class="row roomy-40" >
-                    	<div class="col-md-3">
+                    	<div data-aos="fade-right" class="col-md-3">
                     		<img src="assets/images/sub_4_1.png" width="100%" alt="4" />
                     	</div>
-                    	<div class="col-md-3">
+                    	<div data-aos="flip-right" class="col-md-3">
                     		<img src="assets/images/sub_4_2.png" width="100%" alt="4" />
                     	</div>
-                    	<div class="col-md-3">
+                    	<div data-aos="flip-left" class="col-md-3">
                     		<img src="assets/images/sub_4_3.png" width="100%" alt="4" />
                     	</div>
-                    	<div class="col-md-3">
+                    	<div data-aos="fade-left" class="col-md-3">
                     		<img src="assets/images/sub_4_4.png" width="100%" alt="4" />
                     	</div>
 										</div><!-- End off row -->
@@ -197,29 +199,29 @@
 								<hr />
                 <div class="container">
                 		<blockquote> <h2 class="w800" style="color:#87939f"> 주요사업분야 </h2> </blockquote>
-                    <div class="row text-center">
+                    <div data-aos="flip-left" class="row text-center">
                        <img src="assets/images/business.png" width="80%" alt="business" />
                     </div>
                 </div>
 								<hr id="history"/>
                 <div class="container" style="background:url(assets/images/com_history.png)">
                 		<blockquote> <h2 class="w800" style="color:#87939f"> 주요연혁 및 실적 </h2> </blockquote>
-                    <div class="row text-center">
+                    <div data-aos="fade-up" class="row text-center">
                        <img src="assets/images/history_1.png" width="80%" alt="business" />
                     </div>
-                    <div class="row text-center">
+                    <div data-aos="fade-up" class="row text-center">
                        <img src="assets/images/history_2.png" width="80%" alt="business" />
                     </div>
-                    <div class="row text-center">
+                    <div data-aos="fade-up" class="row text-center">
                        <img src="assets/images/history_3.png" width="80%" alt="business" />
                     </div>
-                    <div class="row text-center m-top-10">
+                    <div data-aos="fade-up" class="row text-center m-top-10">
                        <img src="assets/images/history_4.png" width="80%" alt="business" />
                     </div>
-                    <div class="row text-center m-top-10">
+                    <div data-aos="fade-up" class="row text-center m-top-10">
                        <img src="assets/images/history_5.png" width="80%" alt="business" />
                     </div>
-                    <div class="row text-center m-top-10">
+                    <div data-aos="fade-up" class="row text-center m-top-10">
                        <img src="assets/images/history_6.png" width="80%" alt="business" />
                     </div>
                 </div>
@@ -231,7 +233,7 @@
                 	<a href="http://dmaps.kr/9h4rf" title="다음지도" target="_blank">
                 		<h3 class=" w700 p-l-15" ><i class="fa fa-map-o"> </i>&ensp; 찾아오시는 길 : 8호선 문정역 4번출구</h3>
                 	</a>
-	                <div class="row text-center">
+	                <div data-aos="zoom-in" data-aos-duration="1000" class="row text-center">
 	                	<a href="http://dmaps.kr/9h4rf" title="다음지도" target="_blank">
 	                   <img src="assets/images/map.png" alt="History" />
 	                 </a>
@@ -312,6 +314,14 @@
         <script src="assets/js/main.js"></script>
         <script src="https://unpkg.com/vue"></script>
         <script src="assets/js/dawinict.js"></script>
+<script>
+    AOS.init({
+      duration: 600,
+      offset: 0,
+      delay: 100,
+      easing: 'ease-out-quad',
+    });
+</script>
 
 </body>
 </html>
