@@ -3,8 +3,8 @@
 			eng_nm:	"DAWINICT. Co., LTD.",
 			addr:		"서울시 영등포구 여의나루로 53-1 대오빌딩 906호",
 			corp_no:"101-86-52969",
-			tel		:	"+82 2 881 5771",
-			fax		:	"+82 2 881 5772",
+			tel		:	"+82 2 3775 4363 ~ 4365",
+			fax		:	"+82 2 3775 4366",
 			email	:	"dawinict@dawinit.com" 
 		}
 const vue_app = new Vue({
