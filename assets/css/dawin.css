@@ -1,5 +1,5 @@
     	.my-round10 { border-radius: 10px;}
-			.#fouc { display:none} 
+			.#fouc { display:none}
     	.navbar-default {
 			    background-color: rgba(255,255,255,0.95);
 			    font-size:18px;
@@ -15,7 +15,7 @@
 	    color:#00a885;
 	}
 					hr { border:1px solid silver}
-					#navbar-menu>ul>li>ul>li>a {display:block; padding:10px 15px; 
+					#navbar-menu>ul>li>ul>li>a {display:block; padding:10px 15px;
 						transition:all 0.1s ease-out; border:1px solid #ddd; position:relative; border-top:0px;
 					}
 					#navbar-menu>ul>li>ul>li { font-size:14px; line-height:18px; font-weight:normal; block-size: auto;}
@@ -27,7 +27,7 @@
 					    display: none;
 					    position:absolute;
 					    top:50px;
-					    width:100%; 
+					    width:100%;
 					    min-width:200px;
 					    box-sizing:content-box;
 					    height:auto;
@@ -37,13 +37,13 @@
 
 				  #service hr,h1,h2,h3,h4,h5,h6 {color:#3b2c87; letter-spacing: -0.8px;}
 
-					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87; 
-						line-height:3rem;     
+					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87;
+						line-height:3rem;
 						text-indent: -1.3em;
     				padding-left: 1.3em;
     				}
-					#service ul.style-none { 
-						list-style:none inside  ; font-size:1.5rem; 
+					#service ul.style-none {
+						list-style:none inside  ; font-size:1.5rem;
 						color:#3b2c87;; word-spacing: 2px; line-height:3rem;
 						text-indent: -1.5em;
     				padding-left: 4em;
@@ -55,9 +55,9 @@
 							letter-spacing: -0.6px;
 					    background: url(../images/text_i.png) no-repeat left 7px;
 					    padding-left: 2rem;
-					}					
+					}
 					/* table { font-weight : bold ; } */
-					
+
 					.vcenter {  vertical-align:middle; display: table-cell;}
 					tr th , .my-middle {
 					  display: table-cell;
@@ -65,8 +65,8 @@
 					  vertical-align:middle;
 					  line-height:3rem;
 					}
-					
-					img {  
+
+					img {
 						max-width: 100%;
   					height: auto;
 					}
@@ -134,7 +134,7 @@ td { vertical-align:middle;}
 }
 
 @media  (min-width: 768px) {
-	.carousel-caption { font-size:4rem ; color:#3b2c87; 
+	.carousel-caption { font-size:4rem ; color:#3b2c87;
 	}
 
 	#navbar-menu>ul>li:hover>ul { display : block ;}
