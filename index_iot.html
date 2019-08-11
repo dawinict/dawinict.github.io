@@ -212,113 +212,10 @@
                                  <img src="assets/images/sub_2_6.png"  width="100px" alt="2"/>
                               </div>
                               <div  class="col-md-10  p-top-10" >
-                                 <h1>Bird 제품구성</h1>
+                                 <h1>BirdNet 시스템 기본구성</h1>
                               </div>
                            </div>
 
-                           <table class="table table-responsive table-bordered">
-                             <thead class="bg-success">
-                               <tr>
-                                 <th>구분</th>
-                                 <th>코드</th>
-                                 <th>제품명</th>
-                                 <th>제품사진</th>
-                               </tr>
-                             </thead>
-                             <TBODY>
-                               <tr >
-                                 <td>Master Mote</td>
-                                 <td><a href="#MasterModal" data-toggle="modal" ><b>Bird-master-10</a></td>
-                                 <td>GateWay</td>
-                                 <td><img src="assets/images/master-10.png" alt="마스터모트"  width="60"></td>
-                               </tr>
-                               <tr >
-                                 <td rowspan="2">Slave Mote</td>
-                                 <td><a href="#RepeaterModal" data-toggle="modal" ><B>Bird-Repeater</a></td>
-                                 <td>리피터</td>
-                                 <td><img src="assets/images/repeater.png" alt="리피터"  width="60"></td>
-                               </tr>
-                               <tr >
-                                 <td><a href="#RTDModal" data-toggle="modal" ><B>Bird-RTD</a></td>
-                                 <td>온도센서</td>
-                                 <td><img src="assets/images/rtd1.png" alt="센서"  width="50">
-                                   <img src="assets/images/rtd2.png" alt="센서"  width="50">
-                                 </td>
-                               </tr>
-                             </TBODY>
-                           </table>
-  <br>
-
-<div class="modal fade " id="MasterModal" tabindex="-1" role="dialog">
-	<div class="modal-dialog ">
-		<div class="modal-content container-fluid" >
-      <div class="modal-header " >
-        <button type="button" class="close" data-dismiss="modal">×</button>
-      </div>
-			<div class="modal-body " >
-        <div class="row roomy-20 ">
-          <img class="img-responsive pl-5"  src="assets/images/master-10-spec.png" alt="" >
-        </div>
-        <div class="row roomy-20">
-          <img class="img-responsive " src="assets/images/master-10.png" alt="MasterMote"  >
-        </div>
-        <div class="row roomy-20">
-          <img class="img-responsive " src="assets/images/master-10-con.png"   >
-        </div>
-  		</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-xs" data-dismiss="modal">닫기</button>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="modal fade" id="RepeaterModal" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-md">
-		<div class="modal-content container-fluid" >
-      <div class="modal-header " >
-        <button type="button" class="close" data-dismiss="modal">×</button>
-      </div>
-			<div class="modal-body " >
-        <div class="row roomy-20 pl-3">
-          <img class="img-responsive center-block pl-10"  src="assets/images/repeater-spec.png" alt=""  >
-        </div>
-        <div class="row roomy-20">
-          <img src="assets/images/repeater.png" alt="리피터"  >
-        </div>
-  		</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-xs" data-dismiss="modal">닫기</button>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="modal fade" id="RTDModal" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-md">
-		<div class="modal-content container-fluid" >
-      <div class="modal-header " >
-        <button type="button" class="close" data-dismiss="modal">×</button>
-      </div>
-			<div class="modal-body " >
-        <div class="row roomy-20 pl-3">
-          <img class="img-responsive center-block pl-10"  src="assets/images/rtd-spec.png" alt=""  >
-        </div>
-        <div class="row roomy-20">
-          <img src="assets/images/rtd1.png" alt="센서"  >
-        </div>
-        <div class="row roomy-20">
-          <img src="assets/images/rtd2.png" alt="센서"  >
-        </div>
-        <p class="text-i bold">Dimension</p>
-        <div class="row roomy-20">
-          <img src="assets/images/rtd-dem.png" alt="demension"  >
-        </div>
-  		</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-xs" data-dismiss="modal">닫기</button>
-			</div>
-		</div>
-	</div>
-</div>
 
                            <div class="row roomy-20" >
                               <div  class="col-md-1 text-center" >
@@ -328,6 +225,12 @@
                                  <h2 class="w700">Master Mote</h2>
                               </div>
                            </div>
+                           <div class="row ">
+                              <h3 class="text-i" style="margin-left:20px" >
+                                Master Mote는 Slave Mote와 관리시스템간 연동을 지원하는 Gateway 역할을 수행 합니다.
+                              </h3>
+                           </div>
+
                            <div class="row roomy-20">
                               <img src="assets/images/sub_2_8.png"  alt="2"/>
                            </div>
@@ -340,22 +243,156 @@
                                  <h2 class="w700">Slave Mote</h2>
                               </div>
                            </div>
+                           <div class="row ">
+                              <h3 class="text-i" style="margin-left:20px" >
+                                Slave mote는 설비 혹은 센서와 연동하여 제반정보를 수집/전송하거나, Repeater 역할을 수행 합니다.
+                              </h3>
+                           </div>
+
                            <div class="row roomy-20">
                               <img src="assets/images/sub_2_9.png" alt="1"/>
                            </div>
                            <hr/>
-                           <div class="row p-top-60" >
-                              <div  class="col-md-1 text-center" >
-                                 <img src="assets/images/sub_2_7.png" width="80px" alt="2"/>
-                              </div>
-                              <div  class="col-md-11  p-top-10 bg-success my-round10" >
-                                 <h2 class="w700">Slave Mote 종류 및 Battery Pack 사양</h2>
-                              </div>
-                           </div>
-                           <div class="row roomy-20">
-                              <img src="assets/images/sub_2_10.png" alt="1"/>
-                           </div>
+                         <div class="row roomy-40 " >
+                            <div  class="col-md-2 text-center" >
+                               <img src="assets/images/sub_2_6.png"  width="100px" alt="2"/>
+                            </div>
+                            <div  class="col-md-10  p-top-10" >
+                               <h1>BirdNet 제품구성</h1>
+                            </div>
                          </div>
+
+                         <div class="container">
+                             <div class="row" >
+                               <div  class="col-md-1 text-right my-auto" >
+                                   <img src="assets/images/sub_3_3.png"  width="38px" alt=""/>
+                                 </div>
+                               <div  class="col-md-11 my-auto" >
+                                   <h2>BirdNet Master <small>(Model : BMM-18910) </small></h2>
+                                    Master Mote(M/M)
+
+                               </div>
+                            </div>
+                            <div class="row p-top-10">
+                              <div  class="col-md-1 text-right my-auto" >
+                                  <img src="assets/images/legal-paper.png"  width="25px" alt=""/>
+                                </div>
+                              <div  class="col my-auto" >
+                                  <h3>주 요 사 양</h3>
+                              </div>
+
+                            </div>
+                            <div class="row my-auto" >
+                               <div class="col-md-1"></div>
+                               <div class="col-md-5 ">
+                                 <ul style="line-height:20px">
+                                    <li>CPU : TI AM3359</li>
+                                    <li>Memory : eMMC 4 Gb </li>
+                                    <li>Port : Ethernet 1, Serial 2 </li>
+                                    <li>OS : Embedded Linux </li>
+                                    <li>Power : POE 48V </li>
+                                    <li>Size : 182mm(W)*45mm(H)*120mm(D) </li>
+                                    <li>Weight : < 900g </li>
+                                  </ul>
+                               </div>
+                               <div class="col-md-6">
+                                 <img src="assets/images/master-10.png" alt="마스터모트"  width="80" />
+                                 <a href="file/Bird-Master_Spec.pdf" ><span class="glyphicon glyphicon-arrow-down"></span>제품카탈로그</a>
+                               </div>
+                             </div>
+
+                              <div class="row p-top-30" >
+                                 <div  class="col-md-1 text-right my-auto" >
+                                     <img src="assets/images/sub_3_3.png"  width="38px" alt=""/>
+                                   </div>
+                                 <div  class="col-md-11 my-auto" >
+                                     <h2>BirdNet Repeater <small>(Model : BSM-18930-PV-RP01)</small></h2>
+                                     Slave Mote (SM) for Repeater
+
+                                 </div>
+                              </div>
+                              <div class="row p-top-10">
+                                <div  class="col-md-1 text-right my-auto" >
+                                    <img src="assets/images/legal-paper.png"  width="25px" alt=""/>
+                                  </div>
+                                <div  class="col my-auto" >
+                                    <h3>주 요 사 양</h3>
+                                </div>
+
+                              </div>
+                              <div class="row my-auto" >
+                                 <div class="col-md-1"></div>
+                                 <div class="col-md-5 ">
+                                   <ul style="line-height:20px">
+                                     <li>CPU : ARM Cortext-M3 32bit</li>
+                                     <li>Memory : 512 Kbyte</li>
+                                     <li>Enclosure Material : PVC </li>
+                                     <li>Battery Power : 3.3V DC up, 8500mAh </li>
+                                     <li>Size : 80mm(W)*55mm(H)*35mm(D)</li>
+                                     <li>Weight : < 150g </li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-6">
+                                   <div class="col-md"><img src="assets/images/repeater.png" alt="리피터"  width="80"></div>
+                                   <a href="file/Bird-repeater_Spec.pdf" ><span class="glyphicon glyphicon-arrow-down"></span>제품카탈로그</a>
+                                 </div>
+                             </div>
+
+                             <div class="row p-top-30" >
+                                <div  class="col-md-1 text-right my-auto" >
+                                    <img src="assets/images/sub_3_3.png"  width="38px" alt=""/>
+                                  </div>
+                                <div  class="col-md-11 my-auto" >
+                                  <h2>BirdNet RTD <amall>(Model : (BSM-18950-T04)</small></h2>
+                                    Slave Mote (SM) with RTD Sensor
+
+                                </div>
+                             </div>
+                             <div class="row p-top-10">
+                               <div  class="col-md-1 text-right my-auto" >
+                                   <img src="assets/images/legal-paper.png"  width="25px" alt=""/>
+                                 </div>
+                               <div  class="col my-auto" >
+                                   <h3>주 요 사 양</h3>
+                               </div>
+
+                             </div>
+                             <div class="row my-auto" >
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5 ">
+                                  <ul style="line-height:20px">
+                                    <li>CPU : ARM Cortext-M3 32bit </li>
+                                    <li>Memory : 512 KByte </li>
+                                    <li>Temperature Element : Pt 100Ω at 0℃ </li>
+                                    <li>Temperature Range : -200 ~ 600℃  </li>
+                                    <li>Enclosure Material : Aluminum  </li>
+                                    <li>Battery Power : 3.3V DC up, 8500mAh </li>
+                                    <li>Size : 178*130*40 </li>
+                                    <li>Weight : < 1600g </li>
+                                    <li>방폭 인증 : Ex IIc T6 IP67 </li>
+                                   </ul>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="col-md"><img src="assets/images/rtd1.png" alt="센서"  width="80"></div>
+                                  <a href="file/Bird-RTD_Spec.pdf" ><span class="glyphicon glyphicon-arrow-down"></span>제품카탈로그</a>
+                                </div>
+                            </div>
+
+                         </div>
+
+                         <div class="row p-top-60" >
+                            <div  class="col-md-1 text-center" >
+                               <img src="assets/images/sub_2_7.png" width="80px" alt="2"/>
+                            </div>
+                            <div  class="col-md-11  p-top-10 bg-success my-round10" >
+                               <h2 class="w700">Slave Mote 종류 및 Battery Pack 사양</h2>
+                            </div>
+                         </div>
+                         <div class="row roomy-20">
+                            <img src="assets/images/sub_2_10.png" alt="1"/>
+                         </div>
+                       </div>
+
                            <hr/>
                            <!--제공가치-->
                          <div id="section4" class="container">
