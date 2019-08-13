@@ -112,6 +112,7 @@
 .fa {margin-right: .7em;}
 
 td { vertical-align:middle;}
+small { font-family: 'Gothic A1', sans-serif;}
 
 .my-block
  {background-color: #f5fbd2 ; border-left: 8px solid #c9cbf1; padding:.7em 1em;}
