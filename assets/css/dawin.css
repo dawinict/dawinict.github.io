@@ -47,7 +47,14 @@
 						color:#3b2c87;; word-spacing: 2px; line-height:3rem;
 						text-indent: -1.5em;
     				padding-left: 4em;
-
+						}
+          #prodList>ul>li {
+						/* list-style:none inside  ;  */
+            float: left;
+            font-size:1.2rem;
+						color:#3b2cE7;; word-spacing: 4px; line-height:2rem;
+						text-indent: -1em;
+    				padding-left: 2em;
 						}
 
 					.text-i {
