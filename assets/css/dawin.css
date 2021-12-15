@@ -7,7 +7,9 @@
 			    padding-top:7px;
 			    letter-spacing:-0.5px ;
 			}
-
+.dropdown-menu {
+	font-family: "맑은 고딕";
+}
 			#navbar-menu>ul>li:hover>a {color:#fff; background-color:#55b9ff;}
 			.carousel-caption { padding-bottom:20%;color:#6b4963}
 	.features_item .f_item_icon i{
@@ -37,11 +39,6 @@
 
 				  #service hr,h1,h2,h3,h4,h5,h6 {color:#3b2c87; letter-spacing: -0.8px;}
 
-					#service ul { list-style:square inside  ; font-size:1.3rem; color:#3b2c87;
-						line-height:3rem;
-						text-indent: -1.3em;
-    				padding-left: 1.3em;
-    				}
 					#service ul.style-none {
 						list-style:none inside  ; font-size:1.5rem;
 						color:#3b2c87;; word-spacing: 2px; line-height:3rem;
@@ -79,7 +76,14 @@
 					}
 					#service th,
 					#service td { font-size:1.5rem; }
-
+					#service ul,
+					#prod td
+					 { list-style:square inside  ; font-size:1.2rem; color:#3b2c87;
+						line-height:3rem;
+						text-indent: -1.3em;
+    				padding-left: 1.3em;
+    				}
+					#prod td {line-height:2rem;}
 .features_item .f_item_icon{
 /*    float: left;*/
 /*    width:10%; */
@@ -119,6 +123,7 @@
 .fa {margin-right: .7em;}
 
 td { vertical-align:middle;}
+
 small { font-family: 'Gothic A1', sans-serif;}
 
 .my-block
