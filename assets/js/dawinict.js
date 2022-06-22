@@ -7,14 +7,16 @@
 			fax		:	"+82 2 3775 4366",
 			email	:	"dawinict@dawinit.com" 
 		}
-const vue_app = new Vue({
+		
+	const { createApp } = Vue
+      createApp({
   el: '#vue-app',
   data: function() {
     return {
       com_rem: com_info 
     }
   }
-});
+}).mount('#vue-app')
 
 document.getElementById("fouc").style.display="block";
 
