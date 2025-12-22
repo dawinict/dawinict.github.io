@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dawin ICT</title>
+   <link rel="stylesheet" href="style.css">
+
+   <!-- Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <style>
+      /* Stylish Accordion Customization for AQT Page */
+      .accordion {
+         border: none !important;
+         background: transparent !important;
+         display: flex;
+         flex-direction: column;
+         gap: 16px;
+         /* Space between items */
+      }
+
+      .accordion-item {
+         border: 1px solid #eef0f3 !important;
+         /* Very subtle border */
+         border-radius: 12px;
+         background: #fff;
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+         /* Soft, modern shadow */
+         overflow: hidden;
+         transition: all 0.3s ease;
+      }
+
+      .accordion-item:hover {
+         transform: translateY(-3px);
+         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+         border-color: #dbe4f0 !important;
+      }
+
+      .accordion-header {
+         background: #fff !important;
+         padding: 22px 30px !important;
+         border: none !important;
+         font-weight: 700 !important;
+         /* Pretendard Bold */
+         font-size: 20px !important;
+         color: #222 !important;
+         letter-spacing: -0.02em;
+      }
+
+      .accordion-header:hover {
+         color: var(--primary-color) !important;
+         background: #f9fbfe !important;
+      }
+
+      .accordion-header.active {
+         color: var(--primary-color) !important;
+         background: #f0f7ff !important;
+         box-shadow: inset 0 -1px 0 #e1eaf5;
+         /* Subtle separation */
+      }
+
+      .accordion-content {
+         background: #fff !important;
+      }
+
+      .accordion-content p {
+         padding: 30px !important;
+         font-size: 17px !important;
+         color: #4b5563 !important;
+         /* Styled gray */
+         line-height: 1.75 !important;
+      }
+   </style>
+   <!-- 메인 스크립트 연결 -->
+</head>
+
+<body>
+   <!-- Header -->
+   <div class="header_wrap">
+      <header id="header">
+         <div class="container">
+            <h1 class="logo">
+               <a href="index.html">
+                  <img src="assets/images/logo2.png" alt="DAWIN ICT" style="margin:20px 20px 5px" width="148">
+               </a>
+            </h1>
+            <nav class="gnb" id="gnb">
+
+            </nav>
+         </div>
+         <div class="gnb_bg"></div>
+      </header>
+   </div>
+
+   <!-- Sub Hero Section -->
+   <!-- Hero Section (Slider) -->
+   <section id="hero" style="height: 310px;">
+      <div class="slider-container">
+         <div class="slide active"
+            style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/images/사진2.png');">
+            <div class="content"><br><br><br>
+               <h1 class="hero-title">AQT 플랫폼 기반 테스트 자동화로 전환 이후<br>시스템의 안정성과 신뢰성을 확보합니다</h1>
+
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- Company Overview Section -->
+   <section id="features" class="section" style="padding: 60px 0;">
+      <div class="container">
+         <div class="section-header">
+            <h2>테스트 자동화 (AQT Platform)</h2>
+         </div>
+         <h2 class="subtitle" style="color: var(--primary-color);">서비스 개요</h2>
+         <div class="flex-container">
+            <div class="text-block" style="flex: 3;">
+               <p style="font-size: 19px;"><br>다윈아이씨티의 테스트 자동화(AQT Platform) 서비스는 엔터프라이즈 전환 과정에서 발생할 수 있는 오류와 리스크를 최소화하기
+                  위해
+                  <strong>데이터·업무·성능을 종합적으로 검증하는 End-to-End 테스트 자동화 서비스</strong>입니다.<br><br>
+                  전환 전·중·후 전 과정에 걸쳐 자동화된 테스트 체계를 적용함으로써 <strong>대규모 전환 프로젝트의 품질을 체계적으로 보장</strong>합니다.
+               </p>
+
+            </div>
+            <div class="image-block" style="flex: 2;">
+               <img src="assets/images/사진31.png" alt="Company Meeting">
+            </div>
+         </div>
+         <br><br>
+         <div class="accordion">
+            <!-- <div class="accordion-item">
+               <button class="accordion-header">서비스 개요 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>다윈아이씨티의 전환(Migration) 및 전환 자동화 서비스는 기업의 핵심 업무 시스템을 안정적으로 분석·전환하여 최신 플랫폼 환경으로 이전하는 엔터프라이즈 전환 서비스입니다.
+                     정밀한 구조 분석과 자동화 기술을 기반으로 전환 리스크를 최소화하고, 예측 가능한 전환 품질을 제공합니다.</p>
+               </div>
+            </div> -->
+
+            <div class="accordion-item">
+               <button class="accordion-header">데이터·업무·성능 기반 End-to-End 테스트 자동화<i
+                     class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="font-size: 1.2em; color: var(--primary-color); font-weight: 600;">시스템 전환 이후에도 기존 업무가
+                        동일하게 수행되는지를 데이터와 업무 흐름 관점에서 정밀하게 검증합니다.</span><br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     데이터 정합성 및 이행 결과 검증<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     업무 로직 및 처리 결과 비교 검증<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     온라인·배치·연계 업무 End-to-End 테스트<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     성능 테스트 및 처리 시간 비교 분석<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 결과의 정확성과 신뢰성 확보
+
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">대규모 전환 프로젝트 품질 검증<i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="font-size: 1.2em; color: var(--primary-color); font-weight: 600;">대규모 엔터프라이즈 전환 환경에
+                        적합한 테스트 자동화 체계를 적용하여 프로젝트 규모와 복잡도에 관계없이 안정적인 품질 검증을 수행합니다.</span><br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     대량 테스트 케이스 자동 실행<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     반복 테스트 자동화를 통한 품질 편차 최소화<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 단계별 품질 지표 관리<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 결과에 대한 객관적 검증 데이터 제공<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 프로젝트 전반의 품질 통제 및 리스크 최소화
+
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">테스트 환경 구축 및 실행 자동화<i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="font-size: 1.2em; color: var(--primary-color); font-weight: 600;">테스트 환경 구축부터 시나리오 관리,
+                        실행, 결과 분석까지의 전 과정을 자동화하여 운영 효율을 극대화합니다.</span><br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     테스트 환경 구성 및 표준 템플릿 제공<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     테스트 시나리오 및 케이스 관리 자동화<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     테스트 실행·결과 수집·리포트 자동화<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     반복 테스트에 최적화된 실행 환경 구성<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     테스트 생산성 향상 및 운영 부담 감소
+
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">서비스 핵심 가치 요약 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 품질을 수치와 데이터로 검증<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     대규모 전환 프로젝트에 최적화된 자동화 테스트 체계<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 이후 운영 안정성까지 고려한 품질 보증
+
+                  </p>
+               </div>
+            </div>
+         </div>
+   </section>
+
+   <!-- Section 1: Assessment -->
+
+
+
+   <!-- Footer -->
+   <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="script.js"></script>
+   <script src="assets/js/footer.js"></script>
+   <script>
+      // Scroll to top functionality
+      document.getElementById('scrollToTop').addEventListener('click', function () {
+         window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+   </script>
+</body>
+
+</html>

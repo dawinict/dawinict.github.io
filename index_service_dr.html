@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dawin ICT</title>
+   <link rel="stylesheet" href="style.css">
+   <!-- Google Fonts for a clean look -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet">
+   <!-- Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <style>
+      /* Stylish Accordion Customization */
+      .accordion {
+         border: none !important;
+         background: transparent !important;
+         display: flex;
+         flex-direction: column;
+         gap: 16px;
+         /* Space between items */
+      }
+
+      .accordion-item {
+         border: 1px solid #eef0f3 !important;
+         /* Very subtle border */
+         border-radius: 12px;
+         background: #fff;
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+         /* Soft, modern shadow */
+         overflow: hidden;
+         transition: all 0.3s ease;
+      }
+
+      .accordion-item:hover {
+         transform: translateY(-3px);
+         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+         border-color: #dbe4f0 !important;
+      }
+
+      .accordion-header {
+         background: #fff !important;
+         padding: 22px 30px !important;
+         border: none !important;
+         font-weight: 700 !important;
+         /* Pretendard Bold */
+         font-size: 20px !important;
+         color: #222 !important;
+         letter-spacing: -0.02em;
+      }
+
+      .accordion-header:hover {
+         color: var(--primary-color) !important;
+         background: #f9fbfe !important;
+      }
+
+      .accordion-header.active {
+         color: var(--primary-color) !important;
+         background: #f0f7ff !important;
+         box-shadow: inset 0 -1px 0 #e1eaf5;
+         /* Subtle separation */
+      }
+
+      .accordion-content {
+         background: #fff !important;
+      }
+
+      .accordion-content p {
+         padding: 30px !important;
+         font-size: 17px !important;
+         color: #4b5563 !important;
+         /* Styled gray */
+         line-height: 1.75 !important;
+      }
+   </style>
+   <!-- 메인 스크립트 연결 -->
+</head>
+
+<body>
+   <!-- Header -->
+   <div class="header_wrap">
+      <header id="header">
+         <div class="container">
+            <h1 class="logo">
+               <a href="index.html">
+                  <img src="assets/images/logo2.png" alt="DAWIN ICT" style="margin:20px 20px 5px" width="148">
+               </a>
+            </h1>
+            <nav class="gnb" id="gnb">
+
+            </nav>
+         </div>
+         <div class="gnb_bg"></div>
+      </header>
+   </div>
+
+   <!-- Sub Hero Section -->
+   <!-- Hero Section (Slider) -->
+   <section id="hero" style="height: 310px;">
+      <div class="slider-container">
+         <div class="slide active"
+            style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/images/사진2.png');">
+            <div class="content"><br><br><br>
+               <h1 class="hero-title">DR 운영 자동화를 통해 재해복구 체계를<br>실제로 실행 가능한 수준으로 구축합니다</h1>
+
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- Company Overview Section -->
+   <section id="features" class="section" style="padding: 60px 0;">
+      <div class="container">
+         <div class="section-header">
+            <h2>DR 자동화 (Sanovi 기반)</h2>
+         </div>
+         <h2 class="subtitle" style="color: var(--primary-color);">서비스 개요</h2>
+         <div class="flex-container">
+            <div class="text-block" style="flex: 3;">
+               <p style="font-size: 19px;">다윈아이씨티의 DR 자동화 서비스는 재해 발생 시 기업의 핵심 시스템을 신속하고 안정적으로 복구하기 위해
+                  <strong>DR 운영 절차를 자동화하고 표준화하는 재해복구 관리 서비스</strong>입니다.<br><br>
+                  <strong>IBM Sanovi 기반의 DR 자동화 기술</strong>을 활용하여 재해복구 운영의 복잡성을 줄이고, 실제 상황에서도 실행 가능한 DR 체계를 제공합니다.
+               </p>
+
+            </div>
+            <div class="image-block" style="flex: 2;">
+               <img src="assets/images/사진32.png" alt="Company Meeting">
+            </div>
+         </div>
+         <br><br>
+         <div class="accordion">
+            <!-- <div class="accordion-item">
+               <button class="accordion-header">서비스 개요 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>다윈아이씨티의 전환(Migration) 및 전환 자동화 서비스는 기업의 핵심 업무 시스템을 안정적으로 분석·전환하여 최신 플랫폼 환경으로 이전하는 엔터프라이즈 전환 서비스입니다.
+                     정밀한 구조 분석과 자동화 기술을 기반으로 전환 리스크를 최소화하고, 예측 가능한 전환 품질을 제공합니다.</p>
+               </div>
+            </div> -->
+
+            <div class="accordion-item">
+               <button class="accordion-header">재해복구 운영 자동화 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="font-size: 1.2em; color: var(--primary-color); font-weight: 600;">DR 운영에 필요한 반복적·복잡한
+                        작업을 자동화하여 운영 오류를 최소화하고 대응 속도를 향상시킵니다.</span><br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     DR 전환·복구 절차 자동 실행<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     시스템 기동·중지·전환 작업 자동화<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     운영자 수작업 최소화 및 표준 운영 절차 적용<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     DR 운영 프로세스의 일관성 확보
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">DR 테스트·복구 시나리오 실행 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="font-size: 1.2em; color: var(--primary-color); font-weight: 600;">실제 재해 상황을 가정한 테스트를
+                        통해 DR 시나리오의 실행 가능성과 신뢰성을 검증합니다.</span><br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     정기 DR 테스트 시나리오 수행<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     복구 절차 자동 실행 및 결과 검증<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     복구 소요 시간(RTO) 및 데이터 손실(RPO) 확인<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     테스트 결과 기반 DR 시나리오 개선
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">운영 안정성 강화 솔루션 제공 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="font-size: 1.2em; color: var(--primary-color); font-weight: 600;">DR 자동화를 통해 재해 대응 역량을
+                        강화하고 전환 이후 운영 환경의 안정성을 높입니다.</span><br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     운영 리스크 감소 및 장애 대응 체계 강화<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     재해 발생 시 신속한 의사결정 지원<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 이후 안정적 시스템 운영을 위한 보완 체계 제공
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">서비스 핵심 가치 요약 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     DR 운영 절차의 자동화·표준화<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     실제 실행 가능한 DR 테스트 및 복구 체계<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     엔터프라이즈 시스템 운영 안정성 강화
+                  </p>
+               </div>
+            </div>
+         </div>
+   </section>
+
+   <!-- Section 1: Assessment -->
+
+
+
+   <!-- Footer -->
+   <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="script.js"></script>
+   <script src="assets/js/footer.js"></script>
+   <script>
+      // Scroll to top functionality
+      document.getElementById('scrollToTop').addEventListener('click', function () {
+         window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dawin ICT</title>
+   <link rel="stylesheet" href="style.css">
+
+   <!-- Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <style>
+      /* Stylish Accordion Customization for AQT Page */
+      .accordion {
+         border: none !important;
+         background: transparent !important;
+         display: flex;
+         flex-direction: column;
+         gap: 16px;
+         /* Space between items */
+      }
+
+      .accordion-item {
+         border: 1px solid #eef0f3 !important;
+         /* Very subtle border */
+         border-radius: 12px;
+         background: #fff;
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+         /* Soft, modern shadow */
+         overflow: hidden;
+         transition: all 0.3s ease;
+      }
+
+      .accordion-item:hover {
+         transform: translateY(-3px);
+         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+         border-color: #dbe4f0 !important;
+      }
+
+      .accordion-header {
+         background: #fff !important;
+         padding: 22px 30px !important;
+         border: none !important;
+         font-weight: 700 !important;
+         /* Pretendard Bold */
+         font-size: 20px !important;
+         color: #222 !important;
+         letter-spacing: -0.02em;
+      }
+
+      .accordion-header:hover {
+         color: var(--primary-color) !important;
+         background: #f9fbfe !important;
+      }
+
+      .accordion-header.active {
+         color: var(--primary-color) !important;
+         background: #f0f7ff !important;
+         box-shadow: inset 0 -1px 0 #e1eaf5;
+         /* Subtle separation */
+      }
+
+      .accordion-content {
+         background: #fff !important;
+      }
+
+      .accordion-content p {
+         padding: 30px !important;
+         font-size: 17px !important;
+         color: #4b5563 !important;
+         /* Styled gray */
+         line-height: 1.75 !important;
+      }
+   </style>
+   <!-- 메인 스크립트 연결 -->
+</head>
+
+<body>
+   <!-- Header -->
+   <div class="header_wrap">
+      <header id="header">
+         <div class="container">
+            <h1 class="logo">
+               <a href="index.html">
+                  <img src="assets/images/logo2.png" alt="DAWIN ICT" style="margin:20px 20px 5px" width="148">
+               </a>
+            </h1>
+            <nav class="gnb" id="gnb">
+
+            </nav>
+         </div>
+         <div class="gnb_bg"></div>
+      </header>
+   </div>
+
+   <!-- Sub Hero Section -->
+   <!-- Hero Section (Slider) -->
+   <section id="hero" style="height: 310px;">
+      <div class="slider-container">
+         <div class="slide active"
+            style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/images/사진3.png');">
+            <div class="content"><br><br><br>
+               <h1 class="hero-title">엔터프라이즈 환경의 플랫폼 전환(U2L 등)을 위해 Rule 기반 자동 변환 기술로<br>애플리케이션 전환을 정확하고 예측 가능하게 수행합니다.
+               </h1>
+
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- Company Overview Section -->
+   <section id="features" class="section" style="padding: 60px 0;">
+      <div class="container">
+         <div class="section-header">
+            <h2>ASW (AppSmartWorker) 솔루션</h2>
+         </div>
+         <h2 class="subtitle" style="color: var(--primary-color);">What is ASW</h2>
+         <div class="flex-container">
+            <div class="text-block" style="flex: 3;">
+               <p style="font-size: 19px;">ASW(AppSmartWorker)는 엔터프라이즈 환경에서 수행되는 <strong>애플리케이션 마이그레이션을 대상으로 소스 분석부터 자동
+                     전환, 이력 관리까지 전 과정을 자동화하는 애플리케이션 전환 자동화 솔루션</strong>입니다.</p>
+            </div>
+            <!-- <div class="image-block" style="flex: 2;">
+               <img src="assets/images/사진12.png" alt="Company Meeting">
+            </div> -->
+         </div>
+         <br><br>
+         <div class="accordion">
+            <div class="accordion-item">
+               <button class="accordion-header">Why ASW <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="font-size: 1.2em; color: var(--primary-color); font-weight: 600;">기존 전환 방식의
+                        한계</span><br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     개발자 숙련도에 따른 품질 편차<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     반복 작업으로 인한 오류 발생<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     대규모 전환 시 일정 통제 어려움<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 결과 관리의 한계<br><br>
+                     <span style="font-size: 1.2em; color: var(--primary-color); font-weight: 600;">ASW의 접근
+                        방식</span><br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 로직의 Rule 기반 표준화<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     자동 전환 엔진을 통한 일관된 품질 확보<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 전·후 결과의 체계적 관리
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">ASW 전환 자동화 구조 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p style="color: var(--primary-color) !important;">ASW는 AS-IS 애플리케이션을 분석한 후 Rule 기반 자동 전환 엔진을 통해 TO-BE
+                     환경으로 전환하며,
+                     전환 결과를 중앙에서 관리합니다.</p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">핵심 기능 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 대상 소스 자동 분석 및 Assessment<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     Rule 기반 소스 자동 변환<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 전·후 소스 비교 및 이력 관리<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     반복 전환 프로젝트 표준화
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">적용 시나리오 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     Unix → Linux(U2L) 전환<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     노후 플랫폼 현대화<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     대규모 애플리케이션 일괄 전환<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     반복 전환 프로젝트 표준화
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">기대 효과 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 기간 단축<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     전환 품질 향상 및 오류 감소<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     대규모 전환 프로젝트 일정·품질 통제
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">솔루션 포지션 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p style="color: var(--primary-color) !important;">ASW는 엔터프라이즈 IT 전환을 위한 애플리케이션 전환 자동화 전문 솔루션입니다.</p>
+               </div>
+            </div>
+         </div>
+   </section>
+
+   <!-- Section 1: Assessment -->
+
+
+
+   <!-- Footer -->
+   <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="script.js"></script>
+   <script src="assets/js/footer.js"></script>
+   <script>
+      // Scroll to top functionality
+      document.getElementById('scrollToTop').addEventListener('click', function () {
+         window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+   </script>
+</body>
+
+</html>

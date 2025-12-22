@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dawin ICT</title>
+   <link rel="stylesheet" href="style.css">
+   <!-- Google Fonts for a clean look -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet">
+   <!-- Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <style>
+      /* Stylish Accordion Customization */
+      .accordion {
+         border: none !important;
+         background: transparent !important;
+         display: flex;
+         flex-direction: column;
+         gap: 16px;
+         /* Space between items */
+      }
+
+      .accordion-item {
+         border: 1px solid #eef0f3 !important;
+         /* Very subtle border */
+         border-radius: 12px;
+         background: #fff;
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+         /* Soft, modern shadow */
+         overflow: hidden;
+         transition: all 0.3s ease;
+      }
+
+      .accordion-item:hover {
+         transform: translateY(-3px);
+         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+         border-color: #dbe4f0 !important;
+      }
+
+      .accordion-header {
+         background: #fff !important;
+         padding: 22px 30px !important;
+         border: none !important;
+         font-weight: 700 !important;
+         /* Pretendard Bold */
+         font-size: 20px !important;
+         color: #222 !important;
+         letter-spacing: -0.02em;
+      }
+
+      .accordion-header:hover {
+         color: var(--primary-color) !important;
+         background: #f9fbfe !important;
+      }
+
+      .accordion-header.active {
+         color: var(--primary-color) !important;
+         background: #f0f7ff !important;
+         box-shadow: inset 0 -1px 0 #e1eaf5;
+         /* Subtle separation */
+      }
+
+      .accordion-content {
+         background: #fff !important;
+      }
+
+      .accordion-content p {
+         padding: 30px !important;
+         font-size: 17px !important;
+         color: #4b5563 !important;
+         /* Styled gray */
+         line-height: 1.75 !important;
+      }
+   </style>
+   <!-- 메인 스크립트 연결 -->
+</head>
+
+<body>
+   <!-- Header -->
+   <div class="header_wrap">
+      <header id="header">
+         <div class="container">
+            <h1 class="logo">
+               <a href="index.html">
+                  <img src="assets/images/logo2.png" alt="DAWIN ICT" style="margin:20px 20px 5px" width="148">
+               </a>
+            </h1>
+            <nav class="gnb" id="gnb">
+
+            </nav>
+         </div>
+         <div class="gnb_bg"></div>
+      </header>
+   </div>
+
+   <!-- Sub Hero Section -->
+   <!-- Hero Section (Slider) -->
+   <section id="hero" style="height: 310px;">
+      <div class="slider-container">
+         <div class="slide active"
+            style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/images/사진2.png');">
+            <div class="content"><br><br><br>
+               <h1 class="hero-title">무선 센서 네트워크 기반 IoT 기술로<br>현장 데이터 수집과 모니터링을 효율적으로 구현합니다</h1>
+
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- Company Overview Section -->
+   <section id="features" class="section" style="padding: 60px 0;">
+      <div class="container">
+         <div class="section-header">
+            <h2>산업용 IoT 솔루션 (Bird Series)</h2>
+         </div>
+         <h2 class="subtitle" style="color: var(--primary-color);">서비스 개요</h2>
+         <div class="flex-container">
+            <div class="text-block" style="flex: 3;">
+               <p style="font-size: 19px;"><br>다윈아이씨티의 산업용 IoT 솔루션(Bird Series)은 산업 현장의 설비와 환경 데이터를 안정적으로 수집·모니터링하여 운영
+                  효율과 가시성을 향상시키는 산업용 IoT 서비스입니다.<br><br>
+                  무선 센서 네트워크 기반의 IoT 기술을 통해 <strong>제조·플랜트·설비 환경에 적합한 데이터 수집 및 현장 모니터링 체계</strong>를 제공합니다.</p>
+
+            </div>
+            <div class="image-block" style="flex: 2;">
+               <img src="assets/images/사진28.png" alt="Company Meeting">
+            </div>
+         </div>
+         <br><br>
+         <div class="accordion">
+            <!-- <div class="accordion-item">
+               <button class="accordion-header">서비스 개요 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>다윈아이씨티의 전환(Migration) 및 전환 자동화 서비스는 기업의 핵심 업무 시스템을 안정적으로 분석·전환하여 최신 플랫폼 환경으로 이전하는 엔터프라이즈 전환 서비스입니다.
+                     정밀한 구조 분석과 자동화 기술을 기반으로 전환 리스크를 최소화하고, 예측 가능한 전환 품질을 제공합니다.</p>
+               </div>
+            </div> -->
+
+            <div class="accordion-item">
+               <button class="accordion-header">무선 센서 네트워크 구축 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="font-size: 1.2em; color: var(--primary-color); font-weight: 600;">산업 현장 환경에 최적화된 무선 센서
+                        네트워크를 구축하여 안정적인 데이터 수집 인프라를 제공합니다.</span><br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     산업용 무선 센서 및 게이트웨이 구성<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     현장 환경을 고려한 네트워크 설계<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     유선 인프라 제약 환경에서도 적용 가능한 무선 구조<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     센서 간 안정적인 통신 및 확장성 확보
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">현장 데이터 수집 및 모니터링 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="font-size: 1.2em; color: var(--primary-color); font-weight: 600;">설비 및 환경 데이터를 실시간으로
+                        수집·가시화하여 현장 상태를 직관적으로 파악할 수 있도록 지원합니다.</span><br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     온도·습도·진동·설비 상태 정보 수집<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     실시간 모니터링 대시보드 제공<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     이상 징후 감지를 위한 기준값 설정<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     운영 상황에 대한 즉각적인 확인 및 대응 지원
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">제조·플랜트·설비 환경 최적화 IoT 기술 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="font-size: 1.2em; color: var(--primary-color); font-weight: 600;">수집된 데이터를 기반으로 산업 현장의
+                        운영 환경을 보다 효율적으로 관리할 수 있도록 지원합니다.</span><br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     설비 상태 모니터링 및 운영 효율 분석<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     장애 및 이상 상황 사전 인지 지원<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     제조·플랜트·설비 환경에 특화된 IoT 적용<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     데이터 기반 운영 고도화 연계 가능
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">서비스 핵심 가치 요약 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     산업 환경에 최적화된 무선 IoT 인프라 제공<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     현장 데이터의 실시간 수집·모니터링 체계 구축<br>
+                     &nbsp;&nbsp;&nbsp;<span style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                     제조·플랜트·설비 운영 효율 및 안정성 향상
+                  </p>
+               </div>
+            </div>
+         </div>
+   </section>
+
+   <!-- Section 1: Assessment -->
+
+
+
+   <!-- Footer -->
+   <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="script.js"></script>
+   <script src="assets/js/footer.js"></script>
+   <script>
+      // Scroll to top functionality
+      document.getElementById('scrollToTop').addEventListener('click', function () {
+         window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+   </script>
+</body>
+
+</html>
