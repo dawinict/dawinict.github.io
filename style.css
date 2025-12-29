@@ -1843,3 +1843,14 @@ ul {
         padding: 20px;
     }
 }
+
+/* Utility class for desktop nowrap, mobile wrap */
+.desktop-nowrap {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .desktop-nowrap {
+        white-space: normal;
+    }
+}
