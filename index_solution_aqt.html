@@ -63,7 +63,6 @@
 
       .accordion-content {
          background: #fff !important;
-         text-align: left !important;
       }
 
       .accordion-content p {
@@ -72,238 +71,6 @@
          color: #4b5563 !important;
          /* Styled gray */
          line-height: 1.75 !important;
-      }
-
-      /* AQT Architecture Diagram Styles */
-      .aqt-diagram-wrap {
-         max-width: 900px;
-         margin: 0 auto 50px;
-         text-align: center;
-         font-family: 'Pretendard', sans-serif;
-      }
-
-      .aqt-title {
-         font-size: 24px;
-         font-weight: 700;
-         color: #1e3a8a;
-         margin-bottom: 5px;
-      }
-
-      .aqt-subtitle {
-         font-size: 16px;
-         color: #64748b;
-         margin-bottom: 30px;
-      }
-
-      .aqt-outer-box {
-         border: 1px solid #e2e8f0;
-         border-radius: 20px;
-         padding: 40px 30px;
-         background: #fff;
-         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-         position: relative;
-      }
-
-      /* Top Flow */
-      .flow-process-bar {
-         background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
-         border-radius: 50px;
-         padding: 15px 40px;
-         display: inline-flex;
-         align-items: center;
-         justify-content: center;
-         gap: 40px;
-         margin-bottom: 40px;
-         color: white;
-         box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
-      }
-
-      .flow-step {
-         display: flex;
-         align-items: center;
-         gap: 10px;
-         font-weight: 600;
-         font-size: 16px;
-      }
-
-      .flow-arrow {
-         color: rgba(255, 255, 255, 0.6);
-         font-size: 14px;
-      }
-
-      /* Platform Area */
-      .platform-area {
-         background: #f8fafc;
-         border: 1px solid #e2e8f0;
-         border-radius: 16px;
-         padding: 30px;
-         position: relative;
-         margin-bottom: 20px;
-      }
-
-      .platform-label {
-         position: absolute;
-         top: -12px;
-         left: 50%;
-         transform: translateX(-50%);
-         background: #fff;
-         padding: 0 20px;
-         font-weight: 700;
-         color: #334155;
-         border: 1px solid #e2e8f0;
-         border-radius: 20px;
-      }
-
-      .platform-grid {
-         display: grid;
-         grid-template-columns: 1fr 1fr 220px;
-         gap: 15px;
-      }
-
-      .module-col {
-         display: flex;
-         flex-direction: column;
-         gap: 15px;
-      }
-
-      .module-card {
-         background: linear-gradient(145deg, #ffffff 0%, #eff6ff 100%);
-         border: 1px solid #bfdbfe;
-         border-radius: 10px;
-         padding: 15px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         gap: 10px;
-         font-weight: 600;
-         color: #1e40af;
-         height: 60px;
-         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
-         transition: transform 0.2s;
-      }
-
-      .module-card:hover {
-         transform: translateY(-2px);
-         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      }
-
-      .virtual-interface-box {
-         background: #fff;
-         border: 1px dashed #cbd5e1;
-         border-radius: 10px;
-         padding: 20px;
-         text-align: left;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-      }
-
-      .virtual-title {
-         font-size: 14px;
-         font-weight: 700;
-         color: #475569;
-         margin-bottom: 10px;
-         display: block;
-         text-align: center;
-      }
-
-      .virtual-list {
-         list-style: none;
-         padding: 0;
-         margin: 0;
-         font-size: 13px;
-         color: #64748b;
-      }
-
-      .virtual-list li {
-         margin-bottom: 6px;
-         padding-left: 10px;
-         position: relative;
-      }
-
-      .virtual-list li::before {
-         content: "•";
-         position: absolute;
-         left: 0;
-         color: #94a3b8;
-      }
-
-      /* Connection Layer */
-      .connection-layer {
-         background: #fff;
-         border: 1px solid #e2e8f0;
-         border-radius: 50px;
-         padding: 12px;
-         color: #475569;
-         font-weight: 600;
-         font-size: 14px;
-         margin-bottom: 20px;
-         position: relative;
-         z-index: 2;
-      }
-
-      /* Bottom System */
-      .bottom-system-area {
-         background: #eff6ff;
-         border-radius: 16px;
-         padding: 20px;
-         position: relative;
-         border: 1px solid #dbeafe;
-      }
-
-      .protocol-tags {
-         display: flex;
-         justify-content: center;
-         gap: 10px;
-         margin-bottom: 10px;
-      }
-
-      .protocol-tag {
-         background: #3b82f6;
-         color: white;
-         padding: 4px 12px;
-         border-radius: 20px;
-         font-size: 12px;
-         font-weight: 500;
-      }
-
-      .aqt-brand-label {
-         position: relative;
-         margin: 0 auto 30px;
-         background: linear-gradient(135deg, #2563eb, #1d4ed8);
-         color: white;
-         font-weight: 800;
-         font-size: 20px;
-         padding: 10px 40px;
-         border-radius: 30px;
-         box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
-         z-index: 10;
-         display: flex;
-         width: fit-content;
-         align-items: center;
-         justify-content: center;
-         gap: 10px;
-      }
-
-      .vertical-arrow-box {
-         margin: -20px 0 0;
-         height: 40px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         color: #94a3b8;
-         font-size: 18px;
-         position: relative;
-         z-index: 1;
-      }
-
-      .bottom-arrow {
-         margin: -20px 0 0;
-         padding-bottom: 20px;
-         display: flex;
-         justify-content: center;
-         color: #94a3b8;
-         font-size: 18px;
       }
    </style>
    <!-- 메인 스크립트 연결 -->
@@ -334,7 +101,8 @@
          <div class="slide active"
             style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/images/사진3.png');">
             <div class="content"><br><br><br>
-               <h1 class="hero-title">운영 시스템의 실거래 데이터를 기반으로<br>엔터프라이즈 전환 결과를 객관적이고 체계적으로 검증합니다.
+               <h1 class="hero-title">운영 시스템의 실거래 데이터를 기반으로<br>
+                  엔터프라이즈 전환 결과를 객관적이고 체계적으로 검증합니다.
                </h1>
 
             </div>
@@ -352,113 +120,146 @@
          <h2 class="subtitle" style="color: var(--primary-color);">What is AQT</h2>
          <div class="flex-container">
             <div class="text-block" style="flex: 3;">
-               <p style="font-size: 19px;">AQT Platform은 엔터프라이즈 전환 프로젝트에서 <strong>전환 결과의 품질을 실거래 데이터 기반으로 자동 검증하는 테스트
-                     자동화 솔루션</strong>입니다.</p>
+               <p style="font-size: 19px;">AQT Platform은 엔터프라이즈 전환 프로젝트에서 전환 결과의 품질과 정합성을 확보하기 위해,<br>
+                  실제 운영 환경에서 발생하는 <strong>실거래 데이터를 기반으로 전환 전·후 시스템을 자동 비교·검증하는 테스트 자동화 솔루션</strong>입니다.<br><br>
+                  기존 시나리오 중심 테스트 방식이 아닌, 실제 업무 흐름과 동일한 거래를 재현함으로써
+                  <strong>대규모 전환 환경에서도 신뢰도 높은 전환 품질 검증을 지원합니다.</strong>
+               </p>
             </div>
-
+            <!-- <div class="image-block" style="flex: 2;">
+               <img src="assets/images/사진12.png" alt="Company Meeting">
+            </div> -->
          </div>
          <br><br>
-         <br><br>
          <div class="aqt-diagram-wrap">
-            <h3 class="aqt-title">AQT 테스트 자동화 플랫폼 아키텍처</h3>
-            <p class="aqt-subtitle">실거래 데이터 기반의 엔드 투 엔드 테스트 자동화</p>
+            <h2 class="aqt-title" style="text-align: center;">AQT 테스트 자동화 플랫폼 아키텍처</h2>
+            <p class="aqt-subtitle" style="text-align: center;">실거래 데이터 기반의 엔드 투 엔드 테스트 자동화</p><br>
             <div class="mb-40 text-center">
-               <img src="assets/images/aqt4_1.png" width="100%" alt="AQT Diagram1">
+               <img src="assets/images/aqt4_1.png" width="80%" alt="AQT Diagram1">
             </div>
-            <div class="accordion">
-               <div class="accordion-item">
-                  <button class="accordion-header">Why AQT <i class="fa fa-chevron-down"></i></button>
-                  <div class="accordion-content">
-                     <p>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        수작업 테스트 중심의 한계<br>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        테스트 커버리지 부족<br>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        대규모 전환 시 품질 리스크 증가<br>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        반복·회귀 테스트 부담
-                     </p>
-                  </div>
-               </div>
+         </div>
 
-               <div class="accordion-item">
-                  <button class="accordion-header">AQT 검증 구조 <i class="fa fa-chevron-down"></i></button>
-                  <div class="accordion-content">
-                     <p style="color: var(--primary-color) !important;">AQT는 실거래 데이터를 수집하여 전환 시스템에 동일한 거래를 재현하고 AS-IS /
-                        TO-BE 결과를 자동 비교·검증합니다.</p>
-                  </div>
-               </div>
+         <br><br>
+         <div class="accordion">
+            <div class="accordion-item">
+               <button class="accordion-header">Why AQT <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
+                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                        수작업 테스트 중심 방식의 한계</span>
+                     <span style="display: block; margin-bottom: 5px; padding-left: 20px;">&nbsp;- 테스트 인력 의존도가 높아 일관된
+                        품질
+                        확보에 한계</span>
+                     <span style="display: block; margin-bottom: 15px; padding-left: 20px;">&nbsp;- 테스트 범위 확장 시 시간과
+                        비용이
+                        기하급수적으로 증가</span>
 
-               <div class="accordion-item">
-                  <button class="accordion-header">핵심 기능 <i class="fa fa-chevron-down"></i></button>
-                  <div class="accordion-content">
-                     <p>
-                        &nbsp;&nbsp;&nbsp;<span
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
                            style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        실거래 데이터 수집 및 테스트 전문 자동 생성<br>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        End-to-End 테스트 자동 실행<br>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        결과 비교 및 검증 리포트 생성<br>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        대규모 전환 프로젝트 전수 테스트
-                     </p>
-                  </div>
-               </div>
+                        테스트 커버리지 부족</span>
+                     <span style="display: block; margin-bottom: 5px; padding-left: 20px;">&nbsp;- 일부 시나리오 중심 검증으로 실제
+                        운영 거래
+                        반영 한계</span>
+                     <span style="display: block; margin-bottom: 15px; padding-left: 20px;">&nbsp;- 예외·비정형 케이스에 대한 검증
+                        어려움</span>
 
-               <div class="accordion-item">
-                  <button class="accordion-header">적용 시나리오 <i class="fa fa-chevron-down"></i></button>
-                  <div class="accordion-content">
-                     <p>
-                        &nbsp;&nbsp;&nbsp;<span
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
                            style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        플랫폼 전환 프로젝트 검증<br>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        클라우드 전환 품질 검증<br>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        대규모 시스템 통합 테스트<br>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        반복 전환 프로젝트 회귀 테스트
-                     </p>
-                  </div>
-               </div>
+                        대규모 전환 시 품질 리스크 증가</span>
+                     <span style="display: block; margin-bottom: 5px; padding-left: 20px;">&nbsp;- 소스, 데이터, 플랫폼 변경이
+                        복합적으로
+                        발생</span>
+                     <span style="display: block; margin-bottom: 15px; padding-left: 20px;">&nbsp;- 장애 발생 시 원인 분석 및
+                        영향도 파악에
+                        많은 시간 소요</span>
 
-               <div class="accordion-item">
-                  <button class="accordion-header">기대 효과 <i class="fa fa-chevron-down"></i></button>
-                  <div class="accordion-content">
-                     <p>
-                        &nbsp;&nbsp;&nbsp;<span
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
                            style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        전환 리스크 사전 제거<br>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        품질 신뢰성 확보<br>
-                        &nbsp;&nbsp;&nbsp;<span
-                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
-                        테스트 효율 극대화
-                     </p>
-                  </div>
-               </div>
-
-               <div class="accordion-item">
-                  <button class="accordion-header">솔루션 포지션 <i class="fa fa-chevron-down"></i></button>
-                  <div class="accordion-content">
-                     <p style="color: var(--primary-color) !important;">AQT는 엔터프라이즈 IT 전환을 위한 전환 검증 테스트 자동화 전문 솔루션입니다.
-                     </p>
-                  </div>
+                        반복·회귀 테스트 부담</span>
+                     <span style="display: block; margin-bottom: 5px; padding-left: 20px;">&nbsp;- 단계별 전환 및 보완 개발 시
+                        동일 테스트
+                        반복 수행 필요</span>
+                     <span style="display: block; margin-bottom: 5px; padding-left: 20px;">&nbsp;- 회귀 테스트 누락에 따른 운영
+                        리스크
+                        상존</span>
+                  </p>
                </div>
             </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">AQT 검증 구조 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p style="color: var(--primary-color) !important;">AQT는 실제 운영 환경에서 발생한 실거래 데이터를 수집하여,
+                     전환 대상 시스템에 동일한 거래를 자동으로 재현합니다.<br><br>
+                     AS-IS 시스템과 TO-BE 시스템의 처리 결과를 자동 비교·검증함으로써
+                     전환 결과의 정합성과 안정성을 체계적으로 확보합니다.</p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">핵심 기능 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
+                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                        실거래 데이터 수집 및 테스트 전문 자동 생성</span>
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
+                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                        End-to-End 테스트 자동 실행</span>
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
+                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                        AS-IS / TO-BE 결과 자동 비교 및 검증 리포트 생성</span>
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
+                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                        대규모 전환 프로젝트 전수 테스트 지원</span>
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">적용 시나리오 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
+                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                        플랫폼 전환 프로젝트 검증 (U2L, U2U, U2C)</span>
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
+                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                        클라우드 전환 품질 검증 (On-Premise → Cloud, Hybrid)</span>
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
+                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                        반복 전환 프로젝트 회귀 테스트</span>
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">기대 효과 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p>
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
+                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                        전환 리스크 사전 제거</span>
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
+                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                        전환 품질 신뢰성 확보</span>
+                     <span style="display: block; margin-bottom: 5px;">&nbsp;<span
+                           style="font-size: 60%; vertical-align: middle; margin-right: 5px;">●</span>
+                        테스트 효율 극대화</span>
+                  </p>
+               </div>
+            </div>
+
+            <div class="accordion-item">
+               <button class="accordion-header">솔루션 포지션 <i class="fa fa-chevron-down"></i></button>
+               <div class="accordion-content">
+                  <p style="color: var(--primary-color) !important;">AQT Platform은 엔터프라이즈 IT 전환을 위한
+                     전환 검증(Test for Migration)에 특화된 테스트 자동화 전문 솔루션입니다.
+                  </p>
+               </div>
+            </div>
+         </div>
    </section>
 
    <!-- Section 1: Assessment -->

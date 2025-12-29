@@ -140,6 +140,56 @@
          background-color: #f9fbfe;
          /* Slightly blue-tinted gray for premium feel */
       }
+
+      /* Logo Grid Styles - Added for Partner Section */
+      .logo-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         gap: 25px;
+         margin-top: 30px;
+      }
+
+      .logo-item {
+         background: #ffffff;
+         border-radius: 15px;
+         padding: 6px 25px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+         transition: all 0.3s ease;
+         border: 1px solid #f1f1f1;
+         height: 82px;
+      }
+
+      .logo-item:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+         border-color: #0056b3;
+         /* Using primary color fallback */
+      }
+
+      .logo-item img {
+         max-width: 100%;
+         max-height: 70px;
+         object-fit: contain;
+         transition: all 0.3s ease;
+      }
+
+      .logo-item:hover img {
+         transform: scale(1.05);
+      }
+
+      /* Specific style for large logos like Samsung SDS */
+      .logo-sds {
+         max-height: 125px;
+      }
+
+      @media (max-width: 768px) {
+         .logo-sds {
+            max-height: 70px;
+         }
+      }
    </style>
 </head>
 
@@ -163,24 +213,27 @@
 
    <!-- Sub Hero Section -->
    <!-- Hero Section (Slider) -->
-   <section id="hero">
+   <section id="hero" style="height: 310px;">
       <div class="slider-container">
          <div class="slide active"
             style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/images/사진4.png');">
-            <div class="content">
-               <h1>Reference</h1>
-               <p>기술로 세상을 연결하는 기업 다윈아이씨티입니다.</p>
+            <div class="content"><br><br><br>
+               <h1 class="hero-title">기술로 세상을 연결하는 기업<br>
+                  다윈아이씨티입니다.</h1>
+
             </div>
          </div>
 
       </div>
+
+
    </section>
 
 
    <div class="container" style="margin-top: 80px;">
       <div class="section-header">
-         <h2>HISTORY</h2>
-         <p>주요 연혁 및 실적</p>
+         <h2>주요사업실적</h2>
+         <p>주요 실적</p>
       </div>
    </div>
 
@@ -601,6 +654,101 @@
             </div>
          </div>
       </div>
+
+   </section>
+   <section id="features" class="section" style="padding: 60px 0;">
+      <div class="container">
+         <div class="section-header">
+            <h2>주요 파트너사</h2>
+         </div>
+         <div class="logo-grid">
+            <!-- Samsung SDS -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_sds.jpg" alt="Samsung SDS" class="logo-sds">
+            </div>
+            <!-- LG CNS -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_lgcns.png" alt="LG CNS">
+            </div>
+            <!-- HP -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_hp.png" alt="HP" style="max-height: 35px;">
+            </div>
+            <!-- IBM -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_ibm.png" alt="IBM" style="max-height: 30px;">
+            </div>
+            <!-- Kyndryl -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_kyndryl.jpg" alt="Kyndryl" style="max-height: 28px;">
+            </div>
+            <!-- KT DS -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_ktds.jpg" alt="KT DS" style="max-height: 56px;">
+            </div>
+            <!-- POSCO & POSCO DX -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_posco.jpg" alt="POSCO DX" style="max-height: 45px;">
+            </div>
+         </div><br>
+
+         <div class="section-header" style="margin-top: 60px;">
+            <h2>주요 고객사</h2>
+         </div>
+         <div class="logo-grid">
+            <!-- IBK Industrial Bank -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_ibk.jpg" alt="IBK기업은행">
+            </div>
+            <!-- Shinhan Bank -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_shinhan.jpg" alt="신한은행">
+            </div>
+            <!-- T-money -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_tmoney.jpg" alt="티머니">
+            </div>
+            <!-- LG U+ -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_lguplus.jpg" alt="LG U+">
+            </div>
+            <!-- Meritz Securities -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_meritz.jpg" alt="메리츠증권">
+            </div>
+            <!-- Shinyoung Securities -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_shinyoung.jpg" alt="신영증권" style="max-height: 35px;">
+            </div>
+            <!-- iM Securities -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_im.png" alt="iM증권">
+            </div>
+            <!-- Shinhan Investment Corp -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_shinhan_invest.jpg" alt="신한투자증권">
+            </div>
+            <!-- Hyundai Motor Securities -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_hyundai_motor.jpg" alt="현대차증권">
+            </div>
+            <!-- Hana Securities -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_hana.jpg" alt="하나증권" style="max-height: 35px;">
+            </div>
+            <!-- KB Life -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_kblife.jpg" alt="KB라이프">
+            </div>
+            <!-- Hyundai AutoEver -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_autoever.jpg" alt="현대오토에버" style="max-height: 45px;">
+            </div>
+            <!-- S-1 -->
+            <div class="logo-item">
+               <img src="assets/images/logo_images/logo_s1.jpg" alt="에스원" style="max-height: 35px;">
+            </div>
+         </div>
 
    </section>
 

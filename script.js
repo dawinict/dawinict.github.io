@@ -115,21 +115,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 <li><a href="index_solution_aqt.html">AQT</a></li>
                 <li><a href="index_solution_asw.html">ASW</a></li>
                 <li><a href="index_solution_dr.html">DRM</a></li>
-                
+                <li><a href="index_solution_iot_prod.html">IoT</a></li>
             </ul>
         </li>
         <li class="has-submenu">
             <a href="index_reference.html">Reference</a>
             <ul class="gnb_sub">
-                <li><a href="index_reference.html">History</a></li>
-                <li><a href="index_iot_prod.html">IoT 제품 목록</a></li>
+                <li><a href="index_reference.html">주요사업실적</a></li>
+                <li><a href="index_reference.html#features">주요 파트너 및 고객사</a></li>
             </ul>
         </li>
         <li class="has-submenu">
             <a href="index_about.html">About us</a>
             <ul class="gnb_sub">
-            <li><a href="index_about.html#Vision">Vision</a></li>    
-            <li><a href="index_about.html#solutions">주요사업분야</a></li>
+            <li><a href="index_about.html#vision">CEO 인사말</a></li>    
+            <li><a href="index_about.html#history">주요 연혁</a></li>
                 <li><a href="index_about.html#contact">오시는 길</a></li>
             </ul>
         </li>
@@ -150,14 +150,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // 마우스가 들어왔을 때 'active' 클래스 추가 (CSS에서 사용)
         item.addEventListener('mouseenter', () => {
             if (window.innerWidth > 768) {
+                // 다른 모든 아이템의 active 제거 (메뉴 간 빠른 이동 시 즉시 전환)
+                menuItems.forEach(other => other.classList.remove('active'));
                 item.classList.add('active');
-            }
-        });
-
-        // 마우스가 나갔을 때 'active' 클래스 제거
-        item.addEventListener('mouseleave', () => {
-            if (window.innerWidth > 768) {
-                item.classList.remove('active');
             }
         });
 
@@ -179,6 +174,15 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
+
+    // 헤더 영역 전체에서 나갈 때 모든 서브메뉴 닫기
+    if (headerWrap) {
+        headerWrap.addEventListener('mouseleave', () => {
+            if (window.innerWidth > 768) {
+                menuItems.forEach(item => item.classList.remove('active'));
+            }
+        });
+    }
 
     // ---------------------------------------------------------
     // Mobile Hamburger Menu Injection (Responsive)
