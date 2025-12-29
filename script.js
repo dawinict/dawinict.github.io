@@ -228,8 +228,15 @@ document.addEventListener('DOMContentLoaded', function () {
             btn.addEventListener('click', toggleMenu);
             overlay.addEventListener('click', toggleMenu);
 
-            // 5. (Removed) Submenu Toggles for Mobile
-            // Logic removed to allow direct navigation since submenus are hidden.
+            // 5. Close menu when clicking a submenu link (essential for anchor links)
+            const submenuLinks = document.querySelectorAll('.gnb_sub a');
+            submenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (gnb.classList.contains('mobile-active')) {
+                        toggleMenu();
+                    }
+                });
+            });
         }
     }
 
