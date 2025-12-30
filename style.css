@@ -1140,8 +1140,7 @@ ul {
 }
 
 /* Patent Image Styles */
-.patent-box img,
-.patent-image img {
+.patent-box img {
     max-width: 60% !important;
     /* Reduced size */
     border-radius: 12px;
@@ -1150,8 +1149,7 @@ ul {
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.patent-box img:hover,
-.patent-image img:hover {
+.patent-box img:hover {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
@@ -1712,13 +1710,6 @@ ul {
 
     .about-timeline-item:nth-child(odd) .about-timeline-content {
         text-align: left;
-    }
-
-    /* Patent Image Responsive */
-    .patent-image img {
-        max-width: 80% !important;
-        /* Larger on mobile */
-        margin-top: 10px;
     }
 }
 
